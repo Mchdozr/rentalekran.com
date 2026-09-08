@@ -17,7 +17,7 @@ function rle_render_header() {
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menü <span aria-hidden="true">☰</span></button>
     <nav id="main-nav" aria-label="Ana gezinme">
-        <a class="nav-link" href="<?php echo rle_link(''); ?>"><span class="nav-label">Ana sayfa</span></a>
+        <a class="nav-link" href="<?php echo rle_link(''); ?>"><span class="nav-label">Anasayfa</span></a>
         <details class="nav-group nav-group--products">
             <summary><span class="nav-label">Ürünlerimiz</span><span class="nav-badge"><?php echo esc_html($product_count); ?> seri</span></summary>
             <div class="nav-drop">
@@ -73,7 +73,7 @@ function rle_render_footer() {
         </section>
         <nav class="footer-list footer-quick" aria-label="Hızlı bağlantılar">
             <h2>Hızlı Linkler</h2>
-            <a href="<?php echo rle_link(''); ?>">Ana sayfa</a>
+            <a href="<?php echo rle_link(''); ?>">Anasayfa</a>
             <a href="<?php echo rle_link('hakkimizda'); ?>">Hakkımızda</a>
             <a href="<?php echo rle_link('firma-bilgilerimiz'); ?>">Firma bilgileri</a>
             <a href="<?php echo rle_link('led-ekran-kiralama'); ?>">LED ekran kiralama</a>

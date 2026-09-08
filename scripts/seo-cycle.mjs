@@ -1,17 +1,19 @@
 /**
- * Publish the next SEO keyword queue item into blog-posts.json.
- * Usage: node scripts/seo-cycle.mjs [--dry-run]
+ * Publish queue items and replenish with new SEO briefs.
+ * Usage: node scripts/seo-cycle.mjs [--dry-run] [--flush]
  */
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const plugin = path.join(root, 'rentalekran-growth');
+const pluginRoot = path.join(root, 'rentalekran-growth');
 const dry = process.argv.includes('--dry-run');
+const flush = process.argv.includes('--flush');
+const QUEUE_MIN = 6;
 
-function readJson(rel) {
-  return JSON.parse(fs.readFileSync(path.join(plugin, rel), 'utf8'));
+function readJson(abs) {
+  return JSON.parse(fs.readFileSync(abs, 'utf8'));
 }
 
 function assetUrl(rel) {
@@ -45,15 +47,64 @@ export function bumpSync(version) {
   return parts.join('.');
 }
 
-function run() {
-  const keywords = readJson('includes/keywords.json');
-  const posts = readJson('includes/blog-posts.json');
-  const item = nextQueueItem(keywords, posts);
-  if (!item) {
-    console.log('seo-cycle: queue empty');
-    return { published: false };
+function addDays(iso, days) {
+  const d = new Date(`${iso}T12:00:00Z`);
+  if (Number.isNaN(d.getTime())) {
+    const now = new Date();
+    now.setUTCDate(now.getUTCDate() + days);
+    return now.toISOString().slice(0, 10);
   }
-  const post = {
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+function latestDate(posts, queue) {
+  const dates = [...(posts || []), ...(queue || [])]
+    .map((item) => item.date)
+    .filter(Boolean)
+    .sort();
+  return dates.length ? dates[dates.length - 1] : new Date().toISOString().slice(0, 10);
+}
+
+export function briefFromSeed(seed, date) {
+  return {
+    slug: seed.slug,
+    title: seed.title,
+    date,
+    category: seed.category || 'LED Ekran Rehberi',
+    focus: seed.focus,
+    excerpt: seed.excerpt,
+    featured: seed.featured || 'assets/rental-led-ekran.webp',
+    imageAlt: seed.imageAlt || seed.title,
+    links: seed.links || ['led-ekran-kiralama', 'led-ekran-satisi', 'iletisim'],
+    sections: [
+      { h2: seed.h2a, p: [seed.pa] },
+      { h2: seed.h2b, p: [seed.pb] },
+    ],
+  };
+}
+
+export function usedSlugs(posts, queue) {
+  return new Set([...(posts || []), ...(queue || [])].map((item) => item.slug).filter(Boolean));
+}
+
+export function replenishQueue(keywords, posts, topics, min = QUEUE_MIN) {
+  const queue = Array.isArray(keywords.queue) ? keywords.queue.slice() : [];
+  const used = usedSlugs(posts, queue);
+  let date = addDays(latestDate(posts, queue), 7);
+  for (const seed of topics) {
+    if (queue.length >= min) break;
+    if (!seed.slug || used.has(seed.slug)) continue;
+    queue.push(briefFromSeed(seed, date));
+    used.add(seed.slug);
+    date = addDays(date, 7);
+  }
+  keywords.queue = queue;
+  return keywords;
+}
+
+function toPost(item) {
+  return {
     slug: item.slug,
     title: item.title,
     date: item.date || new Date().toISOString().slice(0, 10),
@@ -62,17 +113,50 @@ function run() {
     featured: item.featured || 'assets/rental-led-ekran.webp',
     content: item.content || renderQueuedPost(item),
   };
-  if (dry) {
-    console.log('seo-cycle dry-run:', post.slug);
-    return { published: false, slug: post.slug };
+}
+
+export function runCycle({ keywords, posts, topics, flushQueue = false }) {
+  const published = [];
+  keywords.queue = keywords.queue || [];
+  keywords = replenishQueue(keywords, posts, topics, QUEUE_MIN);
+  const limit = flushQueue ? 50 : 1;
+  for (let i = 0; i < limit; i += 1) {
+    const item = nextQueueItem(keywords, posts);
+    if (!item) break;
+    posts.push(toPost(item));
+    keywords.queue = keywords.queue.filter((q) => q.slug !== item.slug);
+    keywords.blogSync = bumpSync(keywords.blogSync);
+    published.push(item.slug);
+    if (!flushQueue) break;
   }
-  posts.push(post);
-  keywords.queue = (keywords.queue || []).filter((q) => q.slug !== item.slug);
-  keywords.blogSync = bumpSync(keywords.blogSync);
-  fs.writeFileSync(path.join(plugin, 'includes/blog-posts.json'), JSON.stringify(posts, null, 2) + '\n');
-  fs.writeFileSync(path.join(plugin, 'includes/keywords.json'), JSON.stringify(keywords, null, 2) + '\n');
-  console.log('seo-cycle published:', post.slug, 'sync', keywords.blogSync);
-  return { published: true, slug: post.slug };
+  keywords = replenishQueue(keywords, posts, topics, QUEUE_MIN);
+  return { keywords, posts, published };
+}
+
+function run() {
+  const keywordsPath = path.join(pluginRoot, 'includes/keywords.json');
+  const postsPath = path.join(pluginRoot, 'includes/blog-posts.json');
+  const topics = readJson(path.join(root, 'scripts/seo-topics.json'));
+  let keywords = readJson(keywordsPath);
+  let posts = readJson(postsPath);
+  const result = runCycle({ keywords, posts, topics, flushQueue: flush });
+  if (!result.published.length) {
+    if (dry) {
+      console.log('seo-cycle dry-run: queue replenished', result.keywords.queue.length);
+      return result;
+    }
+    fs.writeFileSync(keywordsPath, JSON.stringify(result.keywords, null, 2) + '\n');
+    console.log('seo-cycle: no new post; queue', result.keywords.queue.length);
+    return result;
+  }
+  if (dry) {
+    console.log('seo-cycle dry-run:', result.published.join(', '), 'queue', result.keywords.queue.length);
+    return result;
+  }
+  fs.writeFileSync(postsPath, JSON.stringify(result.posts, null, 2) + '\n');
+  fs.writeFileSync(keywordsPath, JSON.stringify(result.keywords, null, 2) + '\n');
+  console.log('seo-cycle published:', result.published.join(', '), 'sync', result.keywords.blogSync, 'queue', result.keywords.queue.length);
+  return result;
 }
 
 function isDirectRun() {

@@ -70,6 +70,7 @@ assert.ok(keywords.pages['led-ekran-satisi']);
 assert.match(keywords.pages[''].title, /^LED Ekran Satış ve Kiralama/);
 assert.match(keywords.pages['led-ekran-kiralama'].title, /^LED Ekran Kiralama/);
 assert.ok(Array.isArray(keywords.queue) && keywords.queue.length > 0);
+assert.match(read('includes/layout.php'), /nav-label">Anasayfa/);
 assert.match(catalog, /led-ekran-satisi/);
 assert.match(read('includes/layout.php'), /led-ekran-satisi/);
 assert.match(seo, /FAQPage/);
@@ -79,10 +80,25 @@ assert.ok(fs.existsSync(path.join(root, '.github/workflows/seo.yml')));
 
 const posts = JSON.parse(read('includes/blog-posts.json'));
 assert.ok(posts.some((p) => p.slug === 'sahne-led-ekran-kiralama'));
-const { nextQueueItem, bumpSync, renderQueuedPost } = await import(pathToFileURL(path.join(root, 'scripts/seo-cycle.mjs')).href);
+const { nextQueueItem, bumpSync, renderQueuedPost, replenishQueue, briefFromSeed, runCycle } = await import(pathToFileURL(path.join(root, 'scripts/seo-cycle.mjs')).href);
 assert.equal(bumpSync('2.5.0'), '2.5.1');
 const nxt = nextQueueItem(keywords, posts);
 assert.ok(nxt && nxt.slug);
 assert.match(renderQueuedPost(nxt), /blog-section/);
+const topics = JSON.parse(fs.readFileSync(path.join(root, 'scripts/seo-topics.json'), 'utf8'));
+assert.ok(topics.length >= 10);
+const filled = replenishQueue({ queue: [] }, posts, topics, 3);
+assert.equal(filled.queue.length, 3);
+assert.ok(filled.queue.every((item) => item.slug && item.sections));
+const unused = topics.find((t) => !posts.some((p) => p.slug === t.slug));
+assert.ok(unused);
+const cycle = runCycle({
+  keywords: { blogSync: '2.5.0', queue: [briefFromSeed(unused, '2026-10-13')] },
+  posts: posts.map((p) => ({ slug: p.slug })),
+  topics,
+  flushQueue: false,
+});
+assert.equal(cycle.published[0], unused.slug);
+assert.ok(cycle.keywords.queue.length >= 3);
 
 console.log('audit tests passed');

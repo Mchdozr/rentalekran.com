@@ -23,10 +23,10 @@ jobs:
         id: cycle
         run: |
           node scripts/seo-cycle.mjs | tee cycle.log
-          if grep -q "queue empty" cycle.log; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
+          if grep -q "seo-cycle published:" cycle.log; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
       - name: Audit
         if: steps.cycle.outputs.changed == 'true'
@@ -37,5 +37,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add rentalekran-growth/includes/blog-posts.json rentalekran-growth/includes/keywords.json
-          git commit -m "SEO: haftalık kuyruktan yeni LED ekran yazısı."
+          git commit -m "SEO: kuyruktan yeni yazı ve otomatik konu yenileme."
           git push

@@ -34,4 +34,4 @@ Varsayılan protokol `ftps`. Natro SFTP isterse workflow’da `protocol: sftp` v
 Plesk’te mümkünse yalnızca plugin klasörüne yetkili ayrı FTP kullanıcısı oluştur. İlk deploy’dan sonra `https://rentalekran.com/` ve `/iletisim/` kontrol et.
 
 ## SEO otomasyonu
-Kelime haritası: `rentalekran-growth/includes/keywords.json`. Haftalık (Pazartesi 07:00 UTC) veya Actions → Weekly SEO content → kuyruktaki sıradaki yazı `blog-posts.json` içine yazılır, `main` push deploy’u tetikler.
+Kelime haritası: `rentalekran-growth/includes/keywords.json`. Haftalık iş kuyruktan bir yazı yayınlar ve `scripts/seo-topics.json` havuzundan kuyruğu yeniden doldurur. Manuel: `node scripts/seo-cycle.mjs` veya `--flush`.
