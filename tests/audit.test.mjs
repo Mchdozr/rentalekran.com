@@ -52,7 +52,7 @@ const { calculate } = require(path.join(plugin, 'assets/planner.js'));
 assert.deepEqual(calculate(4, 3, 0.5, 0.5), { columns: 8, rows: 6, count: 48, width: 4, height: 3, area: 12 });
 assert.throws(() => calculate(0, 3, 0.5, 0.5));
 
-const logo = path.join(plugin, 'assets/rental-ekran-logo-yatay.png');
+const logo = path.join(plugin, 'assets/rental-ekran-logo.png');
 assert.ok(fs.existsSync(logo), 'plugin logo asset missing');
 
 console.log('audit tests passed');

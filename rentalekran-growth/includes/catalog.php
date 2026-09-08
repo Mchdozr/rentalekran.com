@@ -45,7 +45,7 @@ function rle_canonical_for($slug) {
     return home_url($slug === '' ? '/' : '/' . $slug . '/');
 }
 function rle_logo_url() {
-    return RLE_URL . 'assets/rental-ekran-logo-yatay.png';
+    return RLE_URL . 'assets/rental-ekran-logo.png';
 }
 function rle_phones() {
     $s = rle_settings();
