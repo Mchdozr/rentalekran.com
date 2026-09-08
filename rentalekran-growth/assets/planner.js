@@ -135,8 +135,12 @@
           reveal.unobserve(entry.target);
         }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
-    document.querySelectorAll('.rle-reveal, .product-card, .guide-card').forEach((el) => reveal.observe(el));
+    }, { rootMargin: '0px 0px -5% 0px', threshold: 0.05 });
+    document.querySelectorAll('.rle-reveal, .product-card, .guide-card').forEach((el) => {
+      reveal.observe(el);
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.95 && rect.bottom > 0) el.classList.add('is-visible');
+    });
   } else {
     document.querySelectorAll('.rle-reveal, .product-card, .guide-card').forEach((el) => el.classList.add('is-visible'));
   }
