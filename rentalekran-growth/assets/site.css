@@ -51,3 +51,9 @@
 
 .site-header{position:sticky;top:0;z-index:1000;isolation:isolate}.admin-bar .site-header{top:32px}.nav-drop{z-index:1010}.footer-gallery-grid a{background:#f2eee8;border:1px solid #ffffff29;border-radius:7px}.footer-gallery-grid img{padding:10px}
 @media(max-width:782px){.admin-bar .site-header{top:46px}}
+.rle-notice{padding:14px 16px;border-radius:4px;margin:0 0 22px;font-size:14px;line-height:1.5}
+.rle-notice.ok{background:#e8f4e3;border:1px solid #6d9a58}
+.rle-notice.err{background:#f8e4e2;border:1px solid #b52428}
+.rle-hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.planner .actions button.text-link{background:none;border:0;cursor:pointer;color:#30392f}
+.contact-card dd a{display:inline-block;margin-bottom:4px}

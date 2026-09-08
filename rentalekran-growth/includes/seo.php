@@ -24,7 +24,8 @@ function rle_legacy_seo() {
         'cob'=>array('title'=>'COB LED Ekran | Rental Ekran','description'=>'COB LED ekran serisinin mevcut ürün, görsel ve teknik tablolarını inceleyin.'),
         'gob'=>array('title'=>'GOB LED Ekran | Rental Ekran','description'=>'GOB LED ekran serisinin mevcut ürün, görsel ve teknik tablolarını inceleyin.'),
         'floor'=>array('title'=>'Floor Zemin LED Ekran | Rental Ekran','description'=>'Floor zemin LED ekran serisinin mevcut ürün, görsel ve teknik tablolarını inceleyin.'),
-        'elementor-3277'=>array('title'=>'Transparan LED Ekran | Rental Ekran','description'=>'Transparan LED ekran serisinin mevcut ürün, görsel ve teknik tablolarını inceleyin.')
+        'elementor-3277'=>array('title'=>'Transparan LED Ekran | Rental Ekran','description'=>'Transparan LED ekran serisinin mevcut ürün, görsel ve teknik tablolarını inceleyin.'),
+        'transparan-led-ekran'=>array('title'=>'Transparan LED Ekran | Rental Ekran','description'=>'Transparan LED ekran serisinin mevcut ürün, görsel ve teknik tablolarını inceleyin.')
     );
     $post=get_queried_object();
     return is_object($post) && isset($post->post_name,$data[$post->post_name]) ? $data[$post->post_name] : null;
@@ -57,6 +58,12 @@ function rle_schema($slug) {
 }
 add_action('wp_head', function () {
     if (!rle_enabled()) return;
+    $ga = isset(rle_settings()['ga_id']) ? rle_settings()['ga_id'] : '';
+    if ($ga && preg_match('/^G-[A-Z0-9]+$/', $ga)) {
+        echo '<script async src="https://www.googletagmanager.com/gtag/js?id='.esc_attr($ga).'"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","'.esc_js($ga).'");</script>'."\n";
+    } elseif ($ga && preg_match('/^GTM-[A-Z0-9]+$/', $ga)) {
+        echo '<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","'.esc_js($ga).'");</script>'."\n";
+    }
     if (rle_has_seo_plugin()) return; // Avoid competing canonical/schema publishers.
     $route = rle_route(); $legacy=rle_legacy_seo(); $desc = $legacy && !empty($legacy['description']) ? $legacy['description'] : rle_description();
     if ($desc) echo '<meta name="description" content="'.esc_attr($desc).'">' . "\n";
@@ -69,6 +76,16 @@ add_action('wp_head', function () {
     echo '<script type="application/ld+json">'.wp_json_encode(rle_schema($route), JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES).'</script>' . "\n";
 }, 5);
 // Core sitemaps remain responsible for posts and other genuine content.
+add_filter('wp_sitemaps_taxonomies', function ($taxonomies) {
+    unset($taxonomies['liquid-portfolio-category']);
+    return $taxonomies;
+});
+add_filter('wp_sitemaps_post_types', function ($types) {
+    foreach (array_keys((array) $types) as $name) {
+        if (strpos($name, 'liquid-') === 0 || $name === 'metform-form') unset($types[$name]);
+    }
+    return $types;
+});
 add_filter('wp_sitemaps_posts_query_args', function ($args, $post_type) {
     if (!rle_live()) return $args;
     if ($post_type !== 'page') return $args;
@@ -90,7 +107,7 @@ add_action('init', function () {
             public function get_url_list($page_num, $object_subtype = '') {
                 if ((int)$page_num !== 1) return array();
                 $urls = array(); foreach (rle_routes() as $slug=>$page) {
-                    if ($slug === 'ornek-sayfa') continue;
+                    if ($slug === 'ornek-sayfa' || $slug === 'elementor-3277') continue;
                     $urls[] = array('loc'=>rle_canonical_for($slug));
                 }
                 return $urls;
