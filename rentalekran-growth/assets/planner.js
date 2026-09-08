@@ -82,6 +82,23 @@
     rows.forEach((row,i)=>Array.from(row.cells).forEach((cell,j)=>{if(i>0)cell.dataset.label=headers[j]||'';}));
     table.classList.add('rle-stacked-table');
   });
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const reveal = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          reveal.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -4% 0px', threshold: 0.08 });
+    document.querySelectorAll('.rle-reveal').forEach((el) => reveal.observe(el));
+    document.querySelectorAll('.rle-reveal').forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) el.classList.add('is-visible');
+    });
+  } else {
+    document.querySelectorAll('.rle-reveal').forEach((el) => el.classList.add('is-visible'));
+  }
   const form = document.querySelector('#rle-planner-form');
   if (!form) return;
   const generate = document.querySelector('#rle-generate');
@@ -126,22 +143,4 @@
     return true;
   };
   if (generate) generate.addEventListener('click', prepareQuote);
-
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const reveal = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          reveal.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -5% 0px', threshold: 0.05 });
-    document.querySelectorAll('.rle-reveal, .product-card, .guide-card').forEach((el) => {
-      reveal.observe(el);
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight * 0.95 && rect.bottom > 0) el.classList.add('is-visible');
-    });
-  } else {
-    document.querySelectorAll('.rle-reveal, .product-card, .guide-card').forEach((el) => el.classList.add('is-visible'));
-  }
 })(typeof window !== 'undefined' ? window : globalThis);

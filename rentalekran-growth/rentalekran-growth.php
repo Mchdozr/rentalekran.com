@@ -68,13 +68,4 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('rle-site', RLE_URL . 'assets/site.css', array(), '2.4.1');
     wp_enqueue_script('rle-planner', RLE_URL . 'assets/planner.js', array(), '2.4.1', true);
 }, PHP_INT_MAX);
-add_action('wp_print_scripts', function () {
-    if (!rle_shell_active()) return;
-    global $wp_scripts;
-    foreach ((array) $wp_scripts->queue as $handle) {
-        if (in_array($handle, array('rle-planner', 'admin-bar'), true)) continue;
-        wp_dequeue_script($handle);
-        wp_deregister_script($handle);
-    }
-}, 100);
 // No database content, credentials, theme, permalink settings or business data is changed on activation.
