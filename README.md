@@ -1,9 +1,9 @@
 # rentalekran.com
 
-Rental Ekran WordPress presentation and SEO plugin. Production version: 2.2.1.
+Rental Ekran WordPress presentation and SEO plugin. Production version: 2.3.0.
 
 ## Installation
-Requires WordPress 6.6+ and PHP 7.4+. Zip the `rentalekran-growth` directory and upload it from WordPress Plugins > Add New > Upload. Replace the existing plugin, then purge this site's LiteSpeed cache. Back up the installed plugin before deployment.
+Requires WordPress 6.6+ and PHP 7.4+. Canlıya alma: `main` push (aşağıdaki Deployment). Zip yalnızca yedek/rollback içindir.
 
 The host WordPress installation supplies the database, settings, legacy content and media uploads. This repository is the custom plugin, not a complete hosting backup. Production credentials, database exports, WordPress core and third-party themes/plugins are intentionally excluded.
 
@@ -15,7 +15,20 @@ The host WordPress installation supplies the database, settings, legacy content 
 - LED cabinet estimator and prefilled contact links
 
 ## Validation
-PHP syntax and JavaScript syntax checks; route/canonical/structured data integration checks; calculator/menu tests. Responsive layout checked on 21 routes at 360, 390, 768, 1024, 1366 and 1920 pixels. Live product dialog, mobile tables and footer checked separately.
+PHP syntax and JavaScript syntax checks; `node tests/audit.test.mjs`; route/canonical/structured data integration checks; calculator/menu tests. Responsive layout checked on 21 routes at 360, 390, 768, 1024, 1366 and 1920 pixels. Live product dialog, mobile tables and footer checked separately.
 
 ## Deployment
-Deploy explicitly through the site's WordPress administration. A GitHub push does not deploy automatically. Retain the previous plugin zip for rollback and verify normal public URLs after cache purge.
+`main` dalına push (veya Actions → Test and deploy plugin → Run workflow) eklentiyi Natro Plesk’teki `wp-content/plugins/rentalekran-growth/` dizinine kopyalar. Zip yüklemeye gerek yok.
+
+GitHub → Settings → Secrets and variables → Actions:
+
+| Secret | Örnek |
+|---|---|
+| `FTP_SERVER` | `ftp.rentalekran.com` veya `194.36.84.221` |
+| `FTP_USERNAME` | Plesk FTP kullanıcısı |
+| `FTP_PASSWORD` | Plesk FTP şifresi |
+| `FTP_SERVER_DIR` | `/httpdocs/wp-content/plugins/rentalekran-growth/` (sondaki `/` zorunlu) |
+
+Varsayılan protokol `ftps`. Natro SFTP isterse workflow’da `protocol: sftp` ve `port: 22` yap.
+
+Plesk’te mümkünse yalnızca plugin klasörüne yetkili ayrı FTP kullanıcısı oluştur. İlk deploy’dan sonra `https://rentalekran.com/` ve `/iletisim/` kontrol et.

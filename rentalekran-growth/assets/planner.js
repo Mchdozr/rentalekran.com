@@ -55,7 +55,7 @@
     viewer.querySelector('p').textContent = `${source.alt} · ${activeIndex + 1} / ${activeImages.length}`;
     viewer.querySelector('[data-prev]').hidden = viewer.querySelector('[data-next]').hidden = activeImages.length < 2;
   };
-  document.querySelectorAll('.footer-gallery-grid, [data-rle-slider], .legacy-image-grid').forEach(group => {
+  document.querySelectorAll('[data-rle-slider], .legacy-image-grid').forEach(group => {
     const images = Array.from(group.querySelectorAll('img'));
     images.forEach((img, index) => {
       let trigger = img.closest('a,button');
@@ -85,28 +85,26 @@
   const form = document.querySelector('#rle-planner-form');
   if (!form) return;
   const generate = document.querySelector('#rle-generate');
-  if (generate) generate.type = 'submit';
   const selected = new URLSearchParams(root.location.search).get('urun');
   if (Array.from(form.elements.product.options).some(o => o.value === selected)) form.elements.product.value = selected;
   if (new URLSearchParams(root.location.search).get('talep') === 'kiralama') {
     for (const option of form.elements.request.options) if (option.text === 'Kiralama talebi') form.elements.request.value = option.value;
   }
   const result = document.querySelector('#rle-result');
-  // A changed input invalidates the old message: never let stale measurements be sent.
   form.addEventListener('input', () => {result.hidden = true;});
   form.addEventListener('change', () => {result.hidden = true;});
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    if (!form.reportValidity()) return;
+  const prepareQuote = () => {
+    if (!form.reportValidity()) return false;
     const data = new FormData(form);
     const [cw,ch] = data.get('cabinet').split(',').map(Number);
     let answer;
-    try {answer = calculate(Number(data.get('width')), Number(data.get('height')), cw, ch);} catch (error) {return;}
+    try {answer = calculate(Number(data.get('width')), Number(data.get('height')), cw, ch);} catch (error) {return false;}
     const format = n => n.toLocaleString('tr-TR', {maximumFractionDigits: 2});
     const summary = `${answer.columns} sütun × ${answer.rows} sıra = ${answer.count} kabin. Örnek ekran: ${format(answer.width)} × ${format(answer.height)} m (${format(answer.area)} m²).`;
     const product = form.elements.product.options[form.elements.product.selectedIndex].text;
     const message = [
       'Merhaba, LED ekran projem için bilgi / teklif almak istiyorum.',
+      `Ad: ${data.get('contact_name') || ''}`, `Telefon: ${data.get('contact_phone') || ''}`,
       `Ürün: ${product}`, `Talep: ${data.get('request')}`, `Ortam: ${data.get('environment')}`,
       `Şehir / ilçe: ${data.get('city') || 'Belirlenecek'}`,
       `Hedef ölçü: ${format(Number(data.get('width')))} × ${format(Number(data.get('height')))} m`,
@@ -125,5 +123,7 @@
     result.hidden = false;
     document.querySelector('#rle-message').focus();
     root.dispatchEvent(new CustomEvent('rentalekran:quote_prepared', {detail:{product:data.get('product'),environment:data.get('environment')}}));
-  });
+    return true;
+  };
+  if (generate) generate.addEventListener('click', prepareQuote);
 })(typeof window !== 'undefined' ? window : globalThis);

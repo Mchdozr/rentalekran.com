@@ -254,7 +254,7 @@
         "description": "Transparan LED ekranları vitrin, cam yüzey ve tanıtım projeleri için inceleyin. Şeffaflık, parlaklık ve ölçüye göre uygun model için teklif alın.",
         "intro": "Cam yüzeyde içerik, mekânla birlikte görünür.",
         "body": "Transparan LED ekranlar, cam yüzeylerde içerik gösterirken mekânın arka planla görsel ilişkisini korumak isteyen projelerde kullanılır. Şeffaflık oranı, piksel yapısı ve parlaklık birlikte değerlendirilmelidir. Güneş yönü ve izleyicinin konumu, vitrin uygulamalarında özellikle önemlidir.",
-        "image": null,
+        "image": "assets/transparan.webp",
         "specs": [
             [
                 "Katalog seçeneği",

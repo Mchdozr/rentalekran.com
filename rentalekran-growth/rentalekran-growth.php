@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Rental Ekran Growth
  * Description: Rental Ekran ürün kataloğu, proje planlayıcı ve teknik SEO katmanı. Eski içerikleri değiştirmez.
- * Version: 2.2.1
+ * Version: 2.3.0
  * Requires at least: 6.6
  * Requires PHP: 7.4
  * License: GPL-2.0-or-later
@@ -13,6 +13,7 @@ define('RLE_URL', plugin_dir_url(__FILE__));
 require_once RLE_DIR . 'includes/catalog.php';
 require_once RLE_DIR . 'includes/seo.php';
 require_once RLE_DIR . 'includes/admin.php';
+require_once RLE_DIR . 'includes/contact.php';
 
 add_filter('query_vars', function ($vars) { $vars[] = 'rle_route'; return $vars; });
 add_action('parse_request', function ($wp) {
@@ -59,7 +60,7 @@ add_action('wp_enqueue_scripts', function () {
     global $wp_styles, $wp_scripts;
     foreach ((array) $wp_styles->queue as $handle) if (!in_array($handle, array('admin-bar', 'dashicons'), true)) wp_dequeue_style($handle);
     foreach ((array) $wp_scripts->queue as $handle) if ($handle !== 'admin-bar') wp_dequeue_script($handle);
-    wp_enqueue_style('rle-site', RLE_URL . 'assets/site.css', array(), '2.2.1');
-    wp_enqueue_script('rle-planner', RLE_URL . 'assets/planner.js', array(), '2.2.1', true);
+    wp_enqueue_style('rle-site', RLE_URL . 'assets/site.css', array(), '2.3.0');
+    wp_enqueue_script('rle-planner', RLE_URL . 'assets/planner.js', array(), '2.3.0', true);
 }, PHP_INT_MAX);
 // No database content, credentials, theme, permalink settings or business data is changed on activation.

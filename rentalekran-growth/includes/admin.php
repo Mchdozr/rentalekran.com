@@ -13,7 +13,11 @@ function rle_sanitize_settings($input) {
     if (!preg_match('/^[1-9][0-9]{7,14}$/', $wa)) { add_settings_error('rle_settings','whatsapp','WhatsApp numarası ülke koduyla 8–15 rakam olmalıdır.'); $wa=$old['whatsapp']; }
     $phone = sanitize_text_field(isset($input['phone']) && is_scalar($input['phone']) ? $input['phone'] : '');
     if (strlen(preg_replace('/\D/','',$phone)) < 8) $phone=$old['phone'];
-    return array('email'=>$email,'whatsapp'=>$wa,'phone'=>$phone,'live_enabled'=>!empty($input['live_enabled']),
+    $office = sanitize_text_field(isset($input['phone_office']) && is_scalar($input['phone_office']) ? $input['phone_office'] : (isset($old['phone_office']) ? $old['phone_office'] : ''));
+    $alt = sanitize_text_field(isset($input['phone_alt']) && is_scalar($input['phone_alt']) ? $input['phone_alt'] : (isset($old['phone_alt']) ? $old['phone_alt'] : ''));
+    $ga = strtoupper(sanitize_text_field(isset($input['ga_id']) && is_scalar($input['ga_id']) ? $input['ga_id'] : ''));
+    if ($ga !== '' && !preg_match('/^(G|GTM|AW)-[A-Z0-9]+$/', $ga)) { add_settings_error('rle_settings','ga_id','GA kimliği G-, GTM- veya AW- ile başlamalıdır.'); $ga = isset($old['ga_id']) ? $old['ga_id'] : ''; }
+    return array('email'=>$email,'whatsapp'=>$wa,'phone'=>$phone,'phone_office'=>$office,'phone_alt'=>$alt,'ga_id'=>$ga,'live_enabled'=>!empty($input['live_enabled']),
         'address'=>sanitize_text_field(isset($input['address']) && is_scalar($input['address']) ? $input['address'] : $old['address']),
         'business_mode'=>isset($input['business_mode']) && in_array($input['business_mode'],array('project','rental','both'),true) ? $input['business_mode'] : 'project');
 }
@@ -27,8 +31,8 @@ function rle_admin_page() {
     echo '<form action="options.php" method="post">'; settings_fields('rle');
     echo '<table class="form-table">';
     echo '<tr><th>Yayın durumu</th><td><label><input type="checkbox" name="rle_settings[live_enabled]" value="1" '.checked(rle_live(),true,false).'> Yeni siteyi ziyaretçilere aç</label><p class="description">Önizleme kontrolü tamamlandıktan sonra açın. Kapalıyken yalnızca oturum açmış yöneticiler rle_preview=1 ile yeni sayfaları görebilir.</p></td></tr>';
-    foreach (array('phone'=>'Telefon','whatsapp'=>'WhatsApp (ülke koduyla)','email'=>'E-posta','address'=>'Görünür adres') as $key=>$label) {
-        echo '<tr><th><label for="rle-'.esc_attr($key).'">'.esc_html($label).'</label></th><td><input class="regular-text" required id="rle-'.esc_attr($key).'" name="rle_settings['.esc_attr($key).']" type="'.($key==='email'?'email':'text').'" value="'.esc_attr($s[$key]).'"></td></tr>';
+    foreach (array('phone'=>'Telefon (WhatsApp)','phone_office'=>'Santral','phone_alt'=>'İkinci cep','whatsapp'=>'WhatsApp (ülke koduyla)','email'=>'E-posta','address'=>'Görünür adres','ga_id'=>'Google Analytics / GTM kimliği') as $key=>$label) {
+        echo '<tr><th><label for="rle-'.esc_attr($key).'">'.esc_html($label).'</label></th><td><input class="regular-text" '.($key==='ga_id'?'':'required ').'id="rle-'.esc_attr($key).'" name="rle_settings['.esc_attr($key).']" type="'.($key==='email'?'email':'text').'" value="'.esc_attr(isset($s[$key])?$s[$key]:'').'" placeholder="'.($key==='ga_id'?'G-XXXXXXXX veya GTM-XXXXXXX':'').'"></td></tr>';
     }
     echo '<tr><th><label for="rle-mode">Teklif odağı</label></th><td><select id="rle-mode" name="rle_settings[business_mode]">';
     foreach(array('project'=>'Satış / proje','rental'=>'Kiralama','both'=>'Satış ve kiralama') as $v=>$label) echo '<option value="'.esc_attr($v).'" '.selected($s['business_mode'],$v,false).'>'.esc_html($label).'</option>';

@@ -13,9 +13,10 @@ function rle_legacy_content($slug) {
 }
 function rle_settings() {
     return wp_parse_args(get_option('rle_settings', array()), array(
-        'phone' => '+90 543 879 51 08', 'whatsapp' => '905438795108',
-        'email' => 'rental@ledajans.com', 'address' => 'Halide Edip Adıvar Mah. Gül 2 Sk. No:10, Şişli / İstanbul',
-        'business_mode' => 'both', 'live_enabled' => false
+        'phone' => '+90 543 879 51 08', 'phone_office' => '+90 212 220 40 04', 'phone_alt' => '+90 530 405 67 68',
+        'whatsapp' => '905438795108',
+        'email' => 'rental@ledajans.com', 'address' => 'Halide Edip Adıvar Mah. Gül 2 Sk. No:10a, 34382 Şişli / İstanbul',
+        'business_mode' => 'both', 'live_enabled' => false, 'ga_id' => ''
     ));
 }
 function rle_routes() {
@@ -31,19 +32,28 @@ function rle_routes() {
         'shipment'=>array('name'=>'Sevkiyat ve kurulum içeriği','title'=>'LED Ekran Sevkiyat ve Kurulum | Rental Ekran','description'=>'LED ekran sevkiyat ve kurulum kapsamını proje koşullarına göre değerlendirin.'),
         'partners'=>array('name'=>'İş ortakları içeriği','title'=>'İş Ortakları | Rental Ekran','description'=>'Rental Ekran arşivindeki iş ortaklığı içeriklerini inceleyin.'),
         'services'=>array('name'=>'Hizmetler','title'=>'LED Ekran Hizmetleri | Rental Ekran','description'=>'LED ekran satış, kiralama ve proje hizmetlerini inceleyin.'),
-        'ornek-sayfa'=>array('name'=>'Bilgi sayfası','title'=>'Bilgi Sayfası | Rental Ekran','description'=>'Rental Ekran bilgi sayfası.'),
         'led-ekran-fiyatlari'=>array('name'=>'LED ekran fiyatları nasıl belirlenir?','title'=>'LED Ekran Fiyatları: Teklifi Belirleyen Etkenler | Rental Ekran','description'=>'LED ekran fiyatını etkileyen ölçü, piksel aralığı, kabin, kontrol sistemi ve montaj kapsamını öğrenin. Karşılaştırılabilir teklif için kontrol listesi.'),
         'led-ekran-secim-rehberi'=>array('name'=>'Projeniz için LED ekran seçimi','title'=>'LED Ekran Seçim Rehberi: Ölçü, Piksel ve Mekân | Rental Ekran','description'=>'İzleme mesafesi, içerik, ekran ölçüsü ve bakım erişimine göre LED ekran seçimini planlayın. Yedi ürün ailesini ihtiyaçlarınıza göre değerlendirin.'),
         'ic-mekan-dis-mekan-led-ekran'=>array('name'=>'İç mekân mı, dış mekân mı?','title'=>'İç Mekân ve Dış Mekân LED Ekran Farkları | Rental Ekran','description'=>'İç ve dış mekân LED ekran seçerken parlaklık, koruma, bakım ve montaj farklarını inceleyin. Vitrin, sahne ve sabit projeler için seçim kriterleri.'),
         'led-ekran-kiralama'=>array('name'=>'LED ekran kiralama','title'=>'LED Ekran Kiralama | Sahne, Fuar ve Etkinlik · Rental Ekran','description'=>'Sahne, fuar ve etkinlikler için LED ekran kiralama talebinizi hazırlayın. İstanbul ve Türkiye genelindeki projeler için tarih, ölçü ve mekâna göre teklif alın.'),
         'istanbul-led-ekran'=>array('name'=>'İstanbul LED ekran satış ve kiralama','title'=>'İstanbul LED Ekran Satış ve Kiralama | Rental Ekran','description'=>'Şişli, İstanbul merkezli Rental Ekran ile LED ekran satış ve kiralama projenizi planlayın. Türkiye genelindeki talepler için ölçü, tarih ve mekânı paylaşın.')
     );
-    foreach (rle_products() as $product) $routes[!empty($product['legacy']) ? $product['legacy'] : $product['slug']] = $product;
+    foreach (rle_products() as $product) $routes[$product['slug']] = $product;
     return $routes;
 }
 function rle_canonical_for($slug) {
-    if ($slug === 'transparan-led-ekran') $slug = 'elementor-3277';
     return home_url($slug === '' ? '/' : '/' . $slug . '/');
+}
+function rle_logo_url() {
+    return RLE_URL . 'assets/rental-ekran-logo-yatay.png';
+}
+function rle_phones() {
+    $s = rle_settings();
+    $list = array($s['phone']);
+    foreach (array('phone_office', 'phone_alt') as $key) {
+        if (!empty($s[$key])) $list[] = $s[$key];
+    }
+    return array_values(array_unique(array_filter($list)));
 }
 function rle_live() { return !empty(rle_settings()['live_enabled']); }
 function rle_preview() {
