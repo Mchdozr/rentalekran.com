@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "led-ekran-kiralama-fiyati-nasil-belirlenir",
+    "title": "LED Ekran Kiralama Fiyatı Nasıl Belirlenir?",
+    "date": "2026-09-01",
+    "category": "LED Ekran Rehberi",
+    "excerpt": "Kiralama teklifinde ekran ölçüsü, kurulum süresi, nakliye ve teknik ekip kapsamı birlikte değerlendirilir. Tek fiyat yerine proje kalemlerini anlamak doğru karar verdirir.",
+    "featured": "assets/rental-led-ekran.webp",
+    "content": "<div class=\"blog-section\"><h2>Tek fiyat yerine proje kalemleri</h2><p>LED ekran kiralama fiyatı; yalnızca metrekare hesabıyla değil, kurulum süresi, lokasyon, teknik ekip ve operasyon kapsamıyla birlikte oluşur. Etkinlik tarihi, sahne yüksekliği ve elektrik altyapısı teklifin temel girdileridir.</p></div><div class=\"blog-split\"><figure><img src=\"https://rentalekran.com/wp-content/plugins/rentalekran-growth/assets/rental-led-ekran.webp\" alt=\"Rental LED ekran sahne kurulumu\" loading=\"lazy\"></figure><div><h3>En çok etkileyen beş faktör</h3><ul><li>Ekran ölçüsü ve piksel aralığı</li><li>Kurulum / söküm gün sayısı</li><li>Nakliye ve rigging ihtiyacı</li><li>İşlemci, kamera ve yedek ekipman</li><li>Operatör ve saha desteği</li></ul></div></div><div class=\"blog-callout\"><p><strong>Pratik ipucu:</strong> Teklif istemeden önce hedef ölçü, izleme mesafesi ve etkinlik takvimini netleştirin. Aynı gün içinde kurulacak sahne ile çok günlü fuar kurulumu farklı kapsam gerektirir.</p></div><div class=\"blog-section\"><h2>Karşılaştırılabilir teklif için kontrol listesi</h2><p>Her teklifte kabin ölçüsü, toplam piksel çözünürlüğü, yenileme hızı, montaj yöntemi ve dahil hizmetlerin yazılı olması gerekir. Eksik kalem, sonradan maliyet ve operasyon riski doğurur.</p></div>"
+  },
+  {
+    "slug": "fuar-standinda-led-ekran-secimi",
+    "title": "Fuar Standında LED Ekran Seçimi: 6 Kritik Soru",
+    "date": "2026-08-18",
+    "category": "Proje Seçimi",
+    "excerpt": "Fuar standında izleme mesafesi, stand yüksekliği ve içerik türü piksel aralığını belirler. Rental veya sabit sistem kararını kurulum süresiyle birlikte değerlendirin.",
+    "featured": "assets/front.webp",
+    "content": "<div class=\"blog-section\"><h2>Stand ölçüsü görüntüyü belirler</h2><p>Fuar standında LED ekran seçerken önce ziyaretçinin duracağı mesafeyi düşünün. 2–4 metre mesafede P2–P3 aralığı okunabilirlik sağlar; daha geniş alanlarda P3.9 ve üzeri değerlendirilebilir.</p></div><div class=\"blog-split\"><figure><img src=\"https://rentalekran.com/wp-content/plugins/rentalekran-growth/assets/front.webp\" alt=\"Front LED ekran fuar uygulaması\" loading=\"lazy\"></figure><div><h3>Kurulumdan önce sorulması gerekenler</h3><ol><li>Stand tavan yüksekliği ve taşıyıcı limiti nedir?</li><li>İçerik statik mi, video mu?</li><li>Kurulum kaç saatte tamamlanmalı?</li><li>Elektrik ve sinyal nereden gelecek?</li><li>Operatör desteği gerekli mi?</li><li>Söküm ve depolama kapsamı kimde?</li></ol></div></div><div class=\"blog-section\"><h2>Rental mı, modüler satın alma mı?</h2><p>Yılda birkaç fuar için kiralama genelde daha verimlidir. Sık tekrarlayan etkinliklerde modüler rental kabin yatırımı amortisman süresini kısaltabilir. Karar; etkinlik takvimi ve lojistik maliyetle birlikte verilmelidir.</p></div>"
+  },
+  {
+    "slug": "cob-gob-led-ekran-farki",
+    "title": "COB ve GOB LED Ekran Farkı: Hangi Projede Hangisi?",
+    "date": "2026-08-05",
+    "category": "Teknoloji",
+    "excerpt": "COB yakın izleme ve homojen görüntü için; GOB ise yüzey koruması ve zorlu ortamlar için değerlendirilir. İzleme mesafesi ve bakım planı seçimi belirler.",
+    "featured": "assets/cob.webp",
+    "content": "<div class=\"blog-section\"><h2>İki teknoloji, iki farklı ihtiyaç</h2><p>COB (Chip-on-Board) LED’ler substrata doğrudan yerleştirilir; ince piksel aralığında homojen görüntü ve derin kontrast sağlar. GOB (Glue-on-Board) ise modül yüzeyine koruyucu kaplama uygular; darbe ve nem riski yüksek alanlarda tercih edilir.</p></div><div class=\"blog-split\"><figure><img src=\"https://rentalekran.com/wp-content/plugins/rentalekran-growth/assets/cob.webp\" alt=\"COB LED ekran modül detayı\" loading=\"lazy\"></figure><div><h3>COB ne zaman?</h3><ul><li>Yakın izleme (1,5–3 m)</li><li>Kurumsal lobi ve kontrol odası</li><li>Yüksek görüntü homojenliği istenen alanlar</li></ul><h3>GOB ne zaman?</h3><ul><li>Kalabalık geçiş alanları</li><li>Temas riski olan vitrin uygulamaları</li><li>Operasyonel dayanıklılık önceliği</li></ul></div></div><div class=\"blog-callout\"><p>Teknoloji seçimi tek başına yeterli değildir. Kontrol sistemi, yenileme hızı ve servis erişimi aynı projede birlikte planlanmalıdır.</p></div>"
+  },
+  {
+    "slug": "transparan-led-vitrin-uygulamalari",
+    "title": "Transparan LED ile Vitrin Uygulamaları",
+    "date": "2026-07-22",
+    "category": "Uygulama Alanları",
+    "excerpt": "Cam cephe ve vitrinlerde transparan LED; iç mekânı kapatmadan dijital içerik sunar. Işık geçirgenliği, montaj hattı ve güç dağıtımı proje başında netleştirilmelidir.",
+    "featured": "assets/transparan.webp",
+    "content": "<div class=\"blog-section\"><h2>Görünürlük ve mekân bütünlüğü</h2><p>Transparan LED ekranlar, cam yüzeyde dijital içerik gösterirken arkadaki ürün ve mekânı görünür tutar. Mağaza cepheleri, showroom vitrinleri ve fuar standlarında marka algısını güçlendirir.</p></div><div class=\"blog-split\"><figure><img src=\"https://rentalekran.com/wp-content/plugins/rentalekran-growth/assets/transparan.webp\" alt=\"Transparan LED ekran vitrin uygulaması\" loading=\"lazy\"></figure><div><h3>Projede netleştirilmesi gerekenler</h3><ul><li>Cam ölçüsü ve taşıyıcı profil</li><li>Güneş alan yüzeyde parlaklık hedefi</li><li>İçerik tasarımının şeffaflık oranı</li><li>Bakım ve modül erişimi</li></ul></div></div><div class=\"blog-section\"><h2>İçerik tasarımı kritik</h2><p>Transparan ekranda tam dolu koyu arka planlar vitrin etkisini azaltır. Kontrastlı tipografi, kısa mesajlar ve ürünle uyumlu renk paleti daha iyi sonuç verir.</p></div>"
+  }
+]

@@ -126,4 +126,18 @@
     return true;
   };
   if (generate) generate.addEventListener('click', prepareQuote);
+
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const reveal = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          reveal.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    document.querySelectorAll('.rle-reveal, .product-card, .guide-card').forEach((el) => reveal.observe(el));
+  } else {
+    document.querySelectorAll('.rle-reveal, .product-card, .guide-card').forEach((el) => el.classList.add('is-visible'));
+  }
 })(typeof window !== 'undefined' ? window : globalThis);

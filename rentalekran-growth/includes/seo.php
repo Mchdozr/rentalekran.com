@@ -30,7 +30,11 @@ function rle_legacy_seo() {
     $post=get_queried_object();
     return is_object($post) && isset($post->post_name,$data[$post->post_name]) ? $data[$post->post_name] : null;
 }
-add_filter('pre_get_document_title', function ($title) { $meta=rle_route() !== null ? rle_routes()[rle_route()] : rle_legacy_seo(); return !empty($meta['title']) ? $meta['title'] : $title; }, 999);
+add_filter('pre_get_document_title', function ($title) {
+    if (rle_shell_active() && is_singular('post')) return get_the_title() . ' | Rental Ekran';
+    $meta=rle_route() !== null ? rle_routes()[rle_route()] : rle_legacy_seo();
+    return !empty($meta['title']) ? $meta['title'] : $title;
+}, 999);
 add_filter('wp_robots', function ($robots) {
     if (rle_preview() || (rle_enabled() && (rle_original() || is_search() || is_404() || is_attachment() || is_author() || is_page(rle_demo_ids())))) {
         $robots['noindex'] = true; unset($robots['index']);
@@ -67,7 +71,22 @@ add_action('wp_head', function () {
     if (rle_has_seo_plugin()) return; // Avoid competing canonical/schema publishers.
     $route = rle_route(); $legacy=rle_legacy_seo(); $desc = $legacy && !empty($legacy['description']) ? $legacy['description'] : rle_description();
     if ($desc) echo '<meta name="description" content="'.esc_attr($desc).'">' . "\n";
-    if ($route === null) return;
+    if ($route === null) {
+        if (rle_shell_active() && is_singular('post')) {
+            $url = get_permalink();
+            $title = get_the_title() . ' | Rental Ekran';
+            echo '<link rel="canonical" href="' . esc_url($url) . '">' . "\n";
+            echo '<meta property="og:locale" content="tr_TR"><meta property="og:type" content="article">' . "\n";
+            foreach (array('title' => $title, 'description' => $desc, 'url' => $url, 'site_name' => 'Rental Ekran') as $key => $value) {
+                echo '<meta property="og:' . esc_attr($key) . '" content="' . esc_attr($value) . '">' . "\n";
+            }
+            if (has_post_thumbnail()) {
+                echo '<meta property="og:image" content="' . esc_url(get_the_post_thumbnail_url(null, 'large')) . '">' . "\n";
+            }
+            echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        }
+        return;
+    }
     $page = rle_routes()[$route]; $url = rle_canonical_for($route);
     echo '<link rel="canonical" href="'.esc_url($url).'">' . "\n";
     echo '<meta property="og:locale" content="tr_TR"><meta property="og:type" content="website">' . "\n";

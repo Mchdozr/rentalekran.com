@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Rental Ekran Growth
  * Description: Rental Ekran ürün kataloğu, proje planlayıcı ve teknik SEO katmanı. Eski içerikleri değiştirmez.
- * Version: 2.3.0
+ * Version: 2.4.0
  * Requires at least: 6.6
  * Requires PHP: 7.4
  * License: GPL-2.0-or-later
@@ -14,6 +14,8 @@ require_once RLE_DIR . 'includes/catalog.php';
 require_once RLE_DIR . 'includes/seo.php';
 require_once RLE_DIR . 'includes/admin.php';
 require_once RLE_DIR . 'includes/contact.php';
+require_once RLE_DIR . 'includes/layout.php';
+require_once RLE_DIR . 'includes/blog.php';
 
 add_filter('query_vars', function ($vars) { $vars[] = 'rle_route'; return $vars; });
 add_action('parse_request', function ($wp) {
@@ -36,7 +38,7 @@ add_filter('pre_handle_404', function ($pre, $query) {
     return $pre;
 }, 10, 2);
 add_action('template_redirect', function () {
-    if (rle_route() === null) return;
+    if (!rle_shell_active()) return;
     if (rle_preview()) { nocache_headers(); if(!defined('DONOTCACHEPAGE')) define('DONOTCACHEPAGE',true); }
     global $wp;
     if (!rle_has_seo_plugin()) remove_action('wp_head', 'rel_canonical');
@@ -52,15 +54,18 @@ add_action('template_redirect', function () {
 });
 add_filter('redirect_canonical', function ($url) { return rle_route() !== null ? false : $url; });
 add_filter('template_include', function ($template) {
-    return rle_route() !== null && !rle_original() ? RLE_DIR . 'templates/page.php' : $template;
+    if (rle_original() || !rle_shell_active()) return $template;
+    if (rle_route() !== null) return RLE_DIR . 'templates/page.php';
+    if (is_singular('post')) return RLE_DIR . 'templates/single-post.php';
+    return $template;
 }, 999);
 add_action('wp_enqueue_scripts', function () {
-    if (rle_route() === null || rle_original()) return;
+    if (!rle_shell_active()) return;
     // This standalone template uses no Elementor/theme widgets. Retain the logged-in toolbar.
     global $wp_styles, $wp_scripts;
     foreach ((array) $wp_styles->queue as $handle) if (!in_array($handle, array('admin-bar', 'dashicons'), true)) wp_dequeue_style($handle);
     foreach ((array) $wp_scripts->queue as $handle) if ($handle !== 'admin-bar') wp_dequeue_script($handle);
-    wp_enqueue_style('rle-site', RLE_URL . 'assets/site.css', array(), '2.3.0');
-    wp_enqueue_script('rle-planner', RLE_URL . 'assets/planner.js', array(), '2.3.0', true);
+    wp_enqueue_style('rle-site', RLE_URL . 'assets/site.css', array(), '2.4.0');
+    wp_enqueue_script('rle-planner', RLE_URL . 'assets/planner.js', array(), '2.4.0', true);
 }, PHP_INT_MAX);
 // No database content, credentials, theme, permalink settings or business data is changed on activation.

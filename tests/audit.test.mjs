@@ -20,7 +20,15 @@ const legacy = JSON.parse(read('includes/legacy-content.json'));
 assert.match(page, /\$route==='led-ekran-teklif'\s*\|\|\s*\$route==='iletisim'/);
 assert.match(page, /wp_nonce_field\('rle_contact'/);
 assert.match(page, /name="rle_contact"/);
+assert.doesNotMatch(page, /Önceki sayfadan taşınan|Önceki ürün sayfasındaki görseller, teknik tablolar/);
+assert.match(pluginMain, /includes\/blog\.php/);
+assert.match(pluginMain, /single-post\.php/);
+assert.match(pluginMain, /rle_shell_active/);
+assert.ok(fs.existsSync(path.join(plugin, 'templates/single-post.php')));
+assert.ok(fs.existsSync(path.join(plugin, 'includes/layout.php')));
+assert.ok(fs.existsSync(path.join(plugin, 'includes/blog-posts.json')));
 assert.doesNotMatch(page, /Road Freight|ArcHub|BIGLOAD/);
+assert.match(read('includes/layout.php'), /nav-badge/);
 
 assert.match(catalog, /transparan-led-ekran/);
 assert.doesNotMatch(catalog, /elementor-3277'\s*;\s*\$slug/);

@@ -57,3 +57,53 @@
 .rle-hp{position:absolute;left:-9999px;height:0;overflow:hidden}
 .planner .actions button.text-link{background:none;border:0;cursor:pointer;color:#30392f}
 .contact-card dd a{display:inline-block;margin-bottom:4px}
+
+/* Navigation badges and polish */
+.nav-link,.nav-group summary{display:inline-flex;align-items:center;gap:8px}
+.nav-badge{font-size:9px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:3px 8px;border-radius:99px;background:#be2428;color:#fff;line-height:1.2}
+.nav-badge--soft{background:#efe3df;color:#8f2a26}
+.nav-drop-kicker{display:block;font-size:9px;font-weight:700;letter-spacing:1.2px;color:#a92a25;margin-bottom:2px}
+.nav-link--accent .nav-label{border-bottom:2px solid #be242833;padding-bottom:2px}
+.nav-cta{display:inline-flex;align-items:center;gap:10px}
+.nav-cta-dot{width:7px;height:7px;border-radius:50%;background:#3fbf62;box-shadow:0 0 0 0 #3fbf6266;animation:rle-pulse 2.4s ease infinite}
+@keyframes rle-pulse{0%{box-shadow:0 0 0 0 #3fbf6266}70%{box-shadow:0 0 0 8px #3fbf6200}100%{box-shadow:0 0 0 0 #3fbf6200}}
+.nav-group[open] summary .nav-label{color:#a92a25}
+
+/* Product detail blocks */
+.detail-block-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.detail-block{padding:28px;background:linear-gradient(145deg,#f7efec,#eef2e9);border-top:3px solid #c12a2d;border-radius:6px}
+.detail-block .detail-index{font-size:11px;font-weight:700;color:#a92a25;letter-spacing:1px}
+.detail-block h3{font-size:22px;margin:10px 0 14px}
+.detail-block p{font-size:14px;color:#64665f;margin:0 0 10px}
+
+/* Blog article */
+.blog-article{max-width:920px;margin-inline:auto;padding-bottom:40px}
+.blog-lead{font-size:20px;color:#5f6856;max-width:65ch}
+.blog-hero-media{margin:0 0 36px;border-radius:8px;overflow:hidden;background:#eeede7;border:1px solid #deded5}
+.blog-hero-image{width:100%;max-height:460px;object-fit:cover}
+.blog-content{margin-top:10px}
+.rle-prose{font-size:17px;line-height:1.75;color:#43483c}
+.rle-prose h2{font-size:clamp(26px,3vw,34px);margin:36px 0 16px}
+.rle-prose h3{font-size:22px;margin:28px 0 12px}
+.rle-prose p,.rle-prose li{margin-bottom:14px}
+.rle-prose ul,.rle-prose ol{padding-left:22px}
+.rle-prose img{max-width:100%;height:auto;border-radius:6px;margin:18px 0}
+.rle-prose a{text-decoration:underline;color:#9e3027}
+.blog-section{margin:28px 0;padding:26px;background:#f3f0ea;border-radius:6px;border-left:4px solid #be2428}
+.blog-split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin:32px 0}
+.blog-split figure{margin:0;background:#eeede7;border-radius:6px;overflow:hidden;border:1px solid #deded5}
+.blog-split img{width:100%;height:100%;min-height:220px;object-fit:cover}
+.blog-callout{margin:28px 0;padding:22px 24px;background:linear-gradient(145deg,#f7e8e4,#eef2e8);border:1px solid #e0cbc3;border-radius:6px}
+.blog-footer-meta{margin-top:40px;padding-top:28px;border-top:1px solid #deded5;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+.blog-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.blog-tag{font-size:11px;font-weight:700;letter-spacing:.5px;padding:6px 10px;border-radius:99px;background:#efe3df;color:#8f2a26}
+.blog-share-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.blog-card-placeholder{height:200px;display:grid;place-items:center;background:linear-gradient(145deg,#f3e9e5,#e7eee3);color:#a92a25;font-weight:800;letter-spacing:2px}
+
+/* Motion */
+@keyframes rle-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.rle-fade-in{animation:rle-rise .65s ease both}
+.rle-reveal,.product-card,.guide-card{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+.rle-reveal.is-visible,.product-card.is-visible,.guide-card.is-visible{opacity:1;transform:none}
+@media(max-width:760px){.detail-block-grid,.blog-split{grid-template-columns:1fr}.blog-split img{min-height:180px}}
+@media(prefers-reduced-motion:reduce){.rle-fade-in,.nav-cta-dot{animation:none}.rle-reveal,.product-card,.guide-card{opacity:1;transform:none;transition:none}}
