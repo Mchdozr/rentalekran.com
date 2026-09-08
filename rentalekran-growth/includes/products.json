@@ -1,0 +1,290 @@
+[
+    {
+        "slug": "rental-led-ekran",
+        "name": "Rental LED Ekran",
+        "tag": "Sahne · Fuar · Etkinlik",
+        "title": "Rental LED Ekran Modelleri ve Proje Teklifi | Rental Ekran",
+        "description": "İç ve dış mekân rental LED ekran modellerini karşılaştırın. Modüler kabin, piksel aralığı ve kurulum ihtiyacınıza göre proje teklifi isteyin.",
+        "intro": "Sık kurulan ve taşınan ekranlar için modüler yapı.",
+        "body": "Sahne, fuar standı ve etkinlik projelerinde ekranın görüntü kalitesi kadar taşınması, birleştirilmesi ve sökülmesi de önemlidir. Rental LED kabinler farklı ölçülerde ekran oluşturmak için yan yana birleştirilir. İç veya dış mekân seçimi, izleme mesafesi ve çekim koşulları birlikte değerlendirilmelidir.",
+        "image": "assets/rental-led-ekran.webp",
+        "specs": [
+            [
+                "Kabin seçenekleri",
+                "500 × 500 / 500 × 1000 mm"
+            ],
+            [
+                "İç mekân piksel aralığı",
+                "P1.953 / P2.604 / P2.976 / P3.91"
+            ],
+            [
+                "Seçim kriteri",
+                "İzleme mesafesi ve kurulum ortamı"
+            ]
+        ],
+        "uses": [
+            "Fuar standı ve ürün lansmanı",
+            "Sahne arka planı ve etkinlik ekranı",
+            "Taşınabilir görüntü sistemi yatırımı"
+        ],
+        "questions": [
+            [
+                "Rental LED ekran kiralama hizmeti anlamına mı gelir?",
+                "Rental, taşınabilir ve tekrar kurulabilir kabin yapısını da tanımlar. Satın alma, dönemsel kullanım veya kiralama talebinizi teklif aşamasında açıkça belirtin; hizmet kapsamı ayrıca teyit edilir."
+            ],
+            [
+                "İç mekân ekran dışarıda kullanılabilir mi?",
+                "Doğrudan bu varsayım yapılmamalıdır. Dış ortam için parlaklık, ön/arka yüz koruması, bağlantılar ve kurulum koşulları seçilen modelin belgesinden kontrol edilmelidir."
+            ]
+        ],
+        "source": "https://rentalekran.com/rental-led-ekran/",
+        "source_id": 3581
+    },
+    {
+        "slug": "front",
+        "name": "Front LED Ekran",
+        "tag": "Önden erişim · Modüler yapı",
+        "title": "Front LED Ekran ve Ön Bakımlı Modüller | Rental Ekran",
+        "description": "Front LED ekran serisinde P1.9, P2.6, P2.9 ve P3.9 seçeneklerini inceleyin. Bakım erişimi, izleme mesafesi ve proje ölçüsü için teklif alın.",
+        "intro": "Bakım erişimini projenin başında planlayın.",
+        "body": "Ekranın arkasında servis alanı bırakmanın zor olduğu projelerde bakım yöntemi önemli bir seçim kriteridir. Front serisini değerlendirirken yalnızca piksel aralığına bakmayın: modül erişimi, taşıyıcı yapı ve güç/sinyal bağlantıları da projeyle uyumlu olmalıdır.",
+        "image": "assets/front.webp",
+        "specs": [
+            [
+                "Seri seçenekleri",
+                "P1.9 / P2.6 / P2.9 / P3.9"
+            ],
+            [
+                "Modül ölçüsü",
+                "250 × 250 mm"
+            ],
+            [
+                "Teknik doğrulama",
+                "Seçilen modül ve kontrol sistemi bazında"
+            ]
+        ],
+        "uses": [
+            "Bakım erişimi kısıtlı ekran alanları",
+            "Mağaza ve kurumsal tanıtım alanları",
+            "Modüler LED ekran projeleri"
+        ],
+        "questions": [
+            [
+                "P1.9 ile P3.9 arasında nasıl seçim yapılır?",
+                "Daha küçük piksel aralığı aynı alanda daha fazla piksel sağlar. Yakın izleme ve küçük yazı kullanımı ihtiyacı arttıkça daha sık piksel yapısı değerlendirilir; nihai seçim içerik ve bütçeyle yapılır."
+            ],
+            [
+                "Yenileme hızı tüm Front modellerinde aynı mı?",
+                "Hayır. Modül, sürücü ve kontrol sistemi birlikte değerlendirilmelidir. Teklifte seçilen modelin güncel teknik dokümanı istenmelidir."
+            ]
+        ],
+        "source": "https://rentalekran.com/front/",
+        "source_id": 1648
+    },
+    {
+        "slug": "air-star",
+        "name": "AIR / STAR LED Ekran",
+        "tag": "Modüler kabin · Hızlı kurulum",
+        "title": "AIR / STAR LED Ekran Serisi | Rental Ekran",
+        "description": "AIR / STAR LED ekran serisini, iç ve dış mekân kabin seçeneklerini inceleyin. Ekran ölçüsü ve etkinlik projeniz için uygun modeli belirleyin.",
+        "intro": "Tekrarlanan kurulumlar için kabin esnekliği.",
+        "body": "AIR / STAR ürün sayfası, iç ve dış mekân uygulamaları için AIR kabin seçeneklerini bir araya getirir. Sık taşınan sistemlerde kabin ölçüsü, ağırlık ve kilit yapısı kurulum planını etkiler. Kamera çekimi yapılacaksa yenileme hızı kadar işlemci ve kamera ayarları da birlikte test edilmelidir.",
+        "image": "assets/air-star.webp",
+        "specs": [
+            [
+                "AIR kabin ölçüleri",
+                "500 × 500 / 500 × 1000 mm"
+            ],
+            [
+                "AIR iç mekân seçenekleri",
+                "P1.953 / P2.604 / P2.976 / P3.91"
+            ],
+            [
+                "Dış mekân seçimi",
+                "Model bazında parlaklık ve IP kontrolü"
+            ]
+        ],
+        "uses": [
+            "Sahne ve etkinlik ekranları",
+            "Fuar ve tanıtım kurulumları",
+            "Tekrar kurulan modüler sistemler"
+        ],
+        "questions": [
+            [
+                "AIR ve STAR için aynı teknik değerler geçerli mi?",
+                "Bu sayfadaki özet AIR kabin verilerine dayanır. STAR ve diğer varyantların ölçü ve performans değerleri teklif sırasında ayrıca doğrulanmalıdır."
+            ],
+            [
+                "Kamera çekimi için yalnızca yüksek Hz yeterli mi?",
+                "Yenileme hızı tek başına sonuç garantisi değildir. Kamera enstantanesi, kontrol sistemi ve sürücü ayarlarıyla gerçek çekim koşullarında deneme yapılması gerekir."
+            ]
+        ],
+        "source": "https://rentalekran.com/air-star/",
+        "source_id": 3695
+    },
+    {
+        "slug": "cob",
+        "name": "COB LED Ekran",
+        "tag": "Yakın izleme · İnce piksel aralığı",
+        "title": "COB LED Ekran Modelleri ve Piksel Seçimi | Rental Ekran",
+        "description": "COB LED ekranlarda P0.93, P1.25 ve P1.56 seçeneklerini inceleyin. Yakın izleme, toplantı ve sunum alanınız için ekran projesi oluşturun.",
+        "intro": "Yakından izlenen içerik için daha sık piksel yapısı.",
+        "body": "Toplantı, sunum ve detaylı görsel içerik kullanılan alanlarda ekran çözünürlüğü ve izleme mesafesi birlikte ele alınır. COB serisinin ince piksel seçenekleri, küçük yazı ve detay ihtiyacı olan projelerde değerlendirilir. Ekran ölçüsü, hedef çözünürlük ve ortam aydınlığı modeli belirler.",
+        "image": "assets/cob.webp",
+        "specs": [
+            [
+                "Piksel seçenekleri",
+                "P0.93 / P1.25 / P1.56"
+            ],
+            [
+                "Kabin yüzeyi",
+                "600 × 337.5 mm"
+            ],
+            [
+                "Bakım",
+                "Ön bakım"
+            ]
+        ],
+        "uses": [
+            "Toplantı ve sunum alanları",
+            "Yakın izlenen kurumsal ekranlar",
+            "Detaylı içerik gösterimi"
+        ],
+        "questions": [
+            [
+                "COB ile GOB aynı teknoloji mi?",
+                "Hayır. COB çiplerin kart üzerindeki yerleşim/paketleme yaklaşımıdır; GOB ise LED yüzeyinin kaplanmasına ilişkin bir yöntemdir. Ürün seçimi yalnızca bu kısaltmalara göre yapılmamalıdır."
+            ],
+            [
+                "Smart Screen modelleri COB mu?",
+                "Mevcut katalogdaki Smart Screen tablosu SMD GOB panel teknolojisi belirtir. Bu nedenle tüm Smart Screen ürünlerini COB olarak sınıflandırmıyoruz; model belgesini ayrıca isteyin."
+            ]
+        ],
+        "source": "https://rentalekran.com/cob/",
+        "source_id": 3592
+    },
+    {
+        "slug": "gob",
+        "name": "GOB LED Ekran",
+        "tag": "Yüzey koruması · Projeye özel seçim",
+        "title": "GOB LED Ekran ve Yüzey Koruma Çözümleri | Rental Ekran",
+        "description": "GOB LED ekran seçerken yüzey koruması, piksel aralığı ve kullanım ortamını değerlendirin. Projenize uygun model ve teknik belge için iletişime geçin.",
+        "intro": "Yüzey korumasını kullanım koşullarıyla birlikte değerlendirin.",
+        "body": "GOB ekranlarda LED yüzeyine uygulanan koruyucu kaplama, ürün seçiminin önemli bir parçasıdır. Ancak kaplama tek başına dış mekân uygunluğu veya belirli bir IP derecesi anlamına gelmez. Montaj konumu, temas ihtimali, bakım yöntemi ve modelin teknik dokümanı birlikte incelenmelidir.",
+        "image": "assets/gob.webp",
+        "specs": [
+            [
+                "Yüzey",
+                "GOB koruyucu kaplama"
+            ],
+            [
+                "Ortam uygunluğu",
+                "Seçilen modelin teknik belgesine göre"
+            ],
+            [
+                "Piksel ve parlaklık",
+                "Teklifte model bazında netleştirilir"
+            ]
+        ],
+        "uses": [
+            "Yüzey koruması ihtiyacı olan alanlar",
+            "Ziyaretçiye yakın ekran projeleri",
+            "Özel montaj ve gösterim alanları"
+        ],
+        "questions": [
+            [
+                "Her GOB ekran dış mekâna uygun mu?",
+                "Hayır. GOB tanımı tek başına su/toz koruma sınıfını belirtmez. Kullanım ortamı için tüm kabin, bağlantılar ve IP derecesi doğrulanmalıdır."
+            ],
+            [
+                "GOB ekran fiyatı nasıl belirlenir?",
+                "Ölçü, piksel aralığı, kaplama özellikleri, kabin ve kontrol sistemi birlikte fiyatı belirler. Mekân ve kullanım bilgisiyle model bazında teklif istenmelidir."
+            ]
+        ],
+        "source": "https://rentalekran.com/gob/",
+        "source_id": 3973
+    },
+    {
+        "slug": "floor",
+        "name": "Floor Zemin LED Ekran",
+        "tag": "Zemin uygulaması · Etkinlik",
+        "title": "Floor Zemin LED Ekran Sistemleri | Rental Ekran",
+        "description": "Floor zemin LED ekranları etkinlik ve deneyim alanları için inceleyin. Taşıma kapasitesi, yüzey ve kurulum koşullarına göre proje teklifi isteyin.",
+        "intro": "Görüntüyü zemin deneyiminin bir parçası yapın.",
+        "body": "Floor LED ekranlar, zemin üzerinde görüntü gösterimi gereken projeler için değerlendirilir. Görsel performansın yanında taşıyıcı sistem, yüzey davranışı, kablo güzergâhı ve kullanım yükleri planlanmalıdır. Kesin taşıma kapasitesi ve interaktif kullanım özellikleri seçilen modelin belgesiyle doğrulanır.",
+        "image": "assets/floor.webp",
+        "specs": [
+            [
+                "Seri",
+                "Floor / zemin uygulaması"
+            ],
+            [
+                "Katalogda listelenen seçenekler",
+                "Floor 2.6 / Floor 3.9"
+            ],
+            [
+                "Model doğrulama",
+                "Piksel, yük kapasitesi ve yüzey belgesi gerekli"
+            ]
+        ],
+        "uses": [
+            "Etkinlik ve deneyim alanları",
+            "Fuar ve tanıtım zeminleri",
+            "Sahne görsel uygulamaları"
+        ],
+        "questions": [
+            [
+                "Floor LED ekran üzerinde yürünebilir mi?",
+                "Kullanım şekli, yük dağılımı ve taşıyıcı sistem modelin belgelenmiş sınırlarına uygun olmalıdır. Projeye özel teknik değerlendirme olmadan yük kapasitesi varsayılmamalıdır."
+            ],
+            [
+                "Her zemin ekran interaktif mi?",
+                "Hayır. Sensör ve etkileşim desteği ayrı bir özelliktir. Etkileşim ihtiyacını teklif talebinde belirtin ve modelde bu desteğin bulunduğunu teyit edin."
+            ]
+        ],
+        "source": "https://rentalekran.com/floor/",
+        "source_id": 3655
+    },
+    {
+        "slug": "transparan-led-ekran",
+        "legacy": "elementor-3277",
+        "name": "Transparan LED Ekran",
+        "tag": "Vitrin · Cam yüzey · Görünürlük",
+        "title": "Transparan LED Ekran ve Vitrin Çözümleri | Rental Ekran",
+        "description": "Transparan LED ekranları vitrin, cam yüzey ve tanıtım projeleri için inceleyin. Şeffaflık, parlaklık ve ölçüye göre uygun model için teklif alın.",
+        "intro": "Cam yüzeyde içerik, mekânla birlikte görünür.",
+        "body": "Transparan LED ekranlar, cam yüzeylerde içerik gösterirken mekânın arka planla görsel ilişkisini korumak isteyen projelerde kullanılır. Şeffaflık oranı, piksel yapısı ve parlaklık birlikte değerlendirilmelidir. Güneş yönü ve izleyicinin konumu, vitrin uygulamalarında özellikle önemlidir.",
+        "image": null,
+        "specs": [
+            [
+                "Katalog seçeneği",
+                "P3.9–7.8 sınıfı"
+            ],
+            [
+                "Uygulama",
+                "Vitrin ve cam yüzey projeleri"
+            ],
+            [
+                "Seçim kriteri",
+                "Şeffaflık, parlaklık ve montaj"
+            ]
+        ],
+        "uses": [
+            "Mağaza vitrinleri",
+            "Cam yüzeyli tanıtım alanları",
+            "İç ve dış mekân için uygun model seçimi"
+        ],
+        "questions": [
+            [
+                "Şeffaflık arttığında görüntü aynı kalır mı?",
+                "Şeffaflık, piksel yapısı ve izleme mesafesi birlikte değerlendirilir. Küçük yazı veya yoğun detay içeren içerikleri gerçek ölçüde test etmek faydalıdır."
+            ],
+            [
+                "Vitrine iç mekân modeli yeterli mi?",
+                "Ekran içeride olsa bile doğrudan güneş ışığı görüntüyü etkileyebilir. Parlaklık, cam yüzey, montaj mesafesi ve ısınma koşulları proje bazında kontrol edilmelidir."
+            ]
+        ],
+        "source": "https://rentalekran.com/elementor-3277/",
+        "source_id": 3277
+    }
+]

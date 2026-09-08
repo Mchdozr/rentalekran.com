@@ -1,0 +1,7 @@
+.env*
+*.sql
+*.sqlite*
+*.zip
+wp-config.php
+node_modules/
+*.log
