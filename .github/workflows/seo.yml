@@ -1,0 +1,41 @@
+name: Weekly SEO content
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: seo-cycle
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Publish next keyword article
+        id: cycle
+        run: |
+          node scripts/seo-cycle.mjs | tee cycle.log
+          if grep -q "queue empty" cycle.log; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Audit
+        if: steps.cycle.outputs.changed == 'true'
+        run: node tests/audit.test.mjs
+      - name: Commit
+        if: steps.cycle.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rentalekran-growth/includes/blog-posts.json rentalekran-growth/includes/keywords.json
+          git commit -m "SEO: haftalık kuyruktan yeni LED ekran yazısı."
+          git push

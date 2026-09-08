@@ -43,9 +43,38 @@ add_filter('wp_robots', function ($robots) {
 });
 function rle_schema($slug) {
     $settings = rle_settings(); $page = rle_routes()[$slug]; $url = rle_canonical_for($slug); $home = home_url('/');
-    $org = array('@type'=>'Organization','@id'=>$home.'#organization','name'=>'Rental Ekran','url'=>$home,'telephone'=>$settings['phone'],'email'=>$settings['email']);
-    $web = array('@type'=>'WebSite','@id'=>$home.'#website','url'=>$home,'name'=>'Rental Ekran','publisher'=>array('@id'=>$home.'#organization'),'inLanguage'=>'tr-TR');
-    $entry = array('@type'=> $slug === 'urunlerimiz' ? 'CollectionPage' : 'WebPage','@id'=>$url.'#webpage','url'=>$url,'name'=>$page['title'],'description'=>$page['description'],'isPartOf'=>array('@id'=>$home.'#website'),'inLanguage'=>'tr-TR');
+    $org = array(
+        '@type'=>array('Organization','LocalBusiness'),
+        '@id'=>$home.'#organization',
+        'name'=>'Rental Ekran',
+        'url'=>$home,
+        'telephone'=>$settings['phone'],
+        'email'=>$settings['email'],
+        'address'=>array(
+            '@type'=>'PostalAddress',
+            'streetAddress'=>$settings['address'],
+            'addressLocality'=>'İstanbul',
+            'addressCountry'=>'TR'
+        ),
+        'areaServed'=>array('İstanbul','Türkiye'),
+        'knowsAbout'=>array('LED ekran kiralama','LED ekran satışı','rental LED ekran','sahne LED ekran','fuar LED ekran')
+    );
+    $web = array(
+        '@type'=>'WebSite','@id'=>$home.'#website','url'=>$home,'name'=>'Rental Ekran','publisher'=>array('@id'=>$home.'#organization'),'inLanguage'=>'tr-TR',
+        'potentialAction'=>array('@type'=>'SearchAction','target'=>$home.'?s={search_term_string}','query-input'=>'required name=search_term_string')
+    );
+    $entryType = 'WebPage';
+    if ($slug === 'urunlerimiz') $entryType = 'CollectionPage';
+    if ($slug === 'led-ekran-kiralama' || $slug === 'led-ekran-satisi') $entryType = 'Service';
+    $entry = array('@type'=>$entryType,'@id'=>$url.'#webpage','url'=>$url,'name'=>$page['title'],'description'=>$page['description'],'isPartOf'=>array('@id'=>$home.'#website'),'inLanguage'=>'tr-TR');
+    if ($slug === 'led-ekran-kiralama') {
+        $entry['serviceType'] = 'LED ekran kiralama';
+        $entry['provider'] = array('@id'=>$home.'#organization');
+    }
+    if ($slug === 'led-ekran-satisi') {
+        $entry['serviceType'] = 'LED ekran satışı';
+        $entry['provider'] = array('@id'=>$home.'#organization');
+    }
     $nodes = array($org,$web,$entry);
     if ($slug !== '') {
         $crumbs = array(array('@type'=>'ListItem','position'=>1,'name'=>'Ana sayfa','item'=>$home));
@@ -57,6 +86,12 @@ function rle_schema($slug) {
     if ($slug === 'urunlerimiz') {
         $items = array(); foreach (rle_products() as $i=>$p) $items[] = array('@type'=>'ListItem','position'=>$i+1,'name'=>$p['name'],'url'=>rle_canonical_for($p['slug']));
         $nodes[] = array('@type'=>'ItemList','itemListElement'=>$items);
+    }
+    $faqs = rle_keyword_faqs($slug);
+    if ($faqs) {
+        $items = array();
+        foreach ($faqs as $qa) $items[] = array('@type'=>'Question','name'=>$qa[0],'acceptedAnswer'=>array('@type'=>'Answer','text'=>$qa[1]));
+        $nodes[] = array('@type'=>'FAQPage','mainEntity'=>$items);
     }
     return array('@context'=>'https://schema.org','@graph'=>$nodes);
 }

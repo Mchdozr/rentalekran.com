@@ -1,6 +1,6 @@
 # rentalekran.com
 
-Rental Ekran WordPress presentation and SEO plugin. Production version: 2.3.0.
+Rental Ekran WordPress presentation and SEO plugin. Production version: 2.5.0.
 
 ## Installation
 Requires WordPress 6.6+ and PHP 7.4+. Canlıya alma: `main` push (aşağıdaki Deployment). Zip yalnızca yedek/rollback içindir.
@@ -32,3 +32,6 @@ GitHub → Settings → Secrets and variables → Actions:
 Varsayılan protokol `ftps`. Natro SFTP isterse workflow’da `protocol: sftp` ve `port: 22` yap.
 
 Plesk’te mümkünse yalnızca plugin klasörüne yetkili ayrı FTP kullanıcısı oluştur. İlk deploy’dan sonra `https://rentalekran.com/` ve `/iletisim/` kontrol et.
+
+## SEO otomasyonu
+Kelime haritası: `rentalekran-growth/includes/keywords.json`. Haftalık (Pazartesi 07:00 UTC) veya Actions → Weekly SEO content → kuyruktaki sıradaki yazı `blog-posts.json` içine yazılır, `main` push deploy’u tetikler.

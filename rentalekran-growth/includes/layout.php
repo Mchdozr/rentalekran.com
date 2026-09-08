@@ -31,8 +31,10 @@ function rle_render_header() {
         <details class="nav-group nav-group--guides">
             <summary><span class="nav-label">Teknik bilgi</span><span class="nav-badge nav-badge--soft">Rehber</span></summary>
             <div class="nav-drop">
+                <a href="<?php echo rle_link('led-ekran-satisi'); ?>">LED ekran satışı</a>
+                <a href="<?php echo rle_link('led-ekran-kiralama'); ?>">LED ekran kiralama</a>
                 <a href="<?php echo rle_link('led-ekran-secim-rehberi'); ?>">LED ekran seçim rehberi</a>
-                <a href="<?php echo rle_link('led-ekran-fiyatlari'); ?>">Fiyatı ne belirler?</a>
+                <a href="<?php echo rle_link('led-ekran-fiyatlari'); ?>">LED ekran fiyatları</a>
                 <a href="<?php echo rle_link('ic-mekan-dis-mekan-led-ekran'); ?>">İç / dış mekân seçimi</a>
                 <a href="<?php echo rle_link('blog-sayfasi'); ?>">Blog yazıları</a>
             </div>
@@ -48,6 +50,7 @@ function rle_render_header() {
             </div>
         </details>
         <a class="nav-link nav-link--accent" href="<?php echo rle_link('led-ekran-kiralama'); ?>"><span class="nav-label">Kiralama</span></a>
+        <a class="nav-link" href="<?php echo rle_link('led-ekran-satisi'); ?>"><span class="nav-label">Satış</span></a>
         <a class="nav-cta" href="<?php echo rle_link('iletisim'); ?>">
             <span class="nav-label">Projenizi konuşalım</span>
             <span class="nav-cta-dot" aria-hidden="true"></span>
@@ -73,6 +76,8 @@ function rle_render_footer() {
             <a href="<?php echo rle_link(''); ?>">Ana sayfa</a>
             <a href="<?php echo rle_link('hakkimizda'); ?>">Hakkımızda</a>
             <a href="<?php echo rle_link('firma-bilgilerimiz'); ?>">Firma bilgileri</a>
+            <a href="<?php echo rle_link('led-ekran-kiralama'); ?>">LED ekran kiralama</a>
+            <a href="<?php echo rle_link('led-ekran-satisi'); ?>">LED ekran satışı</a>
             <a href="<?php echo rle_link('blog-sayfasi'); ?>">Blog</a>
             <a href="<?php echo rle_link('iletisim'); ?>">İletişim</a>
         </nav>

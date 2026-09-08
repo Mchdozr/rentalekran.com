@@ -1,0 +1,201 @@
+{
+  "blogSync": "2.5.0",
+  "pages": {
+    "": {
+      "focus": "LED ekran satış ve kiralama",
+      "title": "LED Ekran Satış ve Kiralama | İstanbul | Rental Ekran",
+      "description": "LED ekran satış ve kiralama: İstanbul merkezli Rental Ekran ile sahne, fuar, vitrin ve kurumsal projeler için model seçin, teklif alın.",
+      "name": "LED ekran satış ve kiralama"
+    },
+    "led-ekran-kiralama": {
+      "focus": "LED ekran kiralama",
+      "title": "LED Ekran Kiralama | Sahne, Fuar, Etkinlik | Rental Ekran",
+      "description": "LED ekran kiralama: sahne, fuar ve lansman için tarih, ölçü ve mekâna göre teklif. İstanbul ve Türkiye geneli rental LED ekran kiralama.",
+      "name": "LED ekran kiralama"
+    },
+    "led-ekran-satisi": {
+      "focus": "LED ekran satışı",
+      "title": "LED Ekran Satışı | Satın Alma ve Proje | Rental Ekran",
+      "description": "LED ekran satışı ve satın alma: kalıcı kurulum, piksel aralığı, kabin ve montaj kapsamına göre proje teklifi. İstanbul merkezli Rental Ekran.",
+      "name": "LED ekran satışı"
+    },
+    "istanbul-led-ekran": {
+      "focus": "İstanbul LED ekran kiralama",
+      "title": "İstanbul LED Ekran Kiralama ve Satış | Şişli | Rental Ekran",
+      "description": "İstanbul LED ekran kiralama ve satış: Şişli merkezli Rental Ekran ile sahne, fuar, mağaza ve kurumsal projeler için teklif alın.",
+      "name": "İstanbul LED ekran satış ve kiralama"
+    },
+    "led-ekran-fiyatlari": {
+      "focus": "LED ekran fiyatları",
+      "title": "LED Ekran Fiyatları | Kiralama ve Satış Teklifi | Rental Ekran",
+      "description": "LED ekran fiyatları nasıl oluşur? Ölçü, piksel, kabin, kurulum ve kiralama süresi. Karşılaştırılabilir teklif için kontrol listesi.",
+      "name": "LED ekran fiyatları nasıl belirlenir?"
+    },
+    "urunlerimiz": {
+      "focus": "LED ekran modelleri",
+      "title": "LED Ekran Modelleri | Rental, COB, Transparan | Rental Ekran",
+      "description": "LED ekran modelleri: rental, Front, AIR/STAR, COB, GOB, floor ve transparan. Satış veya kiralama için ürün ailesini seçin.",
+      "name": "LED ekran modelleri"
+    },
+    "iletisim": {
+      "focus": "LED ekran teklif",
+      "title": "LED Ekran Teklif ve İletişim | Kiralama / Satış | Rental Ekran",
+      "description": "LED ekran kiralama veya satış teklifi: ölçü, şehir ve mekân bilgisiyle formu doldurun. Rental Ekran İstanbul iletişim.",
+      "name": "LED ekran teklif ve iletişim"
+    },
+    "led-ekran-teklif": {
+      "focus": "LED ekran teklif",
+      "title": "LED Ekran Teklif Formu | Satış ve Kiralama | Rental Ekran",
+      "description": "LED ekran proje teklifi: satış veya kiralama için ölçü, kullanım alanı ve şehir bilgisi gönderin. Rental Ekran İstanbul.",
+      "name": "LED ekran proje teklifi"
+    },
+    "rental-led-ekran": {
+      "focus": "Rental LED ekran",
+      "title": "Rental LED Ekran | Kiralama ve Satış | Rental Ekran",
+      "description": "Rental LED ekran ve rental ekran kabinleri: sahne, fuar ve etkinlik için modüler sistem. Kiralama veya satın alma teklifi alın.",
+      "name": "Rental LED Ekran"
+    },
+    "blog-sayfasi": {
+      "focus": "LED ekran blog",
+      "title": "LED Ekran Blog | Kiralama, Satış ve Seçim | Rental Ekran",
+      "description": "LED ekran kiralama, satış, piksel aralığı ve proje seçimi yazıları. Rental Ekran bilgi merkezi."
+    },
+    "services": {
+      "focus": "LED ekran hizmetleri",
+      "title": "LED Ekran Satış, Kiralama ve Kurulum | Rental Ekran",
+      "description": "LED ekran satış, kiralama, keşif ve kurulum hizmetleri. İstanbul merkezli Rental Ekran proje kapsamı."
+    }
+  },
+  "faqs": {
+    "led-ekran-kiralama": [
+      ["LED ekran kiralama fiyatı nasıl hesaplanır?", "Ölçü, piksel aralığı, kiralama süresi, şehir, kurulum/söküm ve operatör kapsamı birlikte fiyatı belirler. Stok teyidi olmadan sabit fiyat verilmez."],
+      ["Sahne LED ekran kiralama için ne gerekir?", "Etkinlik tarihi, sahne ölçüleri, askı veya zemin kurulumu, görüntü kaynağı ve izleme mesafesi. Rental LED kabinler bu işler için başlangıç noktasıdır."],
+      ["Fuar LED ekran kiralama aynı gün kurulur mu?", "Kurulum süresi mekân, kabin sayısı ve teknik giriş kurallarına bağlıdır. Tarihi ve yükleme saatini teklif notuna yazın."],
+      ["Rental ekran kiralık mı, satılık mı?", "Rental hem taşınabilir kabin ailesini hem kiralama hizmetini ifade eder. Talebinizde kiralama veya satın alma seçeneğini açıkça belirtin."]
+    ],
+    "led-ekran-satisi": [
+      ["LED ekran satışı ile kiralama farkı nedir?", "Satış kalıcı yatırım ve düzenli kullanım içindir. Kiralama belirli tarihli etkinlik ve fuarlar içindir. Toplam kullanım süresi kararı belirler."],
+      ["LED ekran satın alırken nelere bakılır?", "İzleme mesafesi, iç/dış ortam, piksel aralığı, bakım erişimi, kontrol sistemi ve montaj yöntemi. Model belgesi teklifte istenir."],
+      ["İstanbul’da LED ekran satışı yapıyor musunuz?", "Evet. İletişim noktası Şişli’dedir. Türkiye genelindeki satış projelerinde nakliye ve kurulum kapsamı konuma göre yazılır."]
+    ],
+    "istanbul-led-ekran": [
+      ["İstanbul LED ekran kiralama hangi ilçeleri kapsar?", "Şişli merkezli olarak İstanbul genelindeki sahne, fuar ve mağaza taleplerini değerlendiririz. İlçe, mekân erişimi ve kurulum saati teklifi etkiler."],
+      ["Yerinde keşif yapılır mı?", "İstanbul projelerinde mümkün olduğunda yerinde değerlendirme planlanır. Diğer şehirlerde fotoğraf ve plan üzerinden ilerlenir."]
+    ],
+    "led-ekran-fiyatlari": [
+      ["LED ekran m² fiyatı neden tek başına yetmez?", "Aynı metrekarede piksel, kabin, kontrol ve montaj farklıdır. Kiralama süresinde nakliye ve operatör de eklenir."],
+      ["Satış ve kiralama fiyatı aynı mı hesaplanır?", "Hayır. Satışta ürün ve montaj yatırımı; kiralamada süre, stok, kurulum ve söküm öne çıkar."]
+    ]
+  },
+  "queue": [
+    {
+      "slug": "dis-mekan-led-ekran-secimi",
+      "title": "Dış Mekân LED Ekran Seçimi: Parlaklık, IP ve Kurulum",
+      "date": "2026-09-15",
+      "category": "LED Ekran Rehberi",
+      "focus": "dış mekân LED ekran",
+      "excerpt": "Dış mekân LED ekran seçerken parlaklık, IP koruması, güneş yönü ve taşıyıcı yapı birlikte planlanır. Kiralama ve satış teklifi bu verilere göre netleşir.",
+      "featured": "assets/air-star.webp",
+      "imageAlt": "Dış mekân LED ekran kabin yapısı",
+      "sections": [
+        {
+          "h2": "Dış mekân LED ekran ne zaman gerekir?",
+          "p": [
+            "Açık hava sahne, festival, cephe ve güneş alan vitrin uygulamalarında iç mekân paneli varsayılmaz. Dış mekân LED ekran seçimi parlaklık, ön/arka koruma ve bağlantıların belgelenmiş değerleriyle yapılır.",
+            "Rental Ekran’da kiralama veya satış kararı, etkinlik süresi ve kalıcı montaj ihtiyacına göre ayrılır."
+          ]
+        },
+        {
+          "h2": "Parlaklık ve gece ayarı",
+          "p": [
+            "Güneş altında görünürlük için yüksek nit değerleri değerlendirilir; gece için dimming ve sensör planı enerji ve konfor sağlar. Model belgesindeki değer, sahadaki yön ve yansımayla birlikte okunmalıdır."
+          ]
+        },
+        {
+          "h2": "Kiralama mı satış mı?",
+          "p": [
+            "Tek festival veya kısa süreli açık hava işi için LED ekran kiralama; sabit cephe için satış teklifi uygundur. Her iki yolda da nakliye, kurulum ve söküm kalemleri yazılı olmalıdır."
+          ]
+        }
+      ],
+      "links": ["led-ekran-kiralama", "ic-mekan-dis-mekan-led-ekran", "air-star"]
+    },
+    {
+      "slug": "piksel-araligi-nedir-led-ekran",
+      "title": "LED Ekran Piksel Aralığı Nedir? P2.6, P3.9 Seçimi",
+      "date": "2026-09-22",
+      "category": "Teknoloji",
+      "focus": "LED ekran piksel aralığı",
+      "excerpt": "Piksel aralığı izleme mesafesini ve yazı okunabilirliğini belirler. Sahne kiralama ile yakın izleme satışı aynı P değerini gerektirmez.",
+      "featured": "assets/cob.webp",
+      "imageAlt": "Yakın izleme COB LED ekran piksel yapısı",
+      "sections": [
+        {
+          "h2": "Piksel aralığı ne anlama gelir?",
+          "p": [
+            "Piksel aralığı (pitch) komşu pikseller arasındaki mesafedir. P2.6, yaklaşık 2,6 mm aralık demektir. Daha küçük P, aynı ölçüde daha fazla piksel ve yakın mesafede daha keskin görüntü sağlar.",
+            "LED ekran kiralama işlerinde sahne izleyicisi birkaç metre gerideyse P2.6–P3.9 sık değerlendirilir. Toplantı odası satışında COB ve daha sık yapı öne çıkar."
+          ]
+        },
+        {
+          "h2": "Yanlış P seçiminin maliyeti",
+          "p": [
+            "Gereğinden küçük piksel aralığı bütçeyi yükseltir; gereğinden büyük aralık yazıyı bozar. Teklifte hedef ölçü, en yakın izleyici ve içerik örneğini paylaşın."
+          ]
+        }
+      ],
+      "links": ["led-ekran-secim-rehberi", "cob", "rental-led-ekran"]
+    },
+    {
+      "slug": "konferans-toplanti-led-ekran",
+      "title": "Konferans ve Toplantı Salonu LED Ekran Satışı",
+      "date": "2026-09-29",
+      "category": "Uygulama Alanları",
+      "focus": "toplantı salonu LED ekran",
+      "excerpt": "Kurumsal salonda LED ekran satışı; yazı okunabilirliği, bakım erişimi ve sessiz çalışma ile planlanır. Kiralama yalnızca kısa süreli etkinlikler için alternatif olur.",
+      "featured": "assets/cob.webp",
+      "imageAlt": "Kurumsal toplantı salonu LED ekran",
+      "sections": [
+        {
+          "h2": "Toplantı salonunda kiralama mı satış mı?",
+          "p": [
+            "Haftalık kullanılan salonlarda LED ekran satışı genellikle daha doğru yatırımdır. Yılda birkaç konferans için kiralama teklifi yeterlidir.",
+            "Yakın izleme ve küçük punto için COB veya ince piksel Front seçenekleri incelenir."
+          ]
+        },
+        {
+          "h2": "Teklifte netleşecekler",
+          "p": [
+            "Salon derinliği, en yakın koltuk, sunum kaynağı (HDMI/USB), ön bakım mesafesi ve tavan yüksekliği. İstanbul ofis projelerinde yerinde ölçü planlanabilir."
+          ]
+        }
+      ],
+      "links": ["led-ekran-satisi", "cob", "front"]
+    },
+    {
+      "slug": "led-ekran-kurulum-ve-nakliye",
+      "title": "LED Ekran Kurulum ve Nakliye: Teklifte Hangi Kalemler Var?",
+      "date": "2026-10-06",
+      "category": "Proje Seçimi",
+      "focus": "LED ekran kurulum",
+      "excerpt": "LED ekran kiralama ve satış teklifinde nakliye, kurulum, söküm ve operatör ayrı yazılmalıdır. Eksik kalem sahada gecikme yaratır.",
+      "featured": "assets/rental-led-ekran.webp",
+      "imageAlt": "LED ekran kurulum ve kabin taşıma",
+      "sections": [
+        {
+          "h2": "Kurulum kapsamı neden fiyata dahildir?",
+          "p": [
+            "Rental LED ekran kiralama işinde kabin birleştirme, sinyal, güç ve askı/zemin taşıyıcı ayrı iş kalemleridir. Satışta duvar veya iskelet montajı kalıcı bağlantı gerektirir."
+          ]
+        },
+        {
+          "h2": "İstanbul dışı nakliye",
+          "p": [
+            "Şehir, kabin adedi ve yükleme kapısı nakliyeyi belirler. Aynı gün teslimat taahhüdü verilmez; süre teklifte yazılır."
+          ]
+        }
+      ],
+      "links": ["shipment", "led-ekran-kiralama", "iletisim"]
+    }
+  ]
+}

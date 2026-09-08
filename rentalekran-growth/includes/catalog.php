@@ -5,6 +5,41 @@ function rle_products() {
     if ($data === null) $data = json_decode(file_get_contents(RLE_DIR . 'includes/products.json'), true);
     return $data;
 }
+function rle_keywords() {
+    static $data;
+    if ($data === null) {
+        $path = RLE_DIR . 'includes/keywords.json';
+        $data = file_exists($path) ? json_decode(file_get_contents($path), true) : array();
+        if (!is_array($data)) $data = array();
+    }
+    return $data;
+}
+function rle_keyword_page($slug) {
+    $pages = isset(rle_keywords()['pages']) ? rle_keywords()['pages'] : array();
+    return isset($pages[$slug]) ? $pages[$slug] : array();
+}
+function rle_keyword_faqs($slug) {
+    $faqs = isset(rle_keywords()['faqs']) ? rle_keywords()['faqs'] : array();
+    return isset($faqs[$slug]) ? $faqs[$slug] : array();
+}
+function rle_apply_keyword_seo($routes) {
+    foreach (rle_keywords()['pages'] ?? array() as $slug => $seo) {
+        if (!isset($routes[$slug])) continue;
+        if (!empty($seo['title'])) $routes[$slug]['title'] = $seo['title'];
+        if (!empty($seo['description'])) $routes[$slug]['description'] = $seo['description'];
+        if (!empty($seo['name'])) $routes[$slug]['name'] = $seo['name'];
+    }
+    return $routes;
+}
+function rle_render_faq($slug) {
+    $faqs = rle_keyword_faqs($slug);
+    if (!$faqs) return;
+    echo '<section class="section wrap faq"><p class="eyebrow">SIK SORULANLAR</p><h2>Arama yapanların sorduğu sorular.</h2>';
+    foreach ($faqs as $qa) {
+        echo '<details><summary>'.esc_html($qa[0]).'</summary><p>'.esc_html($qa[1]).'</p></details>';
+    }
+    echo '</section>';
+}
 function rle_legacy_content($slug) {
     static $data;
     if ($data === null) $data = json_decode(file_get_contents(RLE_DIR . 'includes/legacy-content.json'), true);
@@ -35,11 +70,12 @@ function rle_routes() {
         'led-ekran-fiyatlari'=>array('name'=>'LED ekran fiyatları nasıl belirlenir?','title'=>'LED Ekran Fiyatları: Teklifi Belirleyen Etkenler | Rental Ekran','description'=>'LED ekran fiyatını etkileyen ölçü, piksel aralığı, kabin, kontrol sistemi ve montaj kapsamını öğrenin. Karşılaştırılabilir teklif için kontrol listesi.'),
         'led-ekran-secim-rehberi'=>array('name'=>'Projeniz için LED ekran seçimi','title'=>'LED Ekran Seçim Rehberi: Ölçü, Piksel ve Mekân | Rental Ekran','description'=>'İzleme mesafesi, içerik, ekran ölçüsü ve bakım erişimine göre LED ekran seçimini planlayın. Yedi ürün ailesini ihtiyaçlarınıza göre değerlendirin.'),
         'ic-mekan-dis-mekan-led-ekran'=>array('name'=>'İç mekân mı, dış mekân mı?','title'=>'İç Mekân ve Dış Mekân LED Ekran Farkları | Rental Ekran','description'=>'İç ve dış mekân LED ekran seçerken parlaklık, koruma, bakım ve montaj farklarını inceleyin. Vitrin, sahne ve sabit projeler için seçim kriterleri.'),
-        'led-ekran-kiralama'=>array('name'=>'LED ekran kiralama','title'=>'LED Ekran Kiralama | Sahne, Fuar ve Etkinlik · Rental Ekran','description'=>'Sahne, fuar ve etkinlikler için LED ekran kiralama talebinizi hazırlayın. İstanbul ve Türkiye genelindeki projeler için tarih, ölçü ve mekâna göre teklif alın.'),
-        'istanbul-led-ekran'=>array('name'=>'İstanbul LED ekran satış ve kiralama','title'=>'İstanbul LED Ekran Satış ve Kiralama | Rental Ekran','description'=>'Şişli, İstanbul merkezli Rental Ekran ile LED ekran satış ve kiralama projenizi planlayın. Türkiye genelindeki talepler için ölçü, tarih ve mekânı paylaşın.')
+        'led-ekran-kiralama'=>array('name'=>'LED ekran kiralama','title'=>'LED Ekran Kiralama | Sahne, Fuar, Etkinlik | Rental Ekran','description'=>'Sahne, fuar ve etkinlikler için LED ekran kiralama talebinizi hazırlayın. İstanbul ve Türkiye genelindeki projeler için tarih, ölçü ve mekâna göre teklif alın.'),
+        'led-ekran-satisi'=>array('name'=>'LED ekran satışı','title'=>'LED Ekran Satışı | Satın Alma ve Proje | Rental Ekran','description'=>'LED ekran satışı ve satın alma: kalıcı kurulum, piksel aralığı ve montaj kapsamına göre proje teklifi. İstanbul merkezli Rental Ekran.'),
+        'istanbul-led-ekran'=>array('name'=>'İstanbul LED ekran satış ve kiralama','title'=>'İstanbul LED Ekran Kiralama ve Satış | Şişli | Rental Ekran','description'=>'Şişli, İstanbul merkezli Rental Ekran ile LED ekran satış ve kiralama projenizi planlayın. Türkiye genelindeki talepler için ölçü, tarih ve mekânı paylaşın.')
     );
     foreach (rle_products() as $product) $routes[$product['slug']] = $product;
-    return $routes;
+    return rle_apply_keyword_seo($routes);
 }
 function rle_canonical_for($slug) {
     return home_url($slug === '' ? '/' : '/' . $slug . '/');

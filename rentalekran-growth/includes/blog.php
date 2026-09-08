@@ -19,7 +19,7 @@ function rle_blog_featured_url($relative) {
 
 function rle_sync_blog_posts() {
     if (!function_exists('wp_insert_post')) return;
-    $target = '2.4.0';
+    $target = isset(rle_keywords()['blogSync']) ? rle_keywords()['blogSync'] : '2.5.0';
     if (get_option('rle_blog_sync_version') === $target) return;
     $GLOBALS['rle_syncing_blog'] = true;
     foreach (rle_blog_posts_data() as $item) {

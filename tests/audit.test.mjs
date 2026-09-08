@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const plugin = path.join(root, 'rentalekran-growth');
@@ -62,5 +62,27 @@ assert.throws(() => calculate(0, 3, 0.5, 0.5));
 
 const logo = path.join(plugin, 'assets/rental-ekran-logo.png');
 assert.ok(fs.existsSync(logo), 'plugin logo asset missing');
+
+const keywords = JSON.parse(read('includes/keywords.json'));
+assert.ok(keywords.pages['']);
+assert.ok(keywords.pages['led-ekran-kiralama']);
+assert.ok(keywords.pages['led-ekran-satisi']);
+assert.match(keywords.pages[''].title, /^LED Ekran Satış ve Kiralama/);
+assert.match(keywords.pages['led-ekran-kiralama'].title, /^LED Ekran Kiralama/);
+assert.ok(Array.isArray(keywords.queue) && keywords.queue.length > 0);
+assert.match(catalog, /led-ekran-satisi/);
+assert.match(read('includes/layout.php'), /led-ekran-satisi/);
+assert.match(seo, /FAQPage/);
+assert.match(seo, /LocalBusiness/);
+assert.ok(fs.existsSync(path.join(root, 'scripts/seo-cycle.mjs')));
+assert.ok(fs.existsSync(path.join(root, '.github/workflows/seo.yml')));
+
+const posts = JSON.parse(read('includes/blog-posts.json'));
+assert.ok(posts.some((p) => p.slug === 'sahne-led-ekran-kiralama'));
+const { nextQueueItem, bumpSync, renderQueuedPost } = await import(pathToFileURL(path.join(root, 'scripts/seo-cycle.mjs')).href);
+assert.equal(bumpSync('2.5.0'), '2.5.1');
+const nxt = nextQueueItem(keywords, posts);
+assert.ok(nxt && nxt.slug);
+assert.match(renderQueuedPost(nxt), /blog-section/);
 
 console.log('audit tests passed');
