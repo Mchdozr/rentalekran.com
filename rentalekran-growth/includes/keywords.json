@@ -1,5 +1,5 @@
 {
-  "blogSync": "2.5.6",
+  "blogSync": "2.5.7",
   "pages": {
     "": {
       "focus": "LED ekran satış ve kiralama",
@@ -121,35 +121,6 @@
     ]
   },
   "queue": [
-    {
-      "slug": "avm-magaza-led-ekran-satisi",
-      "title": "AVM ve Mağaza LED Ekran Satışı",
-      "date": "2026-10-27",
-      "category": "Uygulama Alanları",
-      "focus": "mağaza LED ekran satışı",
-      "excerpt": "AVM ve mağazada LED ekran satışı; vitrin, lobi ve kat içi ekranlar için kalıcı montajdır. Kiralama yalnızca geçici kampanya dönemlerinde alternatif olur.",
-      "featured": "assets/transparan.webp",
-      "imageAlt": "Mağaza vitrin LED ekran satışı",
-      "links": [
-        "led-ekran-satisi",
-        "transparan-led-ekran",
-        "front"
-      ],
-      "sections": [
-        {
-          "h2": "Satış mı kiralama mı?",
-          "p": [
-            "Sürekli vitrin ve kat içi yayın için LED ekran satışı daha doğrudur. Kısa süreli lansman için kiralama teklifi yeterlidir."
-          ]
-        },
-        {
-          "h2": "Vitrin ve iç alan",
-          "p": [
-            "Cam yüzeyde transparan LED; kapalı mağazada Front veya COB. Güneş yönü ve bakım erişimi teklifte belirtilmelidir."
-          ]
-        }
-      ]
-    },
     {
       "slug": "belediye-acilis-led-ekran-kiralama",
       "title": "Açılış ve Tören LED Ekran Kiralama",
@@ -291,6 +262,35 @@
           "h2": "İçerik ve ölçü",
           "p": [
             "En yakın izleyici, yazı punto ve HDMI kaynağı satış teklifini hızlandırır."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "led-ekran-kiralama-istanbul-fuar",
+      "title": "İstanbul Fuar LED Ekran Kiralama",
+      "date": "2026-12-08",
+      "category": "Proje Seçimi",
+      "focus": "fuar LED ekran kiralama İstanbul",
+      "excerpt": "İstanbul fuar LED ekran kiralama işinde stand ölçüsü, kurulum penceresi ve teknik giriş kuralları teklifi belirler.",
+      "featured": "assets/air-star.webp",
+      "imageAlt": "İstanbul fuar standı LED ekran kiralama",
+      "links": [
+        "led-ekran-kiralama",
+        "istanbul-led-ekran",
+        "rental-led-ekran"
+      ],
+      "sections": [
+        {
+          "h2": "Fuar standında rental ekran",
+          "p": [
+            "Kısa kurulum süresi için modüler rental LED tercih edilir. Tavan yüksekliği ve taşıyıcı limiti baştan sorulmalıdır."
+          ]
+        },
+        {
+          "h2": "Nakliye ve söküm",
+          "p": [
+            "Fuar takvimi söküm saatini kısıtlar. Teklifte kurulum ve söküm ayrı kalem olmalıdır."
           ]
         }
       ]
