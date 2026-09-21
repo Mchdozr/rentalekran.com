@@ -1,5 +1,5 @@
 {
-  "blogSync": "2.5.7",
+  "blogSync": "2.5.8",
   "pages": {
     "": {
       "focus": "LED ekran satış ve kiralama",
@@ -121,35 +121,6 @@
     ]
   },
   "queue": [
-    {
-      "slug": "belediye-acilis-led-ekran-kiralama",
-      "title": "Açılış ve Tören LED Ekran Kiralama",
-      "date": "2026-11-03",
-      "category": "Proje Seçimi",
-      "focus": "tören LED ekran kiralama",
-      "excerpt": "Açılış ve resmi tören LED ekran kiralama işinde tarih, protokol alanı ve kurulum süresi teklifi belirler. Rental ekran kısa süreli görünürlük sağlar.",
-      "featured": "assets/rental-led-ekran.webp",
-      "imageAlt": "Açılış töreni LED ekran kiralama",
-      "links": [
-        "led-ekran-kiralama",
-        "istanbul-led-ekran",
-        "shipment"
-      ],
-      "sections": [
-        {
-          "h2": "Kısa süreli kiralama",
-          "p": [
-            "Bir günlük törenlerde satın alma yerine kiralama seçilir. Sahne genişliği, protokol mesafesi ve yayın kaynağı paylaşılmalıdır."
-          ]
-        },
-        {
-          "h2": "İstanbul ve diğer şehirler",
-          "p": [
-            "İlçe, yükleme kapısı ve güvenlik tarama süresi nakliyeyi etkiler. Aynı gün teslimat taahhüdü verilmez."
-          ]
-        }
-      ]
-    },
     {
       "slug": "ic-mekan-led-ekran-satisi-rehberi",
       "title": "İç Mekân LED Ekran Satışı: Lobi ve Sunum",
@@ -291,6 +262,35 @@
           "h2": "Nakliye ve söküm",
           "p": [
             "Fuar takvimi söküm saatini kısıtlar. Teklifte kurulum ve söküm ayrı kalem olmalıdır."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "led-ekran-enerji-ve-parlaklik",
+      "title": "LED Ekran Parlaklık ve Enerji: Teklifte Nelere Bakılır?",
+      "date": "2026-12-15",
+      "category": "Teknoloji",
+      "focus": "LED ekran parlaklık",
+      "excerpt": "LED ekran satışı ve kiralama teklifinde parlaklık (nit) ile gece dimming birlikte planlanır. Model belgesi olmadan nit değeri varsayılmaz.",
+      "featured": "assets/gob.webp",
+      "imageAlt": "Dış cephe LED ekran parlaklık",
+      "links": [
+        "ic-mekan-dis-mekan-led-ekran",
+        "led-ekran-satisi",
+        "gob"
+      ],
+      "sections": [
+        {
+          "h2": "İç ve dış mekân nit",
+          "p": [
+            "İç mekânda konfor, dış mekânda güneş altı görünürlük öne çıkar. Vitrin camı arkasında bile güneş yönü belirtilmelidir."
+          ]
+        },
+        {
+          "h2": "Enerji ve operasyon",
+          "p": [
+            "Sensör, gece profili ve PSU yedeği operasyon maliyetini etkiler. Teklif kapsamına yazılmalıdır."
           ]
         }
       ]
