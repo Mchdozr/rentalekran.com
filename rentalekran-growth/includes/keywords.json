@@ -1,5 +1,5 @@
 {
-  "blogSync": "2.5.8",
+  "blogSync": "2.5.9",
   "pages": {
     "": {
       "focus": "LED ekran satış ve kiralama",
@@ -121,35 +121,6 @@
     ]
   },
   "queue": [
-    {
-      "slug": "ic-mekan-led-ekran-satisi-rehberi",
-      "title": "İç Mekân LED Ekran Satışı: Lobi ve Sunum",
-      "date": "2026-11-10",
-      "category": "LED Ekran Rehberi",
-      "focus": "iç mekân LED ekran satışı",
-      "excerpt": "İç mekân LED ekran satışı; lobi, showroom ve sunum alanlarında yakın izleme ve bakım erişimiyle planlanır.",
-      "featured": "assets/cob.webp",
-      "imageAlt": "İç mekân COB LED ekran satışı",
-      "links": [
-        "led-ekran-satisi",
-        "cob",
-        "led-ekran-secim-rehberi"
-      ],
-      "sections": [
-        {
-          "h2": "Yakın izleme ihtiyacı",
-          "p": [
-            "1,5–4 metre mesafede yazı okunacaksa COB veya ince piksel Front değerlendirilir. Sahne kiralama P değeri iç mekân satışıyla karıştırılmamalıdır."
-          ]
-        },
-        {
-          "h2": "Montaj ve servis",
-          "p": [
-            "Ön bakım, elektrik hattı ve içerik kaynağı (HDMI, medya oynatıcı) satış teklifine yazılır."
-          ]
-        }
-      ]
-    },
     {
       "slug": "led-ekran-kontrol-sistemi-secimi",
       "title": "LED Ekran Kontrol Sistemi: Sender, Processor, CMS",
@@ -291,6 +262,35 @@
           "h2": "Enerji ve operasyon",
           "p": [
             "Sensör, gece profili ve PSU yedeği operasyon maliyetini etkiler. Teklif kapsamına yazılmalıdır."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "okul-konferans-led-ekran-satisi",
+      "title": "Okul ve Konferans Salonu LED Ekran Satışı",
+      "date": "2026-12-22",
+      "category": "Uygulama Alanları",
+      "focus": "konferans salonu LED ekran",
+      "excerpt": "Okul ve konferans salonu LED ekran satışı; yazı okunabilirliği ve sabit montaj içindir. Yılda birkaç etkinlik için kiralama yeterli olabilir.",
+      "featured": "assets/cob.webp",
+      "imageAlt": "Konferans salonu LED ekran satışı",
+      "links": [
+        "led-ekran-satisi",
+        "cob",
+        "led-ekran-secim-rehberi"
+      ],
+      "sections": [
+        {
+          "h2": "Satın alma kararı",
+          "p": [
+            "Haftalık ders ve toplantı varsa satış; ara sıra konferans varsa kiralama değerlendirilir."
+          ]
+        },
+        {
+          "h2": "Salon ölçüsü",
+          "p": [
+            "En yakın sıra, tavan yüksekliği ve sunum kaynağı paylaşılmalıdır."
           ]
         }
       ]
