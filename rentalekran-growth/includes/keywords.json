@@ -1,5 +1,5 @@
 {
-  "blogSync": "2.5.9",
+  "blogSync": "2.5.10",
   "pages": {
     "": {
       "focus": "LED ekran satış ve kiralama",
@@ -121,35 +121,6 @@
     ]
   },
   "queue": [
-    {
-      "slug": "led-ekran-kontrol-sistemi-secimi",
-      "title": "LED Ekran Kontrol Sistemi: Sender, Processor, CMS",
-      "date": "2026-11-17",
-      "category": "Teknoloji",
-      "focus": "LED ekran kontrol sistemi",
-      "excerpt": "LED ekran kiralama ve satışta kontrol sistemi; canlı giriş, planlı yayın ve yedeklilik ihtiyacına göre seçilir.",
-      "featured": "assets/front.webp",
-      "imageAlt": "LED ekran kontrol ve işlemci",
-      "links": [
-        "led-ekran-secim-rehberi",
-        "led-ekran-satisi",
-        "iletisim"
-      ],
-      "sections": [
-        {
-          "h2": "Senkron ve asenkron",
-          "p": [
-            "Sahne ve konserde düşük gecikmeli senkron; vitrin ve kurumsal duyuruda asenkron CMS öne çıkar. Hibrit yapı kritik işlerde değerlendirilir."
-          ]
-        },
-        {
-          "h2": "Teklifte yazılması gerekenler",
-          "p": [
-            "Giriş portları, işlemci, yedek sender ve uzaktan izleme. Model adı tek başına kapsam sayılmaz."
-          ]
-        }
-      ]
-    },
     {
       "slug": "p2-p3-led-ekran-kiralama",
       "title": "P2.6 ve P3.9 LED Ekran Kiralama Farkı",
@@ -291,6 +262,35 @@
           "h2": "Salon ölçüsü",
           "p": [
             "En yakın sıra, tavan yüksekliği ve sunum kaynağı paylaşılmalıdır."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "led-ekran-yedek-modul-bakim",
+      "title": "LED Ekran Bakım, Yedek Modül ve Servis Kapsamı",
+      "date": "2026-12-29",
+      "category": "Proje Seçimi",
+      "focus": "LED ekran bakım",
+      "excerpt": "LED ekran satışı ve kiralama teklifinde yedek modül, ön/arka servis ve garanti ayrı yazılmalıdır.",
+      "featured": "assets/front.webp",
+      "imageAlt": "LED ekran modül bakım erişimi",
+      "links": [
+        "led-ekran-satisi",
+        "front",
+        "shipment"
+      ],
+      "sections": [
+        {
+          "h2": "Neden yedek istenir?",
+          "p": [
+            "Canlı sahnede bir modül arızası yayını keser. Kiralama işinde saha yedeği; satışta stok ve servis süresi netleşir."
+          ]
+        },
+        {
+          "h2": "Front bakım",
+          "p": [
+            "Arkası kapalı duvarda önden erişimli Front serisi değerlendirilir. Erişim yöntemi montajdan önce seçilir."
           ]
         }
       ]
