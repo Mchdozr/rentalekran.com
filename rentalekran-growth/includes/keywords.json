@@ -1,5 +1,5 @@
 {
-  "blogSync": "2.5.10",
+  "blogSync": "2.5.11",
   "pages": {
     "": {
       "focus": "LED ekran satış ve kiralama",
@@ -121,35 +121,6 @@
     ]
   },
   "queue": [
-    {
-      "slug": "p2-p3-led-ekran-kiralama",
-      "title": "P2.6 ve P3.9 LED Ekran Kiralama Farkı",
-      "date": "2026-11-24",
-      "category": "Teknoloji",
-      "focus": "P2.6 LED ekran kiralama",
-      "excerpt": "P2.6 LED ekran kiralama yakın izlemede; P3.9 daha geniş sahne ve fuar mesafesinde sık değerlendirilir. Fiyat kabin sayısı ve süreyle birlikte oluşur.",
-      "featured": "assets/rental-led-ekran.webp",
-      "imageAlt": "Rental LED ekran piksel karşılaştırması",
-      "links": [
-        "led-ekran-kiralama",
-        "rental-led-ekran",
-        "led-ekran-fiyatlari"
-      ],
-      "sections": [
-        {
-          "h2": "Hangi P değeri?",
-          "p": [
-            "İzleyici 3–6 metredeyse P2.6; daha uzak sahne ve festivalde P3.9 düşünülür. Kesin seçim içerik ve ölçüyle yapılır."
-          ]
-        },
-        {
-          "h2": "Kiralama maliyeti",
-          "p": [
-            "Daha sık piksel aynı ölçüde daha çok kabin maliyeti doğurabilir. Teklifte çözünürlük ve kabin adedi ayrı yazılmalıdır."
-          ]
-        }
-      ]
-    },
     {
       "slug": "showroom-led-ekran-satisi",
       "title": "Showroom LED Ekran Satışı ve Kurulum",
@@ -291,6 +262,35 @@
           "h2": "Front bakım",
           "p": [
             "Arkası kapalı duvarda önden erişimli Front serisi değerlendirilir. Erişim yöntemi montajdan önce seçilir."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rental-ekran-kiralama-mi-satin-alma",
+      "title": "Rental Ekran: Kiralama mı Satın Alma mı?",
+      "date": "2027-01-05",
+      "category": "LED Ekran Rehberi",
+      "focus": "rental ekran kiralama",
+      "excerpt": "Rental ekran hem taşınabilir kabin ailesini hem kiralama hizmetini ifade eder. Sık kurulan işlerde satın alma, tek etkinlikte kiralama öne çıkar.",
+      "featured": "assets/rental-led-ekran.webp",
+      "imageAlt": "Rental ekran kabin kiralama ve satış",
+      "links": [
+        "rental-led-ekran",
+        "led-ekran-kiralama",
+        "led-ekran-satisi"
+      ],
+      "sections": [
+        {
+          "h2": "Kelime karışıklığı",
+          "p": [
+            "Rental LED ekran ürün ailesi satılabilir. LED ekran kiralama ise tarihli hizmettir. Talebinizde hangisini istediğinizi yazın."
+          ]
+        },
+        {
+          "h2": "Karar kriteri",
+          "p": [
+            "Yıllık kurulum sayısı, depo ve ekip kapasitesi satın almayı; tek fuar veya konser kiralamayı belirler."
           ]
         }
       ]
