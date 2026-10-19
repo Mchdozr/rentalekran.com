@@ -1,5 +1,5 @@
 {
-  "blogSync": "2.5.11",
+  "blogSync": "2.5.12",
   "pages": {
     "": {
       "focus": "LED ekran satış ve kiralama",
@@ -121,35 +121,6 @@
     ]
   },
   "queue": [
-    {
-      "slug": "showroom-led-ekran-satisi",
-      "title": "Showroom LED Ekran Satışı ve Kurulum",
-      "date": "2026-12-01",
-      "category": "Uygulama Alanları",
-      "focus": "showroom LED ekran",
-      "excerpt": "Showroom LED ekran satışı; ürün anlatımı, yakın izleme ve sessiz çalışma ile planlanır. Kısa fuar için kiralama ayrı değerlendirilir.",
-      "featured": "assets/front.webp",
-      "imageAlt": "Showroom LED ekran satışı",
-      "links": [
-        "led-ekran-satisi",
-        "front",
-        "cob"
-      ],
-      "sections": [
-        {
-          "h2": "Kalıcı ekran yatırımı",
-          "p": [
-            "Haftalık müşteri kabulünde satış, tek seferlik lansmanda kiralama uygundur. Bakım erişimi duvar boşluğuna göre seçilir."
-          ]
-        },
-        {
-          "h2": "İçerik ve ölçü",
-          "p": [
-            "En yakın izleyici, yazı punto ve HDMI kaynağı satış teklifini hızlandırır."
-          ]
-        }
-      ]
-    },
     {
       "slug": "led-ekran-kiralama-istanbul-fuar",
       "title": "İstanbul Fuar LED Ekran Kiralama",
@@ -291,6 +262,35 @@
           "h2": "Karar kriteri",
           "p": [
             "Yıllık kurulum sayısı, depo ve ekip kapasitesi satın almayı; tek fuar veya konser kiralamayı belirler."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lansman-led-ekran-kiralama",
+      "title": "Ürün Lansmanı LED Ekran Kiralama",
+      "date": "2027-01-12",
+      "category": "Uygulama Alanları",
+      "focus": "lansman LED ekran kiralama",
+      "excerpt": "Ürün lansmanı LED ekran kiralama işinde sahne, stand ve kamera çekimi aynı günde kurulabilir. Ölçü ve içerik kaynağı teklifi hızlandırır.",
+      "featured": "assets/air-star.webp",
+      "imageAlt": "Ürün lansmanı LED ekran kiralama",
+      "links": [
+        "led-ekran-kiralama",
+        "air-star",
+        "iletisim"
+      ],
+      "sections": [
+        {
+          "h2": "Kısa süreli görünürlük",
+          "p": [
+            "Lansman bir veya birkaç gün sürer; satın alma yerine kiralama seçilir. Video processor ve yenileme hızı çekim varsa sorulmalıdır."
+          ]
+        },
+        {
+          "h2": "Hazırlık listesi",
+          "p": [
+            "Tarih, mekân, hedef ölçü, HDMI/SDI kaynak ve söküm saati."
           ]
         }
       ]
