@@ -1,5 +1,5 @@
 {
-  "blogSync": "2.5.12",
+  "blogSync": "2.5.13",
   "pages": {
     "": {
       "focus": "LED ekran satış ve kiralama",
@@ -121,35 +121,6 @@
     ]
   },
   "queue": [
-    {
-      "slug": "led-ekran-kiralama-istanbul-fuar",
-      "title": "İstanbul Fuar LED Ekran Kiralama",
-      "date": "2026-12-08",
-      "category": "Proje Seçimi",
-      "focus": "fuar LED ekran kiralama İstanbul",
-      "excerpt": "İstanbul fuar LED ekran kiralama işinde stand ölçüsü, kurulum penceresi ve teknik giriş kuralları teklifi belirler.",
-      "featured": "assets/air-star.webp",
-      "imageAlt": "İstanbul fuar standı LED ekran kiralama",
-      "links": [
-        "led-ekran-kiralama",
-        "istanbul-led-ekran",
-        "rental-led-ekran"
-      ],
-      "sections": [
-        {
-          "h2": "Fuar standında rental ekran",
-          "p": [
-            "Kısa kurulum süresi için modüler rental LED tercih edilir. Tavan yüksekliği ve taşıyıcı limiti baştan sorulmalıdır."
-          ]
-        },
-        {
-          "h2": "Nakliye ve söküm",
-          "p": [
-            "Fuar takvimi söküm saatini kısıtlar. Teklifte kurulum ve söküm ayrı kalem olmalıdır."
-          ]
-        }
-      ]
-    },
     {
       "slug": "led-ekran-enerji-ve-parlaklik",
       "title": "LED Ekran Parlaklık ve Enerji: Teklifte Nelere Bakılır?",
@@ -291,6 +262,35 @@
           "h2": "Hazırlık listesi",
           "p": [
             "Tarih, mekân, hedef ölçü, HDMI/SDI kaynak ve söküm saati."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "led-ekran-olcu-hesabi",
+      "title": "LED Ekran Ölçü Hesabı: Kabin, Çözünürlük, Teklif",
+      "date": "2027-01-19",
+      "category": "Teknoloji",
+      "focus": "LED ekran ölçü hesabı",
+      "excerpt": "LED ekran kiralama ve satış teklifinde hedef metre, kabin ölçüsüyle tam oturmayabilir. Gerçek genişlik ve piksel sayısı teklifte yazılmalıdır.",
+      "featured": "assets/rental-led-ekran.webp",
+      "imageAlt": "LED ekran kabin ölçü hesabı",
+      "links": [
+        "led-ekran-teklif",
+        "led-ekran-secim-rehberi",
+        "led-ekran-fiyatlari"
+      ],
+      "sections": [
+        {
+          "h2": "Kabin ızgarası",
+          "p": [
+            "500×500 veya 500×1000 mm kabinler yan yana dizilir. 4×3 m hedef, seçilen kabine göre birkaç santim sapabilir."
+          ]
+        },
+        {
+          "h2": "Çözünürlük tahmini",
+          "p": [
+            "Yatay piksel ≈ genişlik (mm) / piksel aralığı. Kesin değer model belgesinden doğrulanır."
           ]
         }
       ]
