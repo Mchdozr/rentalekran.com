@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Rental Ekran Growth
  * Description: Rental Ekran ürün kataloğu, proje planlayıcı ve teknik SEO katmanı. Eski içerikleri değiştirmez.
- * Version: 2.6.1
+ * Version: 2.6.2
  * Requires at least: 6.6
  * Requires PHP: 7.4
  * License: GPL-2.0-or-later
@@ -16,6 +16,15 @@ require_once RLE_DIR . 'includes/admin.php';
 require_once RLE_DIR . 'includes/contact.php';
 require_once RLE_DIR . 'includes/layout.php';
 require_once RLE_DIR . 'includes/blog.php';
+
+function rle_force_live_index($robots) {
+    if (!rle_live() || rle_preview() || rle_original()) return $robots;
+    $route = rle_route();
+    if ($route === null && !(rle_shell_active() && is_singular('post'))) return $robots;
+    unset($robots['noindex'], $robots['nofollow']);
+    return $robots;
+}
+add_filter('wp_robots', 'rle_force_live_index', PHP_INT_MAX);
 
 add_filter('query_vars', function ($vars) { $vars[] = 'rle_route'; return $vars; });
 add_action('parse_request', function ($wp) {
@@ -65,7 +74,7 @@ add_action('wp_enqueue_scripts', function () {
     global $wp_styles, $wp_scripts;
     foreach ((array) $wp_styles->queue as $handle) if (!in_array($handle, array('admin-bar', 'dashicons'), true)) wp_dequeue_style($handle);
     foreach ((array) $wp_scripts->queue as $handle) if ($handle !== 'admin-bar') wp_dequeue_script($handle);
-    wp_enqueue_style('rle-site', RLE_URL . 'assets/site.css', array(), '2.6.1');
-    wp_enqueue_script('rle-planner', RLE_URL . 'assets/planner.js', array(), '2.6.1', true);
+    wp_enqueue_style('rle-site', RLE_URL . 'assets/site.css', array(), '2.6.2');
+    wp_enqueue_script('rle-planner', RLE_URL . 'assets/planner.js', array(), '2.6.2', true);
 }, PHP_INT_MAX);
 // No database content, credentials, theme, permalink settings or business data is changed on activation.

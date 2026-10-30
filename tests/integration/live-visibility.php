@@ -27,4 +27,12 @@ if ($repaired !== 1) {
     WP_CLI::error('An already-live Rental Ekran site must repair disabled search visibility.');
 }
 
+$GLOBALS['rle_current_route'] = '';
+$robots = rle_force_live_index(array('noindex' => true, 'max-image-preview' => 'large'));
+unset($GLOBALS['rle_current_route']);
+
+if (isset($robots['noindex'])) {
+    WP_CLI::error('A live public route must remove a stale noindex directive.');
+}
+
 WP_CLI::success('Publishing enables WordPress search visibility.');
