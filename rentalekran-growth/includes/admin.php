@@ -4,6 +4,10 @@ add_action('admin_menu', function () { add_options_page('Rental Ekran', 'Rental 
 add_action('admin_init', function () {
     register_setting('rle', 'rle_settings', array('sanitize_callback'=>'rle_sanitize_settings'));
 });
+function rle_sync_search_visibility() {
+    if (rle_live() && !get_option('blog_public')) update_option('blog_public', 1);
+}
+add_action('init', 'rle_sync_search_visibility', 1);
 function rle_sanitize_settings($input) {
     if (!is_array($input)) return rle_settings();
     $old = rle_settings();
@@ -17,7 +21,9 @@ function rle_sanitize_settings($input) {
     $alt = sanitize_text_field(isset($input['phone_alt']) && is_scalar($input['phone_alt']) ? $input['phone_alt'] : (isset($old['phone_alt']) ? $old['phone_alt'] : ''));
     $ga = strtoupper(sanitize_text_field(isset($input['ga_id']) && is_scalar($input['ga_id']) ? $input['ga_id'] : ''));
     if ($ga !== '' && !preg_match('/^(G|GTM|AW)-[A-Z0-9]+$/', $ga)) { add_settings_error('rle_settings','ga_id','GA kimliği G-, GTM- veya AW- ile başlamalıdır.'); $ga = isset($old['ga_id']) ? $old['ga_id'] : ''; }
-    return array('email'=>$email,'whatsapp'=>$wa,'phone'=>$phone,'phone_office'=>$office,'phone_alt'=>$alt,'ga_id'=>$ga,'live_enabled'=>!empty($input['live_enabled']),
+    $live_enabled = !empty($input['live_enabled']);
+    if ($live_enabled) update_option('blog_public', 1);
+    return array('email'=>$email,'whatsapp'=>$wa,'phone'=>$phone,'phone_office'=>$office,'phone_alt'=>$alt,'ga_id'=>$ga,'live_enabled'=>$live_enabled,
         'address'=>sanitize_text_field(isset($input['address']) && is_scalar($input['address']) ? $input['address'] : $old['address']),
         'business_mode'=>isset($input['business_mode']) && in_array($input['business_mode'],array('project','rental','both'),true) ? $input['business_mode'] : 'project');
 }

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Rental Ekran Growth
  * Description: Rental Ekran ürün kataloğu, proje planlayıcı ve teknik SEO katmanı. Eski içerikleri değiştirmez.
- * Version: 2.6.0
+ * Version: 2.6.1
  * Requires at least: 6.6
  * Requires PHP: 7.4
  * License: GPL-2.0-or-later

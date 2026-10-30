@@ -3,6 +3,7 @@ const base=process.env.RLE_TEST_URL||'http://127.0.0.1:8080';
 for(const slug of ['', 'led-ekran-kiralama','led-ekran-satisi','rental-led-ekran','istanbul-led-ekran','iletisim']) {
  const url=base+(slug?'/'+slug+'/':'/');const res=await fetch(url);assert.equal(res.status,200,url);
  const html=await res.text();
+ assert.doesNotMatch(html, /<meta name="robots" content="[^"]*noindex/);
  assert.equal((html.match(/<h1\b/g)||[]).length,1,url);
  assert.equal((html.match(/<link rel="canonical"/g)||[]).length,1,url);
  const graph=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
