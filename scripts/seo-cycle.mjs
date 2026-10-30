@@ -25,11 +25,19 @@ export function renderQueuedPost(item) {
     const paras = (s.p || []).map((p) => `<p>${p}</p>`).join('');
     return `<div class="blog-section"><h2>${s.h2}</h2>${paras}</div>`;
   }).join('');
+  // Intrinsic dimensions of the checked-in assets, not display-size guesses.
+  const size = {
+    'assets/rental-led-ekran.webp': [1024, 576], 'assets/air-star.webp': [1024, 768],
+    'assets/cob.webp': [1024, 505], 'assets/front.webp': [850, 850],
+    'assets/gob.webp': [960, 471], 'assets/floor.webp': [777, 408],
+    'assets/transparan.webp': [1030, 687],
+  }[item.featured];
+  const imageSize = size ? ` width="${size[0]}" height="${size[1]}"` : '';
   const split = item.featured
-    ? `<div class="blog-split"><figure><img src="${assetUrl(item.featured)}" alt="${item.imageAlt || item.title}" loading="lazy"></figure><div><h3>${item.focus || 'Özet'}</h3><p>${item.excerpt || ''}</p></div></div>`
+    ? `<div class="blog-split"><figure><img src="${assetUrl(item.featured)}" alt="${item.imageAlt || item.title}"${imageSize} loading="lazy"></figure><div><h3>${item.focus || 'Özet'}</h3><p>${item.excerpt || ''}</p></div></div>`
     : '';
   const links = (item.links || [])
-    .map((slug) => `<a href="https://rentalekran.com/${slug}/">${slug.replace(/-/g, ' ')}</a>`)
+    .map((slug) => `<a href="https://rentalekran.com/${slug ? slug + '/' : ''}">${slug ? slug.replace(/-/g, ' ') : 'Rental Ekran'}</a>`)
     .join(' · ');
   const callout = links ? `<div class="blog-callout"><p>İlgili sayfalar: ${links}</p></div>` : '';
   return split + sections + callout;
@@ -77,7 +85,7 @@ export function briefFromSeed(seed, date) {
     featured: seed.featured || 'assets/rental-led-ekran.webp',
     imageAlt: seed.imageAlt || seed.title,
     links: seed.links || ['led-ekran-kiralama', 'led-ekran-satisi', 'iletisim'],
-    sections: [
+    sections: seed.sections || [
       { h2: seed.h2a, p: [seed.pa] },
       { h2: seed.h2b, p: [seed.pb] },
     ],

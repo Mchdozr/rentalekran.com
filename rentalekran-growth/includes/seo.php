@@ -48,6 +48,8 @@ function rle_schema($slug) {
         '@id'=>$home.'#organization',
         'name'=>'Rental Ekran',
         'url'=>$home,
+        'logo'=>rle_logo_url(),
+        'image'=>rle_social_image($slug)['url'],
         'telephone'=>$settings['phone'],
         'email'=>$settings['email'],
         'address'=>array(
@@ -60,8 +62,8 @@ function rle_schema($slug) {
         'knowsAbout'=>array('LED ekran kiralama','LED ekran satışı','rental LED ekran','sahne LED ekran','fuar LED ekran')
     );
     $web = array(
-        '@type'=>'WebSite','@id'=>$home.'#website','url'=>$home,'name'=>'Rental Ekran','publisher'=>array('@id'=>$home.'#organization'),'inLanguage'=>'tr-TR',
-        'potentialAction'=>array('@type'=>'SearchAction','target'=>$home.'?s={search_term_string}','query-input'=>'required name=search_term_string')
+        '@type'=>'WebSite','@id'=>$home.'#website','url'=>$home,'name'=>'Rental Ekran','publisher'=>array('@id'=>$home.'#organization'),
+        'inLanguage'=>'tr-TR'
     );
     $entryType = 'WebPage';
     if ($slug === 'urunlerimiz') $entryType = 'CollectionPage';
@@ -75,6 +77,7 @@ function rle_schema($slug) {
         $entry['serviceType'] = 'LED ekran satışı';
         $entry['provider'] = array('@id'=>$home.'#organization');
     }
+    if (in_array($slug, array('', 'istanbul-led-ekran', 'iletisim', 'led-ekran-teklif'), true)) $org['hasMap'] = rle_map_url();
     $nodes = array($org,$web,$entry);
     if ($slug !== '') {
         $crumbs = array(array('@type'=>'ListItem','position'=>1,'name'=>'Ana sayfa','item'=>$home));
@@ -88,6 +91,8 @@ function rle_schema($slug) {
         $nodes[] = array('@type'=>'ItemList','itemListElement'=>$items);
     }
     $faqs = rle_keyword_faqs($slug);
+    $product = rle_product($slug);
+    if ($product && !empty($product['questions'])) $faqs = array_merge($faqs, $product['questions']);
     if ($faqs) {
         $items = array();
         foreach ($faqs as $qa) $items[] = array('@type'=>'Question','name'=>$qa[0],'acceptedAnswer'=>array('@type'=>'Answer','text'=>$qa[1]));
@@ -126,7 +131,11 @@ add_action('wp_head', function () {
     echo '<link rel="canonical" href="'.esc_url($url).'">' . "\n";
     echo '<meta property="og:locale" content="tr_TR"><meta property="og:type" content="website">' . "\n";
     foreach (array('title'=>$page['title'],'description'=>$desc,'url'=>$url,'site_name'=>'Rental Ekran') as $key=>$value) echo '<meta property="og:'.esc_attr($key).'" content="'.esc_attr($value).'">' . "\n";
-    echo '<meta name="twitter:card" content="summary">' . "\n";
+    $image = rle_social_image($route);
+    echo '<meta property="og:image" content="'.esc_url($image['url']).'">' . "\n";
+    echo '<meta property="og:image:width" content="'.(int)$image['width'].'"><meta property="og:image:height" content="'.(int)$image['height'].'">' . "\n";
+    echo '<meta property="og:image:alt" content="'.esc_attr($page['name']).'">' . "\n";
+    echo '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="'.esc_url($image['url']).'">' . "\n";
     echo '<script type="application/ld+json">'.wp_json_encode(rle_schema($route), JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES).'</script>' . "\n";
 }, 5);
 // Core sitemaps remain responsible for posts and other genuine content.

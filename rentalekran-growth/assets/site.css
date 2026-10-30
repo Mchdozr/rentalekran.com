@@ -107,3 +107,6 @@
 .rle-reveal.is-visible{opacity:1;transform:none}
 @media(max-width:760px){.detail-block-grid,.blog-split{grid-template-columns:1fr}.blog-split img{min-height:180px}}
 @media(prefers-reduced-motion:reduce){.rle-fade-in,.nav-cta-dot{animation:none}.rle-reveal{opacity:1;transform:none;transition:none}}
+
+/* Service cards contain text, unlike the two-column image guide cards. */
+.service-grid .guide-card{display:block}

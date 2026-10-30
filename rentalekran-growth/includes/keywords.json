@@ -1,11 +1,11 @@
 {
-  "blogSync": "2.5.13",
+  "blogSync": "2.6.0",
   "pages": {
     "": {
-      "focus": "LED ekran satış ve kiralama",
-      "title": "LED Ekran Satış ve Kiralama | İstanbul | Rental Ekran",
-      "description": "LED ekran satış ve kiralama: İstanbul merkezli Rental Ekran ile sahne, fuar, vitrin ve kurumsal projeler için model seçin, teklif alın.",
-      "name": "LED ekran satış ve kiralama"
+      "focus": "LED ekran, rental ekran",
+      "title": "LED Ekran | Rental Ekran Satış ve Kiralama",
+      "description": "LED ekran çözümleri için Rental Ekran: İstanbul merkezli satış ve kiralama. Sahne, fuar, vitrin ve kurumsal alanlar için kabin ve model seçimi, proje teklifi.",
+      "name": "LED ekran"
     },
     "led-ekran-kiralama": {
       "focus": "LED ekran kiralama",
@@ -50,10 +50,10 @@
       "name": "LED ekran proje teklifi"
     },
     "rental-led-ekran": {
-      "focus": "Rental LED ekran",
-      "title": "Rental LED Ekran | Kiralama ve Satış | Rental Ekran",
+      "focus": "rental LED ekran kabinleri",
+      "title": "Rental LED Ekran Kabinleri | Sahne ve Fuar",
       "description": "Rental LED ekran ve rental ekran kabinleri: sahne, fuar ve etkinlik için modüler sistem. Kiralama veya satın alma teklifi alın.",
-      "name": "Rental LED Ekran"
+      "name": "Rental LED ekran kabinleri"
     },
     "blog-sayfasi": {
       "focus": "LED ekran blog",
@@ -64,6 +64,71 @@
       "focus": "LED ekran hizmetleri",
       "title": "LED Ekran Satış, Kiralama ve Kurulum | Rental Ekran",
       "description": "LED ekran satış, kiralama, keşif ve kurulum hizmetleri. İstanbul merkezli Rental Ekran proje kapsamı."
+    },
+    "hakkimizda": {
+      "title": "Hakkımızda | Rental Ekran",
+      "description": "Rental Ekran’ın LED ekran çözüm yaklaşımı, ürünleri ve iletişim bilgileri.",
+      "name": "Hakkımızda"
+    },
+    "firma-bilgilerimiz": {
+      "title": "Firma Bilgileri | Rental Ekran",
+      "description": "Rental Ekran firma, iletişim ve adres bilgileri.",
+      "name": "Firma bilgileri"
+    },
+    "case-studies": {
+      "title": "Projeler ve Referans İçerikleri | Rental Ekran",
+      "description": "Rental Ekran arşivindeki proje ve referans içeriklerini inceleyin.",
+      "name": "Projeler ve referans içerikleri"
+    },
+    "shipment": {
+      "title": "LED Ekran Sevkiyat ve Kurulum | Rental Ekran",
+      "description": "LED ekran sevkiyat ve kurulum kapsamını proje koşullarına göre değerlendirin.",
+      "name": "Sevkiyat ve kurulum içeriği"
+    },
+    "partners": {
+      "title": "İş Ortakları | Rental Ekran",
+      "description": "Rental Ekran arşivindeki iş ortaklığı içeriklerini inceleyin.",
+      "name": "İş ortakları içeriği"
+    },
+    "led-ekran-secim-rehberi": {
+      "title": "LED Ekran Seçim Rehberi: Ölçü, Piksel ve Mekân | Rental Ekran",
+      "description": "İzleme mesafesi, içerik, ekran ölçüsü ve bakım erişimine göre LED ekran seçimini planlayın. Yedi ürün ailesini ihtiyaçlarınıza göre değerlendirin.",
+      "name": "Projeniz için LED ekran seçimi"
+    },
+    "ic-mekan-dis-mekan-led-ekran": {
+      "title": "İç Mekân ve Dış Mekân LED Ekran Farkları | Rental Ekran",
+      "description": "İç ve dış mekân LED ekran seçerken parlaklık, koruma, bakım ve montaj farklarını inceleyin. Vitrin, sahne ve sabit projeler için seçim kriterleri.",
+      "name": "İç mekân mı, dış mekân mı?"
+    },
+    "front": {
+      "title": "Front LED Ekran | Ön Bakımlı Modüller",
+      "description": "Front LED ekran serisinde P1.9, P2.6, P2.9 ve P3.9 seçeneklerini inceleyin. Bakım erişimi, izleme mesafesi ve proje ölçüsü için teklif alın.",
+      "name": "Front LED Ekran"
+    },
+    "air-star": {
+      "title": "AIR / STAR Kabinler | Modüler Etkinlik Ekranları",
+      "description": "AIR / STAR LED ekran serisini, iç ve dış mekân kabin seçeneklerini inceleyin. Ekran ölçüsü ve etkinlik projeniz için uygun modeli belirleyin.",
+      "name": "AIR / STAR LED Ekran"
+    },
+    "cob": {
+      "title": "COB LED Ekran | Yakın İzleme ve Sunum",
+      "description": "COB LED ekranlarda P0.93, P1.25 ve P1.56 seçeneklerini inceleyin. Yakın izleme, toplantı ve sunum alanınız için ekran projesi oluşturun.",
+      "name": "COB LED Ekran"
+    },
+    "gob": {
+      "title": "GOB LED Ekran | Kaplama ve Yüzey Seçimi",
+      "description": "GOB LED ekran seçerken yüzey koruması, piksel aralığı ve kullanım ortamını değerlendirin. Projenize uygun model ve teknik belge için iletişime geçin.",
+      "name": "GOB LED Ekran"
+    },
+    "floor": {
+      "title": "Floor LED Ekran | Zemin Görüntü Sistemleri",
+      "description": "Floor zemin LED ekranları etkinlik ve deneyim alanları için inceleyin. Taşıma kapasitesi, yüzey ve kurulum koşullarına göre proje teklifi isteyin.",
+      "name": "Floor Zemin LED Ekran"
+    },
+    "transparan-led-ekran": {
+      "title": "Transparan LED Ekran | Cam ve Vitrin Uygulamaları",
+      "description": "Transparan LED ekranları vitrin, cam yüzey ve tanıtım projeleri için inceleyin. Şeffaflık, parlaklık ve ölçüye göre uygun model için teklif alın.",
+      "name": "Transparan LED Ekran"
     }
   },
   "faqs": {
@@ -118,6 +183,24 @@
         "Satış ve kiralama fiyatı aynı mı hesaplanır?",
         "Hayır. Satışta ürün ve montaj yatırımı; kiralamada süre, stok, kurulum ve söküm öne çıkar."
       ]
+    ],
+    "": [
+      [
+        "LED ekran nedir?",
+        "LED ekran, görüntüyü ışık yayan diyotlardan oluşan modül ve kabinlerle gösteren bir görüntüleme sistemidir. Ölçü, piksel aralığı ve ortam koşulları birlikte değerlendirilir."
+      ],
+      [
+        "Rental ekran nedir?",
+        "Rental ekran ifadesi tekrar kurulabilen taşınabilir LED ekran kabinlerini anlatabilir. Rental Ekran ise İstanbul merkezli LED ekran satış ve kiralama hizmetinin marka adıdır."
+      ],
+      [
+        "LED ekran kiralamak mı satın almak mı daha uygundur?",
+        "Belirli süreli sahne ve fuar uygulamalarında kiralama; düzenli ve kalıcı kullanımda satın alma değerlendirilir. Toplam kullanım süresi, kurulum, bakım ve taşıma maliyetleri birlikte karşılaştırılmalıdır."
+      ],
+      [
+        "İstanbul’da LED ekran için nasıl teklif alınır?",
+        "Rental Ekran’a ekran ölçüsünü, kullanım alanını, şehir ve tarih bilgisini ileterek teklif talebi hazırlanabilir. Model, kurulum ve teknik destek kapsamı proje koşullarına göre netleştirilir."
+      ]
     ]
   },
   "queue": [
@@ -131,21 +214,53 @@
       "featured": "assets/gob.webp",
       "imageAlt": "Dış cephe LED ekran parlaklık",
       "links": [
+        "",
         "ic-mekan-dis-mekan-led-ekran",
         "led-ekran-satisi",
         "gob"
       ],
       "sections": [
         {
-          "h2": "İç ve dış mekân nit",
+          "h2": "Parlaklık ihtiyacını mekânın ışığı belirler",
           "p": [
-            "İç mekânda konfor, dış mekânda güneş altı görünürlük öne çıkar. Vitrin camı arkasında bile güneş yönü belirtilmelidir."
+            "LED ekran parlaklık değeri, yüzeyden yayılan ışığın yoğunluğunu ifade eder ve genellikle nit olarak belirtilir. Ancak teklif tablosunda büyük bir sayının bulunması tek başına iyi görüntü anlamına gelmez. İzleyicinin bulunduğu yöndeki ortam ışığı, ekrana düşen güneş, içerikteki beyaz alanlar ve kullanım saatleri birlikte değerlendirilmelidir. İç toplantı salonunda rahatsızlık oluşturan bir ayar, gün ışığı alan başka bir mekânda yetersiz kalabilir. Bu nedenle ihtiyaç tarifini yalnızca iç mekân veya dış mekân şeklinde bırakmamak gerekir.",
+            "Keşif için ekranın konumu, baktığı yön, gölgelendiği saatler ve izleme alanının fotoğrafları hazırlanabilir. Vitrin arkasındaki ekranlarda camın yansıması ve olası film kaplaması da hesaba katılır. En yararlı deneme, gerçek içeriği planlanan konumda, kullanım saatlerine yakın koşullarda izlemektir. Böylece görünürlük sorununun parlaklık, yansıma veya içerik tasarımından hangisiyle ilişkili olduğu anlaşılır."
           ]
         },
         {
-          "h2": "Enerji ve operasyon",
+          "h2": "Teknik belgede hangi parlaklık bilgisi aranmalı?",
           "p": [
-            "Sensör, gece profili ve PSU yedeği operasyon maliyetini etkiler. Teklif kapsamına yazılmalıdır."
+            "Model belgesindeki parlaklık değerinin hangi koşulda ölçüldüğü sorulmalıdır. Tam beyaz test görüntüsü, kullanılan renk sıcaklığı, kalibrasyon ve güç sınırlaması gibi unsurlar ölçüm sonucunu etkileyebilir. Aynı serinin farklı piksel aralıkları veya donanım sürümleri de aynı değere sahip olmak zorunda değildir. Ürün ailesi adına bakarak bütün seçenekler için tek bir nit değeri kabul etmek yerine, teklif edilen modelin belgesi istenir.",
+            "Parlaklıkla birlikte renk tutarlılığı ve düşük seviyelerdeki görüntü davranışı da incelenmelidir. Akşam kullanımında ekran kısıldığında gri tonların kaybolması veya renk dengesinin belirgin değişmesi kabul denemesine eklenebilecek konulardır. Numune değerlendirmesinde yalnızca parlak tanıtım videosu kullanılmamalı; koyu sahneler, ten renkleri, küçük metin ve geniş düz renk yüzeyleri de gösterilmelidir. Belgenin açıklamadığı özellikler satıcının yazılı yanıtıyla netleştirilir."
+          ]
+        },
+        {
+          "h2": "Gece ayarı ve otomatik kontrol nasıl planlanır?",
+          "p": [
+            "Gündüz okunabilirliği için belirlenen ayarın gece boyunca korunması, çevredeki kullanıcıların konforunu bozabilir ve gereksiz enerji kullanımına neden olabilir. Çalışma programında sabah, gündüz, akşam ve kapanış durumları ayrı tanımlanabilir. Bunlar her projeye uygulanacak sabit yüzdeler değildir; çevre koşulları, içerik ve gerekiyorsa yerel kullanım kuralları dikkate alınarak sahada ayarlanır. İşletme ekibinin gerektiğinde ayarı kimden ve nasıl değiştireceğini bilmesi gerekir.",
+            "Ortam ışığı sensörü kullanılıyorsa sensörün ekranın kendi ışığından veya geçici spotlardan etkilenmemesi önemlidir. Ani ışık değişimlerinde görüntünün sürekli açılıp kısılmasını önleyen geçiş davranışı kontrol edilir. Sensör bağlantısı kesildiğinde sistemin hangi güvenli ayara döneceği de tarif edilmelidir. Otomatik sistem bulunması, devreye alma sırasında gündüz ve gece denemesi yapma ihtiyacını ortadan kaldırmaz."
+          ]
+        },
+        {
+          "h2": "Maksimum güç ile ortalama tüketim farklıdır",
+          "p": [
+            "Elektrik altyapısı için kullanılan maksimum güç bilgisi ile faturayı tahmin etmeye yarayan ortalama tüketim aynı amaçla kullanılmaz. Maksimum değer, uygun elektrik projelendirmesine girdi sağlar. Ortalama değer ise içerik, parlaklık, çalışma süresi ve kontrol ayarlarına bağlıdır. Satış dosyasında bu iki değerin birbirine karıştırılmaması gerekir. Yalnızca tipik tüketim bilgisine dayanarak kablo veya koruma elemanı seçilmemelidir; bu değerlendirme yetkin elektrik sorumlusu tarafından yapılır.",
+            "Örneğin tüketimin saatlik enerjiye çevrilmesinde ortalama güç kilovat cinsinden ele alınır ve çalışma saatiyle çarpılır. Günlük ortalama 2 kilovat tüketen varsayımsal bir sistem on saat çalışırsa ekran için yaklaşık 20 kilovatsaat hesaplanır. Bu örnek herhangi bir modelin tüketim iddiası değildir. Kontrol bilgisayarı, görüntü işlemcisi, soğutma ve diğer yardımcı cihazların harcaması varsa toplam bütçeye ayrıca eklenir."
+          ]
+        },
+        {
+          "h2": "Güç dağıtımı ve ısıl koşulları birlikte değerlendirin",
+          "p": [
+            "Bir ekranın yüzey alanını büyütmek yalnızca daha fazla modül eklemek değildir; güç dağıtımının ve kablo güzergâhının da yeniden değerlendirilmesini gerektirir. Besleme noktaları, dağıtım panosu, topraklama, koruma elemanları ve erişilebilir kapatma düzeni proje kapsamına yazılmalıdır. Mevcut priz bulunması, tesisatın istenen yükü güvenle taşıyabildiğini göstermez. Mekânın elektrik sorumlusu ile ekran sistemini kuracak ekip arasında bilgi alışverişi sağlanmalıdır.",
+            "Elektrikle alınan enerjinin bir bölümü ısıya dönüşür. Kapalı niş, vitrin boşluğu veya havalandırması zayıf arka hacim, cihazın çalışma koşullarını zorlaştırabilir. Bu nedenle bakım boşluğu ve üreticinin havalandırma gereksinimleri montaj çiziminde gösterilir. Dış ortam için yüzey koruması değerlendirilirken yalnızca yağmur değil, güneş altında oluşan sıcaklık da düşünülür. <a href=\"https://rentalekran.com/ic-mekan-dis-mekan-led-ekran/\">İç ve dış mekân seçimi</a> bu koşulları birlikte ele almak için başlangıç sağlar.",
+            "Tüketim karşılaştırması için deneme süresi ve oynatılan içerik aynı tutulabilir. Ölçümün ekranın tamamını mı yoksa tek bir besleme hattını mı kapsadığı kaydedilir. Elektrik sayacından alınan toplam değer başka cihazları da içeriyorsa doğrudan ekrana atfedilmez. Böyle bir kayıt, tahmin ile gerçek işletme koşulları arasındaki farkın nedenini açıklamaya yardımcı olur ve daha sonra çalışma programının değiştirilmesinde kullanılabilir."
+          ]
+        },
+        {
+          "h2": "Teklif ve teslim kontrolünü ölçülebilir hale getirin",
+          "p": [
+            "Karşılaştırılabilir bir teklifte model, ekran alanı, belgelenmiş parlaklık bilgisi, maksimum ve varsayıma dayanan ortalama güç, kontrol yöntemi ve çalışma takvimi bulunmalıdır. Enerji tasarrufu ifadesi kullanılıyorsa hangi referansa ve koşula göre söylendiği sorulur. GOB gibi bir yüzey uygulaması da kendiliğinden belirli bir tüketim veya parlaklık seviyesi vaat etmez; <a href=\"https://rentalekran.com/gob/\">GOB ürün seçimi</a> sırasında ilgili modelin verileri ayrıca incelenir.",
+            "Teslim sırasında tanımlı test görüntüsü, gündüz ve gece ayarı, sensör davranışı ve erişim yetkileri kontrol edilerek kayıt altına alınabilir. Bakım sonrası kalibrasyon veya kontrol kartı değişiminde hangi ayarların korunacağı belirlenir. <a href=\"https://rentalekran.com/led-ekran-satisi/\">LED ekran satışı</a> talebine çalışma saatlerini eklemek, ilk yatırım ile işletme giderinin aynı çerçevede değerlendirilmesini kolaylaştırır. Ölçü ve kullanım yerini <a href=\"https://rentalekran.com/\">Rental Ekran</a> üzerinden paylaşırken bu bilgilerin eklenmesi, teknik değerlendirmenin somut koşullara dayanmasına yardımcı olur."
           ]
         }
       ]
@@ -160,21 +275,53 @@
       "featured": "assets/cob.webp",
       "imageAlt": "Konferans salonu LED ekran satışı",
       "links": [
+        "",
         "led-ekran-satisi",
         "cob",
         "led-ekran-secim-rehberi"
       ],
       "sections": [
         {
-          "h2": "Satın alma kararı",
+          "h2": "Salonda ekranın hangi işi yapacağına karar verin",
           "p": [
-            "Haftalık ders ve toplantı varsa satış; ara sıra konferans varsa kiralama değerlendirilir."
+            "Konferans salonu LED ekran seçimi, sahnenin arkasındaki boş alanı ölçmekle başlamamalıdır. Ders sunumu, tören, çevrim içi bağlantı, öğrenci gösterisi ve film gösterimi farklı ihtiyaçlar doğurur. Haftalık derslerde yoğun metin ve grafik görülecekse okunabilirlik öncelik kazanır. Sahne gösterisinde ise dekorla ilişki, konuşmacının görünürlüğü ve ışık dengesi daha belirleyici olabilir. Aynı salon bütün bu işleri yapacaksa kullanım senaryoları ayrı yazılmalı, tek bir tanıtım videosuyla karar verilmemelidir.",
+            "Okul yönetimi, teknik sorumlu ve salonu düzenli kullanan öğretmenler birlikte örnek içerik hazırlayabilir. Gerçek ders dosyalarındaki en küçük metin, tablolar, çizimler ve video örnekleri değerlendirmeye alınır. Bu içeriklerle yapılacak gösterim, ekranın yalnızca etkileyici görünmesini değil, eğitim amacına hizmet etmesini sınar. Kullanıcıların değiştiremeyeceği içerik koşulları varsa teknik gereksinim bunlara göre belirlenir."
           ]
         },
         {
-          "h2": "Salon ölçüsü",
+          "h2": "En yakın ve en uzak sırayı birlikte inceleyin",
           "p": [
-            "En yakın sıra, tavan yüksekliği ve sunum kaynağı paylaşılmalıdır."
+            "Ekranın boyutuna yalnızca salon kapasitesinden karar verilemez. İlk sıranın mesafesi, son sıranın uzaklığı, yan koltuklardan görüş ve sahne yüksekliği ölçülmelidir. Yakındaki izleyici için piksel yapısı görünür hale gelebilirken uzaktaki izleyici için yazının boyutu yetersiz kalabilir. Bu iki sorun farklıdır. Daha küçük piksel aralığı seçmek, sunumda çok küçük yazı kullanılmasının bütün sonuçlarını tek başına çözmez.",
+            "Ekranın alt kenarı, ön sıradaki kişilerin başları ve konuşmacının konumuyla birlikte değerlendirilir. Alt tarafta sürekli altyazı gösterilecekse en gerideki koltuktan bu alanın kapanmadığı kontrol edilir. Salon planına olası ekran sınırları işlenerek farklı noktalardan fotoğraf veya görüş çizimi hazırlanabilir. Yakın izleme için <a href=\"https://rentalekran.com/cob/\">COB seçenekleri</a> incelenebilir; ancak uygunluğu seçilen modelin belgesi, içerik denemesi ve gerçek mesafelerle doğrulanmalıdır."
+          ]
+        },
+        {
+          "h2": "Sunumun piksel ölçüsü ve kullanım kolaylığı",
+          "p": [
+            "Fiziksel ekran ölçüsü ile bilgisayarın çıkış çözünürlüğü farklı kavramlardır. Seçilen kabin diziliminin oluşturduğu gerçek piksel genişliği ve yüksekliği öğrenilmelidir. Sunum bilgisayarı standart bir görüntü oranı üretiyorsa ekranda ölçekleme, boşluk bırakma veya kırpma seçenekleri ortaya çıkabilir. Harita, matematiksel şekil ve tablo gibi içeriklerde oranın bozulmaması özellikle önemlidir. İçerik üreticilerine kullanılabilir tuval ölçüsünün önceden bildirilmesi işleri kolaylaştırır.",
+            "Öğretmenin her kullanımda teknik menülere girmesi beklenmemelidir. Açılış, kaynak seçimi, ses seviyesi ve kapanış için anlaşılır bir işlem sırası tasarlanabilir. Misafir bilgisayarının nasıl bağlanacağı, dönüştürücü ihtiyacı ve kablo uzunluğu kontrol edilir. Bağlantı noktasının konuşmacının yolunu kesmemesi gerekir. Yönetim erişimi ile günlük kullanım yetkileri ayrılarak öğrencilerin veya geçici kullanıcıların kalıcı sistem ayarlarını değiştirmesi önlenebilir."
+          ]
+        },
+        {
+          "h2": "Ses, kamera ve sahne ışığı ayrı sistemlerdir",
+          "p": [
+            "LED ekran görüntü üretir; salonun ses ihtiyacını kendiliğinden çözmez. Bilgisayar sesi, kablosuz mikrofon ve uzaktan katılımcı sesi için ayrı bir yönlendirme planı gerekir. Ekrana giden görüntü ile salondaki ses arasında belirgin gecikme oluşup oluşmadığı prova sırasında kontrol edilir. Konuşmacının yüzünü gösteren canlı kamera kullanılacaksa görüntü zincirindeki gecikme, sahne ve ekrandaki hareketin birlikte algılanmasını etkileyebilir.",
+            "Sahne ışıkları açıkken okunabilirlik, ışıklar azaldığında ise izleyici konforu denenmelidir. Film veya karanlık sunum sırasında beyaz bir slaytın aniden açılması rahatsız edici olabilir. Kullanım senaryolarına göre parlaklık profilleri hazırlanması yararlıdır. Kamera kaydı veya canlı yayın planlanıyorsa bant oluşumu ve görüntü kararlılığı gerçek kamera ayarlarıyla test edilir. Yalnızca bir teknik özellik başlığına bakarak bütün çekim koşullarında sorunsuz kayıt garantisi verilmemelidir."
+          ]
+        },
+        {
+          "h2": "Kalıcı montajda okulun günlük düzeni önemlidir",
+          "p": [
+            "Duvar veya taşıyıcı yapı, ekranın ve montaj sisteminin yükü dikkate alınarak uzmanlarca değerlendirilmelidir. Öğrencilerin erişebileceği kablolar, keskin kenarlar ve servis noktaları kontrol altına alınır. Yangın çıkışları, yönlendirme işaretleri ve bakım yolları kapatılmamalıdır. Sahnenin farklı etkinlikler için kullanılması, ekranın önünde dekor, perde veya hareketli ekipman bulunması gibi durumlar da yerleşim kararına eklenir.",
+            "Bakım erişimi sonradan düşünülürse küçük bir parça değişimi için büyük söküm gerekebilir. Ön veya arka erişim yöntemi, modülün çıkarılacağı alan ve servis sırasında salonun kullanılıp kullanılamayacağı önceden belirlenir. Temizlik yöntemi, kullanılmaması gereken kimyasallar ve kapatma talimatları modelin dokümanına dayanmalıdır. Okul personeline yalnızca günlük kullanım değil, olağan dışı durumda güvenli kapatma ve servis çağırma adımları da aktarılmalıdır.",
+            "Erişilebilirlik açısından altyazı ve işaret dili görüntüsü kullanılacaksa bu alanların içerik tasarımında korunması gerekir. Sunumdaki renklerin tek başına anlam taşımaması, grafiklerde metin veya desenle desteklenmesi yararlıdır. Teknik kabul sırasında bu içerikler salonun farklı noktalarından denenebilir. Ayrıca görevli değiştiğinde sistemi kullanabilmek için kısa bir kullanım kılavuzunun salon içinde erişilebilir yerde tutulması, eğitimin yalnızca tek kişiye bağlı kalmasını önler."
+          ]
+        },
+        {
+          "h2": "Satın alma bütçesini teslim koşullarıyla tamamlayın",
+          "p": [
+            "Yıl içinde kaç kez ve kaç saat kullanım olacağı belirlenerek satın alma ile dönemsel kiralama karşılaştırılabilir. Yalnızca birkaç tören için kullanılan salonda kiralama değerlendirmeye açıktır. Düzenli eğitim kullanımında ise ürün, kontrol donanımı, kurulum, eğitim, enerji, bakım ve olası yenileme giderleri birlikte ele alınır. Teklif karşılaştırması ekran yüzeyinin fiyatıyla sınırlanmamalı; aynı kapsamın karşılaştırıldığından emin olunmalıdır.",
+            "Kabul listesine gerçek ders sunumu, son sıradan okuma, misafir bilgisayar bağlantısı, ses uyumu ve elektrik kesintisi sonrasında kontrollü açılış eklenebilir. Garanti kapsamı, servis başvurusu yöntemi ve yedek parça yaklaşımı yazılı istenir. <a href=\"https://rentalekran.com/led-ekran-satisi/\">Satış projesi</a> için salon planı ve örnek dosyalar paylaşılabilir. <a href=\"https://rentalekran.com/led-ekran-secim-rehberi/\">LED ekran seçim rehberi</a> teknik seçenekleri karşılaştırmaya yardımcı olur; <a href=\"https://rentalekran.com/\">Rental Ekran</a> üzerinden iletilen talepte eğitim kullanımının özellikle belirtilmesi değerlendirmeyi kolaylaştırır."
           ]
         }
       ]
@@ -189,21 +336,53 @@
       "featured": "assets/front.webp",
       "imageAlt": "LED ekran modül bakım erişimi",
       "links": [
+        "",
         "led-ekran-satisi",
         "front",
         "shipment"
       ],
       "sections": [
         {
-          "h2": "Neden yedek istenir?",
+          "h2": "Bakım kapsamı arıza çıkmadan tanımlanmalı",
           "p": [
-            "Canlı sahnede bir modül arızası yayını keser. Kiralama işinde saha yedeği; satışta stok ve servis süresi netleşir."
+            "LED ekran bakım planı yalnızca arızalı parçanın değişiminden oluşmaz. Görüntü kontrolü, bağlantı incelemesi, havalandırma koşulları, uygun temizlik ve kontrol ayarlarının korunması birlikte ele alınır. Sabit bir vitrinde uzun süre açık kalan ekran ile sürekli taşınan etkinlik ekranının yıpranma kaynakları aynı değildir. Birinde çevresel kirlenme ve ısıl koşullar öne çıkarken diğerinde bağlantıların sık sökülmesi, taşıma ve mekanik hizalama daha fazla dikkat gerektirebilir.",
+            "İşletme sorumlusu, hangi işlemleri kendi ekibinin yapabileceğini ve hangi durumlarda yetkili teknik destek gerektiğini bilmelidir. Güç altında müdahale veya taşıyıcı sistemde değişiklik gibi işler günlük kullanıcı görevi değildir. Bakım aralığı için her ürüne geçerli tek bir takvim vermek yerine üretici talimatı, ortam koşulları ve kullanım yoğunluğu esas alınır. Bakım kayıtları, tekrar eden sorunların tesadüfi mi sistematik mi olduğunu anlamayı kolaylaştırır."
           ]
         },
         {
-          "h2": "Front bakım",
+          "h2": "Modül, güç kaynağı ve kontrol arızasını ayırın",
           "p": [
-            "Arkası kapalı duvarda önden erişimli Front serisi değerlendirilir. Erişim yöntemi montajdan önce seçilir."
+            "Ekranda karanlık bir bölüm görülmesi her zaman LED modülünün bozulduğu anlamına gelmez. Güç beslemesi, veri bağlantısı, alıcı kart, yanlış eşleme veya kaynak görüntüsü benzer belirtiler oluşturabilir. Kullanıcı ilk aşamada sorunun bütün ekranda mı, belirli bir kabinde mi, yoksa sınırlı bir bölgede mi olduğunu kaydedebilir. Sorunun fotoğrafı, oluştuğu saat ve gösterilen içerik bilgisi teknik değerlendirmeyi hızlandırır.",
+            "Güvenli kullanıcı kontrolleri ile teknik müdahale sınırı net tutulmalıdır. İlgili kişinin kapatma talimatını uygulaması veya farklı bir kaynakla deneme yapması mümkün olabilir; elektrik bağlantılarını açması beklenmemelidir. Canlı etkinlikte arıza görülmesi de mutlaka yayının bütünüyle kesileceği anlamına gelmez. Etki, bağlantı mimarisine ve arızanın yerine bağlıdır. Müdahale kararı, sahne güvenliği ve devam eden programla birlikte teknik sorumlu tarafından verilmelidir."
+          ]
+        },
+        {
+          "h2": "Yedek parçanın uyumluluğu miktarından önce gelir",
+          "p": [
+            "Teklifte yedek modül bulunması yararlıdır, ancak yalnızca adet yazılması yeterli değildir. Modülün mekanik ölçüsü, bağlantıları, sürücü düzeni ve kontrol sistemiyle uyumu doğrulanmalıdır. Aynı piksel aralığını taşıyan iki ürün birbirinin yerine otomatik olarak kullanılamaz. Donanım sürümü veya üretim partisi farkları görüntü ve yapı bakımından ek değerlendirme gerektirebilir. Bu nedenle yedeklerin hangi sistem için ayrıldığı açık şekilde etiketlenmelidir.",
+            "Renk ve parlaklık tutarlılığı da değiştirme işleminin parçasıdır. Yeni takılan modül, çevresindeki uzun süre kullanılmış modüllerden farklı görünebilir. Gerekli kalibrasyon verileri, yazılım erişimi ve uygulanacak yöntem önceden bilinmelidir. Yedek parça listesine yalnızca modül değil, modelin ihtiyaçlarına göre güç kaynağı, veri kablosu ve kontrol bileşenleri de girebilir. Miktarlar sahadaki risk, erişim süresi ve kullanım önemine göre belirlenir; her projeye aynı oran dayatılmaz."
+          ]
+        },
+        {
+          "h2": "Ön ve arka erişim montaj kararını değiştirir",
+          "p": [
+            "Duvara yakın kurulan bir ekranda arka servis için yeterli alan bulunmayabilir. Böyle bir durumda önden bakım yapılabilen bir sistem değerlendirilir. Ancak önden bakım ifadesi, bütün parçaların aynı yöntemle çıkarılabildiği veya hiç çalışma alanı gerektirmediği anlamına gelmez. Hangi bileşenlere önden ulaşılabildiği ve özel alet gereksinimi teklif edilen model için ayrı doğrulanmalıdır. <a href=\"https://rentalekran.com/front/\">Front ürün ailesi</a> incelenirken bakım yöntemi somut montaj planına bağlanmalıdır.",
+            "Arka servisli uygulamalarda servis koridoru, aydınlatma, güvenli erişim ve parçanın taşınacağı güzergâh önem kazanır. Yüksekteki ekran için erişim ekipmanı gereksinimi de bakım maliyetine yansıyabilir. Servis elemanının ulaşamadığı bir kurulumda yedek parçanın depoda bulunması tek başına yeterli olmaz. Erişim planı, ekran kapatıldığında çevredeki faaliyetlerin nasıl yönetileceğini ve müdahale alanının nasıl ayrılacağını da kapsamalıdır."
+          ]
+        },
+        {
+          "h2": "Depolama, temizlik ve kayıt sistemi kurun",
+          "p": [
+            "Yedekler koruyucu ambalajlarıyla, üreticinin saklama koşullarına uygun yerde tutulmalıdır. Nem, toz, fiziksel darbe ve yanlış istifleme kullanılmayan parçaları da etkileyebilir. Kiralama ekipmanında taşıma kutularının iç düzeni ve kabinlerin korunması ayrıca önemlidir. Sevkiyattan sonra yalnızca dış görünüşe bakmak yerine bağlantı ve görüntü kontrolü yapılması, sonraki etkinliğe arızalı ekipman gönderilmesi riskini azaltır.",
+            "Temizlik sırasında rastgele sıvı veya aşındırıcı malzeme kullanılmamalıdır. Ekran yüzeyinin yapısı ve kaplaması uygulanabilecek yöntemi belirler; üretici talimatı esas alınır. Bakım kaydında tarih, görülen belirti, değişen parçanın kimliği, yapılan ayar ve kontrol sonucu bulunabilir. Sistem yapılandırmasının güncel yedeği de saklanmalıdır. Bu kayıtlar, bir sonraki teknisyenin ekranın geçmişini öğrenmesini sağlar ve aynı sorunun yeniden ortaya çıkmasında gereksiz parça değişimini önlemeye yardımcı olur.",
+            "Kontrol bilgisayarı veya işlemci değiştirildiğinde geri yükleme için yalnızca görüntü dosyaları yeterli olmayabilir. Kabin eşleme bilgisi, ekran çözünürlüğü ve varsa kalibrasyon dosyalarının güncel kopyaları saklanmalıdır. Yedeklerin kimde bulunduğu ve ne zaman güncellendiği kayda alınır. Müdahale sonrasında ekranın tamamında düz renk, geçişli ton ve gerçek içerik gösterilerek yeni bir görüntü hatası oluşmadığı kontrol edilir."
+          ]
+        },
+        {
+          "h2": "Garanti ile servis hizmetini ayrı tarif edin",
+          "p": [
+            "Garanti metni, bütün saha hizmetlerinin aynı koşullarda karşılandığı anlamına gelmez. Arızanın değerlendirilmesi, yerinde müdahale, nakliye, erişim ekipmanı, kullanıcı kaynaklı hasar ve geçici çözüm koşulları ayrı sorulmalıdır. Yanıt süresiyle sorunun tamamen çözülme süresi de aynı değildir. Sözleşmede bulunmayan hızlı müdahale veya kesintisiz çalışma vaatleri varsayılmamalı; gerekli hizmet seviyesi proje önemine göre yazılı olarak görüşülmelidir.",
+            "<a href=\"https://rentalekran.com/led-ekran-satisi/\">Satış teklifinde</a> parça listesi, servis yöntemi ve teslim sonrası sorumlular birlikte istenebilir. Taşıma veya yüksek erişim gerektiren işlerde <a href=\"https://rentalekran.com/shipment/\">sevkiyat ve kurulum kapsamı</a> ayrıca değerlendirilir. Teknik talep gönderirken ekranın modeli, yaklaşık yaşı, kurulum fotoğrafı ve belirtinin açıklaması paylaşılabilir. <a href=\"https://rentalekran.com/\">Rental Ekran</a> üzerinden yapılacak görüşmede bu bilgiler, bir bakım ihtiyacıyla yeni sistem talebinin doğru kapsamda ele alınmasını kolaylaştırır."
           ]
         }
       ]
@@ -218,21 +397,53 @@
       "featured": "assets/rental-led-ekran.webp",
       "imageAlt": "Rental ekran kabin kiralama ve satış",
       "links": [
+        "",
         "rental-led-ekran",
         "led-ekran-kiralama",
         "led-ekran-satisi"
       ],
       "sections": [
         {
-          "h2": "Kelime karışıklığı",
+          "h2": "Rental ürün ile kiralama hizmetini ayırın",
           "p": [
-            "Rental LED ekran ürün ailesi satılabilir. LED ekran kiralama ise tarihli hizmettir. Talebinizde hangisini istediğinizi yazın."
+            "Rental ekran ifadesi iki farklı anlamda kullanılır. Birincisi sökülüp yeniden kurulmaya uygun, taşınabilir kabinlerden oluşan ürün yaklaşımıdır. İkincisi belirli tarih ve kapsam için ekran kullanma hizmetidir. Dolayısıyla rental kabin satın almak mümkündür; ürünün adında bu kelimenin bulunması yalnızca kiralanabildiği anlamına gelmez. Teklif talebinde ekipman mülkiyeti mi, etkinlik süresince kullanım mı istendiği açıkça belirtilmelidir.",
+            "Karar, yalnızca ekrana ihtiyaç duyulan gün sayısından ibaret değildir. Kurulumlar arasındaki süre, farklı ekran boyutlarının gerekip gerekmediği ve şirketin teknik personeli de sonucu değiştirir. Aynı salon için düzenli kullanılan bir sistemle her ay farklı şehirlerde kurulan bir sistemin ihtiyaçları farklıdır. <a href=\"https://rentalekran.com/rental-led-ekran/\">Rental LED kabinleri</a> incelenirken ürünü kullanacak iş modelinin tarif edilmesi, uygun karşılaştırmanın temelini oluşturur."
           ]
         },
         {
-          "h2": "Karar kriteri",
+          "h2": "Kullanım takvimini gerçekçi biçimde çıkarın",
           "p": [
-            "Yıllık kurulum sayısı, depo ve ekip kapasitesi satın almayı; tek fuar veya konser kiralamayı belirler."
+            "Önce geçmiş veya planlanan etkinliklerin tarihleri, süreleri, yerleri ve ekran ölçüleri bir tabloya yazılabilir. Burada yalnızca gösterim günü değil, kurulum, prova, söküm ve taşıma için ayrılacak günler de dikkate alınmalıdır. Aynı ekipmanın arka arkaya iki etkinliğe yetişmesi, takvimde boş gün görünmesine rağmen mümkün olmayabilir. Birbiriyle çakışan işler ayrıca değerlendirilmelidir; tek bir satın alma bütün talepleri karşılamayabilir.",
+            "Kullanım sıklığı yüksek olsa bile her işte farklı piksel aralığı, dış ortam koruması veya ekran geometrisi isteniyorsa tek bir stok bütün ihtiyaçlara uygun olmayabilir. Tersine aynı içerik ve benzer ölçüyle sürekli kurulan bir düzende ekipmanın tekrar kullanımı daha öngörülebilir olabilir. Bu nedenle toplam etkinlik sayısı yerine gerçekten aynı ekipmanla karşılanabilecek etkinlikler ayrılmalıdır. Belirsiz talepleri kesin kullanım gibi saymak satın alma hesabını olduğundan iyimser gösterebilir."
+          ]
+        },
+        {
+          "h2": "Toplam sahip olma maliyetini hesaplayın",
+          "p": [
+            "Satın alma bütçesine kabin fiyatının yanında kontrol donanımı, kablolar, dağıtım ekipmanı, taşıma kutuları ve kullanım biçimine uygun destek sistemi girebilir. Depolama, sigorta gereksinimi, bakım, yedek parça ve personel gideri de değerlendirilir. Bütün bu kalemler her projede aynı kapsamda bulunmaz; hangi işin kim tarafından yapılacağına göre liste hazırlanır. Fiyatları karşılaştırırken eksik kalemlerin sonradan eklenmesi olasılığı dikkate alınmalıdır.",
+            "Kiralama tarafında ise ekranın yanı sıra nakliye, kurulum, söküm, operatör, prova günü ve bekleme süresi gibi başlıklar sorulur. Bir teklif bunları içerirken diğeri ayrı fiyatlandırabilir. Salt günlük bedelle satın alma fiyatını bölmek güvenilir bir başa baş hesabı vermez. Aynı dönemdeki satın alma ve işletme toplamı, aynı etkinlikleri kapsayan kiralama toplamıyla karşılaştırılır. Varsayılan kullanım miktarı ve değerlendirme dönemi hesabın yanında açıkça yazılır."
+          ]
+        },
+        {
+          "h2": "Depo ve ekip kapasitesi görünmeyen belirleyicilerdir",
+          "p": [
+            "Ekipmana sahip olmak, her etkinlikte kullanılabilir durumda olduğu anlamına gelmez. Uygun depolama alanı, parça takibi, yükleme düzeni ve etkinlik sonrasında kontrol süreci gerekir. Taşıma sırasında kabinlerin hasar görmemesi için uygun koruma kullanılmalıdır. Depoya dönen bir sistemin eksik kablosu veya hasarlı bağlantısı bir sonraki kurulumdan önce fark edilmelidir. Bu işler için ayrılacak zaman ve sorumlu kişi planlanmalıdır.",
+            "Kurulum ekibi mekanik hizalama, güç dağıtımı ve görüntü eşleme süreçlerinde yetkin olmalıdır. Elektrik ve taşıyıcı yapı işleri ilgili uzmanlık gerektirir. Personelin bulunmadığı günler, izinler ve aynı anda yürüyen işler operasyonu etkiler. Kiralama hizmetinde bu sorumlulukların hangilerinin hizmet sağlayıcıda olduğu sözleşmede netleşir. Satın alma tercihinde dışarıdan teknik hizmet alınacaksa bu bedel ve erişilebilirlik de sahip olma hesabına eklenmelidir."
+          ]
+        },
+        {
+          "h2": "Görüntü ve içerik ihtiyaçları kararı değiştirebilir",
+          "p": [
+            "Yakın mesafeden metin okunacak fuar standı ile uzaktan izlenen sahne arka planı aynı önceliklere sahip değildir. Taşınabilirlik, yüzey dayanımı, bakım erişimi ve kamera çekimindeki davranış farklı ağırlıklar kazanabilir. Satın alınacak sistem gelecekteki işlerin tamamına uyacak varsayımıyla seçilmemeli; hangi kullanım aralığında yeterli olacağı açıkça tanımlanmalıdır. Gereksiz geniş bir özellik hedefi yatırım tutarını artırırken belirsizliği her zaman azaltmaz.",
+            "İçeriğin hazırlanması ve görüntü kaynaklarının yönetimi de ayrı iştir. Bir ekranın mülkiyeti, sunum dosyalarının doğru çözünürlükte olmasını veya canlı kaynakların sorunsuz geçiş yapmasını sağlamaz. Bu nedenle <a href=\"https://rentalekran.com/led-ekran-kiralama/\">kiralama kapsamı</a> görüşülürken içerik kontrolü ve operatör desteği sorulabilir. Satın alma değerlendirmesinde ise ekibin kullanacağı yazılım, eğitim ihtiyacı ve yapılandırma yedekleri de teslim kapsamına alınmalıdır.",
+            "Finansal tabloda ikinci el satış değeri kullanılacaksa bunun belirsiz bir varsayım olduğu belirtilmelidir. Gelecekteki satış bedelini kesin gelir gibi yazmak yatırım sonucunu yanıltabilir. Ayrıca ekranın kullanım dışı kaldığı dönemlerde devam eden depo ve bakım giderleri hesaba katılır. Kiralama seçeneğinde tarih değişikliği, iptal veya mekânın değişmesi durumunda uygulanacak koşullar da bütçe riskini etkilediği için teklifle birlikte incelenmelidir."
+          ]
+        },
+        {
+          "h2": "İki seçenek arasında karma kullanım kurulabilir",
+          "p": [
+            "Sürekli ihtiyaç duyulan temel boyut için ekipman sahibi olmak, büyük veya farklı özellik isteyen etkinliklerde ilave kiralama yapmak değerlendirilebilir. Ancak farklı kabinlerin doğrudan birleştirilebileceği varsayılmamalıdır. Mekanik bağlantı, görüntü özellikleri ve kontrol uyumu ayrıca incelenmelidir. Bir etkinlikte yan yana bağımsız ekran kullanmak da mümkün bir tasarım seçeneğidir; bunun içerik ve sahne düzenine uygunluğu proje bazında belirlenir.",
+            "Karar dosyasında iyimser ve daha düşük kullanım senaryoları yan yana gösterilebilir. Böylece talep azalırsa yatırımın nasıl etkileneceği görünür olur. <a href=\"https://rentalekran.com/led-ekran-satisi/\">Satın alma teklifi</a> istenirken yıllık program, depolama koşulları ve mevcut teknik ekip bilgisi paylaşılmalıdır. <a href=\"https://rentalekran.com/\">Rental Ekran</a> üzerinden iletilen talepte kiralama ile satın alma seçeneklerinin aynı kullanım listesi için değerlendirilmesi istenebilir. Son karar, doğrulanmış kapsam ve gerçek operasyon kapasitesine dayanmalıdır."
           ]
         }
       ]
@@ -247,21 +458,53 @@
       "featured": "assets/air-star.webp",
       "imageAlt": "Ürün lansmanı LED ekran kiralama",
       "links": [
+        "",
         "led-ekran-kiralama",
         "air-star",
         "iletisim"
       ],
       "sections": [
         {
-          "h2": "Kısa süreli görünürlük",
+          "h2": "Lansmanın akışını ekran planına dönüştürün",
           "p": [
-            "Lansman bir veya birkaç gün sürer; satın alma yerine kiralama seçilir. Video processor ve yenileme hızı çekim varsa sorulmalıdır."
+            "Lansman LED ekran kiralama işinde ilk soru yalnızca kaç metrekare ekran gerektiği değildir. Açılış videosu, konuşmacı sunumu, ürünün ilk kez görünmesi, canlı kamera ve kapanış mesajı farklı görüntü ihtiyaçları oluşturur. Programın hangi anında hangi içerik gösterileceği belirlenirse ekranın sahnedeki görevi netleşir. Ürünün kendisi sahnede sergilenecekse ekranın onu gölgelememesi, ürünle konuşmacıyı birlikte desteklemesi gerekir.",
+            "Basit bir akış tablosunda bölüm adı, süre, görüntü kaynağı, ses ihtiyacı ve geçişten sorumlu kişi yazılabilir. Özellikle ürünün açığa çıktığı an ile videonun veya ışığın aynı anda değişmesi bekleniyorsa zamanlama önceden denenmelidir. Programda son dakika değişikliği olması ihtimaline karşı yönetilebilir bir içerik düzeni kurulur. Kiralama talebine bu akışı eklemek, yalnızca donanım değil operasyon ihtiyacının da anlaşılmasını sağlar."
           ]
         },
         {
-          "h2": "Hazırlık listesi",
+          "h2": "Sahne, izleyici ve ürün konumunu birlikte çizin",
           "p": [
-            "Tarih, mekân, hedef ölçü, HDMI/SDI kaynak ve söküm saati."
+            "Ekranın yeri, salonun en iyi fotoğraf çekilen noktasına göre tek başına seçilmemelidir. İzleyici sıraları, sahneye giriş yolları, ürün platformu, sunum kürsüsü ve basın alanı aynı planda gösterilir. Konuşmacı ekrandaki yazıyı kapatıyorsa veya ürün, önemli görselin önüne geliyorsa içerik yerleşimi değiştirilmelidir. Ekranın alt kısmındaki güvenli içerik alanı bu fiziksel ilişkiler dikkate alınarak belirlenebilir.",
+            "Ekran ölçüsü kabin dizilimine göre netleşeceği için tasarım ekibine yalnızca yaklaşık metre bilgisi verilmesi yeterli olmaz. Gerçek piksel tuvali, kullanılabilir alan ve olası bölünmüş yüzeyler bildirilmelidir. Yan ekran veya ayrı logo yüzeyi varsa her birinin içerik sorumluluğu belirlenir. <a href=\"https://rentalekran.com/air-star/\">AIR / STAR kabin seçenekleri</a> gibi modüler ürünler değerlendirilirken modelin ölçüsü, kurulum koşulları ve sahne tasarımı birlikte incelenmelidir."
+          ]
+        },
+        {
+          "h2": "İçerik tesliminde dosya adından fazlası gerekir",
+          "p": [
+            "Video ve sunum dosyalarının teslim tarihi, çözünürlüğü, görüntü oranı, ses durumu ve oynatma sırası yazılı hale getirilebilir. Bir dosyanın bilgisayarda açılması, etkinlik sisteminde doğru ölçekleneceğini veya sesinin doğru yere ulaşacağını göstermez. Gerçek sistem üzerinde kontrol için zaman ayrılmalıdır. Marka rengi önemliyse onaylı referans görseller hazırlanır ve değerlendirme ortamı netleştirilir; farklı cihazların ekranları arasında kendiliğinden aynı görünüm beklenmemelidir.",
+            "Dosya sürümleri açık biçimde adlandırılmalı, sahada hangi sürümün kullanılacağı tek sorumlu tarafından teyit edilmelidir. Son dakika gelen bir değişikliğin yanlışlıkla eski dosyanın üzerine yazılması engellenmelidir. İnternet üzerinden açılan içeriklere ihtiyaç varsa bağlantı koşulları ve mümkün olan çevrim dışı alternatifler değerlendirilir. Yerel yedek, telif veya erişim kısıtları nedeniyle kullanılamıyorsa bunun program akışına etkisi önceden bilinmelidir."
+          ]
+        },
+        {
+          "h2": "Kamera kaydı için gerçek çekim denemesi yapın",
+          "p": [
+            "Lansmanlarda görüntü çoğu zaman yalnızca salondaki izleyiciye değil, kamera üzerinden uzaktaki kitleye de ulaşır. LED yüzeyde gözle görülmeyen bazı etkiler kamera kaydında bant, titreme veya desen olarak ortaya çıkabilir. Kamera kare hızı, pozlama, objektif, netlik ve çekim açısı sonucu etkiler. Bu nedenle yalnızca ekranın yenileme hızı başlığına bakarak bütün kameralarda kusursuz sonuç çıkacağı varsayılmamalıdır.",
+            "Prova sırasında kullanılacak kamera ve planlanan ayarlarla yakın, geniş ve hareketli çekimler denenir. Ürünün parlak veya yansıtıcı yüzeyi varsa ekrandaki ışığın ürün üzerindeki etkisi de izlenir. Konuşmacının ten rengi, sahne ışığı ve ekran parlaklığı birlikte ayarlanır. Çevrim içi yayın varsa gelen kamera görüntüsünün ekrana veya yayın sistemine nasıl yönlendirileceği belirlenir. Geri besleme oluşturan görüntü döngülerinin önlenmesi için kaynak listesi açık tutulur."
+          ]
+        },
+        {
+          "h2": "Kurulum süresi ile etkinlik süresini ayırın",
+          "p": [
+            "Bir saatlik lansman, bir saatlik teknik hizmet anlamına gelmez. Mekâna giriş, yükleme, kabin kurulumu, elektrik ve veri bağlantıları, içerik testi, prova ve söküm için ayrı zaman gerekir. Fuar veya otel gibi alanlarda mal kabul saati, asansör ölçüsü, yükleme noktası ve gürültü kuralları programı etkileyebilir. Teklifte başlangıç ve bitişin yalnızca gösterim saatleriyle tarif edilmesi yanlış kapsam değerlendirmesine yol açabilir.",
+            "Kurulumun askılı mı zeminden destekli mi olacağı ilgili uzmanlarla belirlenir. Taşıyıcı noktalar ve elektrik kapasitesi doğrulanmadan yerleşim kesinleştirilmemelidir. Ziyaretçi yollarındaki kablolar ve teknik çalışma alanları güvenli biçimde düzenlenir. <a href=\"https://rentalekran.com/led-ekran-kiralama/\">Kiralama hizmeti</a> talebine mekân planı, kurulum izni ve prova saatlerini eklemek, hangi hazırlıkların etkinlikten önce tamamlanması gerektiğini görünür kılar.",
+            "Prova sırasında bekleme görseli de ayrıca onaylanmalıdır. Konuşmacının gecikmesi veya sahne hazırlığının uzaması halinde ekranda hangi mesajın kalacağı önceden bilinirse aceleyle uygun olmayan dosya açılması önlenebilir. Geri sayım yalnızca salon ekibine gösterilecekse izleyicinin gördüğü görüntüden ayrılması gerekir. Sunucu monitörü, sahne geri dönüşü ve ana ekran arasındaki farkın belirlenmesi, konuşmacının yanlış kaynağa bakmasını engeller."
+          ]
+        },
+        {
+          "h2": "Prova ve görev dağılımını sözleşmeye bağlayın",
+          "p": [
+            "Son provada yalnızca bütün videoların sırayla açılması yeterli değildir. Konuşmacı değişimi, sunumdan videoya geçiş, ses başlangıcı, mikrofonla konuşma ve ürün gösterimi gerçek akışla denenmelidir. Bir kaynak görüntüsü kesildiğinde hangi bekleme görselinin açılacağı ve programı kimin sürdüreceği belirlenebilir. Yedekleme kapsamı ekipman ve hizmet planına göre yazılır; belirtilmeyen yedek cihaz veya anında müdahale olanağı varsayılmamalıdır.",
+            "Teknik yönetmen, içerik sorumlusu ve ekran operatörü arasındaki iletişim kanalı belirlenir. İçerik değişikliklerini kimin onaylayacağı açık olmalıdır. Teklifte ekran, işlemci, oynatma kaynağı, operatör, prova, nakliye ve söküm kalemleri ayrı anlaşılır biçimde tarif edilir. <a href=\"https://rentalekran.com/iletisim/\">İletişim talebinde</a> tarih, şehir, hedef ölçü, kamera kullanımı ve içerik akışı paylaşılabilir. <a href=\"https://rentalekran.com/\">Rental Ekran</a> için hazırlanacak bu kısa proje özeti, lansmanın yaratıcı fikrini uygulanabilir bir teknik plana çevirmeye yardımcı olur."
           ]
         }
       ]
@@ -276,21 +519,55 @@
       "featured": "assets/rental-led-ekran.webp",
       "imageAlt": "LED ekran kabin ölçü hesabı",
       "links": [
+        "",
         "led-ekran-teklif",
         "led-ekran-secim-rehberi",
-        "led-ekran-fiyatlari"
+        "led-ekran-fiyatlari",
+        "rental-led-ekran"
       ],
       "sections": [
         {
-          "h2": "Kabin ızgarası",
+          "h2": "Hedef ölçü ile uygulanabilir ölçüyü ayırın",
           "p": [
-            "500×500 veya 500×1000 mm kabinler yan yana dizilir. 4×3 m hedef, seçilen kabine göre birkaç santim sapabilir."
+            "LED ekran ölçü hesabı, kullanıcının istediği genişlik ve yüksekliğin seçilen kabin düzenine çevrilmesidir. Modüler yapı sayesinde farklı boyutlar elde edilir, ancak her hedefin bütün ürünlerle tam karşılanması beklenemez. Bir duvar boşluğuna sığmak, standart video oranını korumak veya sahnedeki dekorla hizalanmak farklı önceliklerdir. Hesaba başlamadan önce hangi ölçünün kesin sınır, hangisinin esnek hedef olduğu belirtilmelidir.",
+            "Ölçü alınırken yalnızca görünen görüntü alanı değil, çerçeve, taşıyıcı sistem, bağlantılar ve bakım boşluğu da değerlendirilir. Duvarın tam genişliğini ekran alanı olarak kullanmak, montaj veya servis için gereken payı ortadan kaldırabilir. Mimari plandaki nominal ölçünün sahada doğrulanması gerekir. Kapı, kolon, sprinkler, yönlendirme levhası ve elektrik noktası gibi unsurlar gerçek kullanılabilir alanı azaltabilir.",
+            "Tekrar kurulan bir sahne veya fuar sistemi planlıyorsanız, hesabı teklif edilen kabin ölçüsüyle birlikte doğrulamak için <a href=\"https://rentalekran.com/rental-led-ekran/\">rental LED ekran kabinlerini</a> inceleyin. Kabin ailesinin adı tek başına modül ölçüsünü veya ekran çözünürlüğünü belirlemez; seçilen modelin teknik çizimi esas alınır."
           ]
         },
         {
-          "h2": "Çözünürlük tahmini",
+          "h2": "Kabin ızgarasını tam sayılarla oluşturun",
           "p": [
-            "Yatay piksel ≈ genişlik (mm) / piksel aralığı. Kesin değer model belgesinden doğrulanır."
+            "Kabin genişliği ve yüksekliği bilindiğinde yatay ve düşey adetler tam sayı olarak seçilir. Ekran genişliği, yatay kabin sayısının kabin genişliğiyle; yüksekliği ise düşey kabin sayısının kabin yüksekliğiyle çarpılmasıyla bulunur. Örneğin yalnızca hesap göstermek amacıyla 500 milimetre kare kabin seçildiğini varsayalım. Sekiz kabin yan yana ve altı kabin üst üste kullanıldığında görüntü alanı 4 metreye 3 metre olur; toplam 48 kabin gerekir.",
+            "Bu örnek herhangi bir ürünün stok veya ölçü beyanı değildir. Başka bir kabin boyutunda aynı hedef farklı şekilde karşılanabilir veya tam karşılanamayabilir. Bazı sistemlerde farklı yükseklikte kabinlerin birlikte kullanılması mümkün olabilir, ancak mekanik ve elektrik uyumluluğu belgelenmeden karma dizilim önerilmemelidir. Teklifte yaklaşık ölçü yerine kabul edilen gerçek genişlik, gerçek yükseklik, yatay ve düşey kabin adedi ayrı gösterilmelidir."
+          ]
+        },
+        {
+          "h2": "Görüntü oranını alan hesabıyla karıştırmayın",
+          "p": [
+            "Metrekare, genişlik ile yüksekliğin çarpımıdır; görüntünün oranını anlatmaz. Aynı yüzey alanına sahip uzun yatay bir ekranla kareye yakın bir ekran içerik açısından farklı davranır. Bir sunumun bütün yüzeyi doldurması bekleniyorsa kaynak dosyanın oranı ile LED yüzeyin oranı karşılaştırılır. Uyuşmazlık durumunda kenarlarda boşluk bırakmak, içeriği kırpmak veya yeni tasarım hazırlamak gibi seçenekler ortaya çıkar.",
+            "Standart video oranını zorla bütün yüzeye yaymak, logo ve kişilerin şekillerini bozabilir. Bu yüzden tasarım kararı teknik kurulumdan önce alınmalıdır. Farklı ekran parçaları tek büyük tuvalde sürülecekse aralarındaki fiziksel boşlukların içerik haritasında nasıl temsil edileceği belirlenir. <a href=\"https://rentalekran.com/led-ekran-secim-rehberi/\">LED ekran seçim rehberi</a> üzerinden kullanım amacı netleştirildikten sonra ölçü ve içerik planını birlikte geliştirmek daha sağlıklı sonuç verir."
+          ]
+        },
+        {
+          "h2": "Piksel sayısını model verisinden doğrulayın",
+          "p": [
+            "Yaklaşık yatay piksel hesabında ekran genişliği milimetre cinsinden piksel aralığına bölünür. Aynı işlem yükseklik için yapılır. Ancak pazarlama adındaki yuvarlanmış piksel aralığı bu hesapta küçük farklar oluşturabilir. Kesin ekran çözünürlüğü, seçilen kabinin yatay ve düşey piksel sayılarının kabin adetleriyle çarpılmasıyla bulunmalıdır. Sonuç işlemci ve içerik ekibine aynı değerlerle iletilmelidir.",
+            "Örnek olarak bir kabinin belgelenmiş çözünürlüğünün varsayımsal olarak 200 × 200 piksel olduğunu düşünelim. Yatay sekiz ve düşey altı kabin, 1600 × 1200 piksellik bir tuval oluşturur. Bu sayılar belirli bir modelin teknik özelliği değildir; yöntemi anlatır. Kaynak bilgisayarın çıkışı farklıysa görüntü işlemcisinin ölçekleme yapması gerekebilir. Küçük yazı ve çizgiler bu işlemden etkilenebileceği için gerçek dosyayla okunabilirlik kontrolü yapılmalıdır."
+          ]
+        },
+        {
+          "h2": "Kontrol sistemini toplam piksele göre değerlendirin",
+          "p": [
+            "Toplam piksel sayısı, ekranın yatay pikseli ile düşey pikselinin çarpımıdır. Bununla birlikte kontrol sistemi seçimini yalnızca toplam sayı belirlemez. Port başına yük, kabin bağlantı sırası, alıcı kart düzeni, izin verilen genişlik ve yükseklik sınırları gibi bilgiler de önemlidir. Bu sınırlar kullanılan donanımın belgesinden doğrulanmalı, farklı cihazların değerleri birbirine aktarılmamalıdır.",
+            "Sinyal dağıtım çiziminde kabinlerin fiziksel sırası ile görüntü haritasındaki sırası açık olmalıdır. Bir kablo veya cihaz arızasında hangi bölümün etkileneceği de bu düzenle ilişkilidir. Yedekleme isteniyorsa kapsamı ayrıca projelendirilir; ek bir kablo bulunması tek başına tam yedeklilik anlamına gelmez. İçerik çözünürlüğü kesinleşmeden oynatma bilgisayarı veya işlemci kapasitesi hakkında karar vermek daha sonra değişiklik gerektirebilir.",
+            "Duvar boşluğuna kurulacak sistemlerde ölçü toleransı ayrıca yazılmalıdır. Duvarın her noktada aynı genişlikte olduğu varsayılmadan üst, orta ve alt seviyeler kontrol edilir. Zemindeki eğim veya yüzey düzensizliği montaj planını etkileyebilir. Ekranın görünen alanı ile toplam kurulum zarfının ayrı çizilmesi, dekor ekibinin görüntü yüzeyine taşmasını ve bakım kapağının kapanmasını önlemeye yardımcı olur. Son çizimde bütün birimler açıkça belirtilmelidir."
+          ]
+        },
+        {
+          "h2": "Ölçü büyüdüğünde diğer sistemleri yeniden hesaplayın",
+          "p": [
+            "Daha büyük yüzey; ağırlık, güç, taşıma hacmi ve kurulum süresini de değiştirebilir. Bunların her biri seçilen modele ve kurulum yöntemine göre hesaplanır. Kabinlerin ağırlığına montaj parçaları ve taşıyıcı sistem de eklenmelidir. Zeminin veya askı noktalarının uygunluğu yetkin kişilerce doğrulanır. Görüntü alanının metrekaresi, yapısal güvenlik değerlendirmesinin yerine geçmez ve elektrik tesisatının yeterliliğini tek başına göstermez.",
+            "<a href=\"https://rentalekran.com/led-ekran-teklif/\">Teklif talebine</a> hedef ölçü, izin verilen sapma, en yakın izleyici, kaynak içerik ve montaj fotoğrafı eklenebilir. Karşılık gelen teklifte gerçek alan, kabin adedi, kesin piksel tuvali ve kapsamın bulunması istenir. <a href=\"https://rentalekran.com/led-ekran-fiyatlari/\">Fiyat değerlendirmesi</a> yapılırken aynı fiziksel alanın farklı piksel ve kontrol gereksinimleri doğurabildiği unutulmamalıdır. <a href=\"https://rentalekran.com/\">Rental Ekran</a> üzerinden paylaşılacak ölçülü plan, tahmini bir metre bilgisinin uygulanabilir kurulum seçeneğine dönüşmesini kolaylaştırır."
           ]
         }
       ]

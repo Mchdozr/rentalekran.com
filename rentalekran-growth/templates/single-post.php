@@ -42,7 +42,7 @@ rle_render_shell_open();
     <div class="blog-grid">
         <?php foreach ($related as $post): setup_postdata($post); $image = get_the_post_thumbnail_url($post, 'medium'); ?>
         <article class="blog-card rle-reveal">
-            <?php if ($image): ?><img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr(get_the_title($post)); ?>" loading="lazy" decoding="async"><?php else: ?>
+            <?php if ($image): ?><?php echo get_the_post_thumbnail($post, 'medium', array('alt'=>get_the_title($post), 'loading'=>'lazy', 'decoding'=>'async')); ?><?php else: ?>
             <div class="blog-card-placeholder" aria-hidden="true"><span>LED</span></div><?php endif; ?>
             <div>
                 <p class="eyebrow"><?php echo esc_html(get_the_date('j F Y', $post)); ?></p>

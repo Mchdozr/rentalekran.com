@@ -56,7 +56,7 @@ function rle_settings() {
 }
 function rle_routes() {
     $routes = array(
-        '' => array('name'=>'LED ekran satış ve kiralama', 'title'=>'LED Ekran Satış ve Kiralama | İstanbul · Rental Ekran', 'description'=>'İstanbul merkezli LED ekran satış ve kiralama çözümleri. Türkiye genelindeki sahne, fuar, vitrin ve kurumsal projeleriniz için model seçin, teklif isteyin.'),
+        '' => array('name'=>'LED ekran satış ve kiralama', 'title'=>'LED Ekran | Rental Ekran Satış ve Kiralama', 'description'=>'İstanbul merkezli LED ekran satış ve kiralama çözümleri. Türkiye genelindeki sahne, fuar, vitrin ve kurumsal projeleriniz için model seçin, teklif isteyin.'),
         'led-ekran-teklif'=>array('name'=>'LED ekran proje teklifi','title'=>'LED Ekran Projesi için İletişim ve Teklif | Rental Ekran','description'=>'Ekran ölçüsü, kullanım alanı ve şehir bilgisiyle LED ekran proje teklifinizi hazırlayın. Rental Ekran İstanbul iletişim bilgilerine ulaşın.'),
         'urunlerimiz'=>array('name'=>'LED ekran ürünleri','title'=>'LED Ekran Ürünleri | Rental Ekran','description'=>'Rental, Front, AIR / STAR, COB, GOB, Floor ve transparan LED ekran serilerini görselleri, teknik tabloları ve kullanım alanlarıyla inceleyin.'),
         'iletisim'=>array('name'=>'İletişim ve teklif','title'=>'LED Ekran İletişim ve Teklif | Rental Ekran','description'=>'LED ekran satış veya kiralama projeniz için ölçü, mekân ve şehir bilgisiyle teklif talebi hazırlayın.'),
@@ -117,4 +117,24 @@ function rle_demo_ids() {
         $post = get_page_by_path($slug); if ($post) $ids[] = $post->ID;
     }
     return $ids;
+}
+
+function rle_map_url() {
+    return 'https://www.google.com/maps?q=' . rawurlencode(rle_settings()['address']);
+}
+function rle_map() {
+    $settings = rle_settings();
+    ?><section class="section wrap rle-map"><h2>Rental Ekran İstanbul iletişim noktası</h2><address><?php echo esc_html($settings['address']); ?><br><a href="tel:<?php echo esc_attr(preg_replace('/[^+0-9]/', '', $settings['phone'])); ?>"><?php echo esc_html($settings['phone']); ?></a><br><a href="mailto:<?php echo esc_attr($settings['email']); ?>"><?php echo esc_html($settings['email']); ?></a></address><p><a href="<?php echo esc_url(rle_map_url()); ?>" target="_blank" rel="noopener noreferrer">Adresi Google Haritalar’da aç ↗</a></p><iframe title="Rental Ekran İstanbul adres haritası" src="<?php echo esc_url(rle_map_url() . '&output=embed'); ?>" width="100%" height="320" style="border:0;max-width:100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section><?php
+}
+function rle_image_dimensions($relative) {
+    $path = RLE_DIR . ltrim($relative, '/');
+    if (!is_file($path)) return '';
+    $size = getimagesize($path);
+    return $size ? 'width="' . (int) $size[0] . '" height="' . (int) $size[1] . '"' : '';
+}
+function rle_social_image($slug = null) {
+    $product = $slug !== null ? rle_product($slug) : null;
+    $relative = $product && !empty($product['image']) ? $product['image'] : 'assets/rental-led-ekran.webp';
+    $size = getimagesize(RLE_DIR . $relative);
+    return array('url' => RLE_URL . $relative, 'width' => $size[0], 'height' => $size[1]);
 }

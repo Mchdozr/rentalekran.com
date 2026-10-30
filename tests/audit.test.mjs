@@ -67,7 +67,7 @@ const keywords = JSON.parse(read('includes/keywords.json'));
 assert.ok(keywords.pages['']);
 assert.ok(keywords.pages['led-ekran-kiralama']);
 assert.ok(keywords.pages['led-ekran-satisi']);
-assert.match(keywords.pages[''].title, /^LED Ekran Satış ve Kiralama/);
+assert.match(keywords.pages[''].title, /^LED Ekran \| Rental Ekran Satış ve Kiralama$/);
 assert.match(keywords.pages['led-ekran-kiralama'].title, /^LED Ekran Kiralama/);
 assert.ok(Array.isArray(keywords.queue) && keywords.queue.length > 0);
 assert.match(read('includes/layout.php'), /nav-label">Anasayfa/);
@@ -102,3 +102,5 @@ assert.equal(cycle.published[0], unused.slug);
 assert.ok(cycle.keywords.queue.length >= 3);
 
 console.log('audit tests passed');
+
+await import('./seo.test.mjs');

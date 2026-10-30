@@ -27,7 +27,7 @@ function rle_sync_blog_posts() {
         $existing = get_posts(array(
             'name' => $item['slug'],
             'post_type' => 'post',
-            'post_status' => array('publish', 'draft', 'pending'),
+            'post_status' => array('publish', 'draft', 'pending', 'future'),
             'numberposts' => 1,
         ));
         $postarr = array(

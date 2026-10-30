@@ -84,10 +84,10 @@ function rle_render_footer() {
         <section class="footer-gallery" aria-labelledby="footer-gallery-title">
             <h2 id="footer-gallery-title">Galeri</h2>
             <div class="footer-gallery-grid">
-                <a href="<?php echo rle_link('rental-led-ekran'); ?>"><img src="<?php echo esc_url(RLE_URL . 'assets/rental-led-ekran.webp'); ?>" alt="Rental LED ekran"><span>Rental LED</span></a>
-                <a href="<?php echo rle_link('front'); ?>"><img src="<?php echo esc_url(RLE_URL . 'assets/front.webp'); ?>" alt="Front LED ekran"><span>Front LED</span></a>
-                <a href="<?php echo rle_link('cob'); ?>"><img src="<?php echo esc_url(RLE_URL . 'assets/cob.webp'); ?>" alt="COB LED ekran"><span>COB LED</span></a>
-                <a href="<?php echo rle_link('floor'); ?>"><img src="<?php echo esc_url(RLE_URL . 'assets/floor.webp'); ?>" alt="Floor zemin LED ekran"><span>Floor LED</span></a>
+                <a href="<?php echo rle_link('rental-led-ekran'); ?>"><img src="<?php echo esc_url(RLE_URL . 'assets/rental-led-ekran.webp'); ?>" width="1024" height="576" loading="lazy" alt="Rental LED ekran"><span>Rental LED</span></a>
+                <a href="<?php echo rle_link('front'); ?>"><img src="<?php echo esc_url(RLE_URL . 'assets/front.webp'); ?>" width="850" height="850" loading="lazy" alt="Front LED ekran"><span>Front LED</span></a>
+                <a href="<?php echo rle_link('cob'); ?>"><img src="<?php echo esc_url(RLE_URL . 'assets/cob.webp'); ?>" width="1024" height="505" loading="lazy" alt="COB LED ekran"><span>COB LED</span></a>
+                <a href="<?php echo rle_link('floor'); ?>"><img src="<?php echo esc_url(RLE_URL . 'assets/floor.webp'); ?>" width="777" height="408" loading="lazy" alt="Floor zemin LED ekran"><span>Floor LED</span></a>
             </div>
         </section>
         <nav class="footer-list footer-products" aria-label="Ürün bağlantıları">
@@ -98,7 +98,7 @@ function rle_render_footer() {
         <section class="footer-contact">
             <h2>İletişim</h2>
             <address>
-                <p><?php echo esc_html($settings['address']); ?></p>
+                <p><a href="<?php echo esc_url(rle_map_url()); ?>" target="_blank" rel="noopener"><?php echo esc_html($settings['address']); ?></a></p>
                 <p><a href="mailto:<?php echo esc_attr($settings['email']); ?>"><?php echo esc_html($settings['email']); ?></a></p>
                 <p><?php foreach (rle_phones() as $phone): ?><a href="tel:<?php echo esc_attr(preg_replace('/[^+0-9]/', '', $phone)); ?>"><?php echo esc_html($phone); ?></a><br><?php endforeach; ?></p>
                 <p><a href="https://wa.me/<?php echo esc_attr($settings['whatsapp']); ?>" target="_blank" rel="noopener">WhatsApp ile yazın ↗</a></p>

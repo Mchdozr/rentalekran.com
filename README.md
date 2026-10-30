@@ -1,6 +1,6 @@
 # rentalekran.com
 
-Rental Ekran WordPress presentation and SEO plugin. Production version: 2.5.0.
+Rental Ekran WordPress presentation and SEO plugin. Plugin version: 2.6.0.
 
 ## Installation
 Requires WordPress 6.6+ and PHP 7.4+. Canlıya alma: `main` push (aşağıdaki Deployment). Zip yalnızca yedek/rollback içindir.
@@ -15,7 +15,7 @@ The host WordPress installation supplies the database, settings, legacy content 
 - LED cabinet estimator and prefilled contact links
 
 ## Validation
-PHP syntax and JavaScript syntax checks; `node tests/audit.test.mjs`; route/canonical/structured data integration checks; calculator/menu tests. Responsive layout checked on 21 routes at 360, 390, 768, 1024, 1366 and 1920 pixels. Live product dialog, mobile tables and footer checked separately.
+PHP syntax and JavaScript syntax checks; `node tests/audit.test.mjs` (SEO content checks included); `node tests/seo-http.test.mjs` against a local WordPress; route/canonical/structured data integration checks; calculator/menu tests. Responsive layout checked on 21 routes at 360, 390, 768, 1024, 1366 and 1920 pixels. Live product dialog, mobile tables and footer checked separately.
 
 ## Deployment
 `main` dalına push (veya Actions → Test and deploy plugin → Run workflow) eklentiyi Natro Plesk’teki `wp-content/plugins/rentalekran-growth/` dizinine kopyalar. Zip yüklemeye gerek yok.
@@ -35,3 +35,5 @@ Plesk’te mümkünse yalnızca plugin klasörüne yetkili ayrı FTP kullanıcı
 
 ## SEO otomasyonu
 Kelime haritası: `rentalekran-growth/includes/keywords.json`. Haftalık iş kuyruktan bir yazı yayınlar ve `scripts/seo-topics.json` havuzundan kuyruğu yeniden doldurur. Manuel: `node scripts/seo-cycle.mjs` veya `--flush`.
+
+Local browser smoke test (Playwright and Chromium required): `node tests/browser-smoke.cjs`. Override `RLE_TEST_URL` and `RLE_CHROMIUM_PATH` when needed. It checks six main pages at 390/1366 px, readable service cards, layout overflow and JavaScript errors. Screenshots are written under `/tmp`.
