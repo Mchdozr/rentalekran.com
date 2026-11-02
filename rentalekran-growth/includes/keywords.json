@@ -1,5 +1,5 @@
 {
-  "blogSync": "2.6.0",
+  "blogSync": "2.6.1",
   "pages": {
     "": {
       "focus": "LED ekran, rental ekran",
@@ -204,67 +204,6 @@
     ]
   },
   "queue": [
-    {
-      "slug": "led-ekran-enerji-ve-parlaklik",
-      "title": "LED Ekran Parlaklık ve Enerji: Teklifte Nelere Bakılır?",
-      "date": "2026-12-15",
-      "category": "Teknoloji",
-      "focus": "LED ekran parlaklık",
-      "excerpt": "LED ekran satışı ve kiralama teklifinde parlaklık (nit) ile gece dimming birlikte planlanır. Model belgesi olmadan nit değeri varsayılmaz.",
-      "featured": "assets/gob.webp",
-      "imageAlt": "Dış cephe LED ekran parlaklık",
-      "links": [
-        "",
-        "ic-mekan-dis-mekan-led-ekran",
-        "led-ekran-satisi",
-        "gob"
-      ],
-      "sections": [
-        {
-          "h2": "Parlaklık ihtiyacını mekânın ışığı belirler",
-          "p": [
-            "LED ekran parlaklık değeri, yüzeyden yayılan ışığın yoğunluğunu ifade eder ve genellikle nit olarak belirtilir. Ancak teklif tablosunda büyük bir sayının bulunması tek başına iyi görüntü anlamına gelmez. İzleyicinin bulunduğu yöndeki ortam ışığı, ekrana düşen güneş, içerikteki beyaz alanlar ve kullanım saatleri birlikte değerlendirilmelidir. İç toplantı salonunda rahatsızlık oluşturan bir ayar, gün ışığı alan başka bir mekânda yetersiz kalabilir. Bu nedenle ihtiyaç tarifini yalnızca iç mekân veya dış mekân şeklinde bırakmamak gerekir.",
-            "Keşif için ekranın konumu, baktığı yön, gölgelendiği saatler ve izleme alanının fotoğrafları hazırlanabilir. Vitrin arkasındaki ekranlarda camın yansıması ve olası film kaplaması da hesaba katılır. En yararlı deneme, gerçek içeriği planlanan konumda, kullanım saatlerine yakın koşullarda izlemektir. Böylece görünürlük sorununun parlaklık, yansıma veya içerik tasarımından hangisiyle ilişkili olduğu anlaşılır."
-          ]
-        },
-        {
-          "h2": "Teknik belgede hangi parlaklık bilgisi aranmalı?",
-          "p": [
-            "Model belgesindeki parlaklık değerinin hangi koşulda ölçüldüğü sorulmalıdır. Tam beyaz test görüntüsü, kullanılan renk sıcaklığı, kalibrasyon ve güç sınırlaması gibi unsurlar ölçüm sonucunu etkileyebilir. Aynı serinin farklı piksel aralıkları veya donanım sürümleri de aynı değere sahip olmak zorunda değildir. Ürün ailesi adına bakarak bütün seçenekler için tek bir nit değeri kabul etmek yerine, teklif edilen modelin belgesi istenir.",
-            "Parlaklıkla birlikte renk tutarlılığı ve düşük seviyelerdeki görüntü davranışı da incelenmelidir. Akşam kullanımında ekran kısıldığında gri tonların kaybolması veya renk dengesinin belirgin değişmesi kabul denemesine eklenebilecek konulardır. Numune değerlendirmesinde yalnızca parlak tanıtım videosu kullanılmamalı; koyu sahneler, ten renkleri, küçük metin ve geniş düz renk yüzeyleri de gösterilmelidir. Belgenin açıklamadığı özellikler satıcının yazılı yanıtıyla netleştirilir."
-          ]
-        },
-        {
-          "h2": "Gece ayarı ve otomatik kontrol nasıl planlanır?",
-          "p": [
-            "Gündüz okunabilirliği için belirlenen ayarın gece boyunca korunması, çevredeki kullanıcıların konforunu bozabilir ve gereksiz enerji kullanımına neden olabilir. Çalışma programında sabah, gündüz, akşam ve kapanış durumları ayrı tanımlanabilir. Bunlar her projeye uygulanacak sabit yüzdeler değildir; çevre koşulları, içerik ve gerekiyorsa yerel kullanım kuralları dikkate alınarak sahada ayarlanır. İşletme ekibinin gerektiğinde ayarı kimden ve nasıl değiştireceğini bilmesi gerekir.",
-            "Ortam ışığı sensörü kullanılıyorsa sensörün ekranın kendi ışığından veya geçici spotlardan etkilenmemesi önemlidir. Ani ışık değişimlerinde görüntünün sürekli açılıp kısılmasını önleyen geçiş davranışı kontrol edilir. Sensör bağlantısı kesildiğinde sistemin hangi güvenli ayara döneceği de tarif edilmelidir. Otomatik sistem bulunması, devreye alma sırasında gündüz ve gece denemesi yapma ihtiyacını ortadan kaldırmaz."
-          ]
-        },
-        {
-          "h2": "Maksimum güç ile ortalama tüketim farklıdır",
-          "p": [
-            "Elektrik altyapısı için kullanılan maksimum güç bilgisi ile faturayı tahmin etmeye yarayan ortalama tüketim aynı amaçla kullanılmaz. Maksimum değer, uygun elektrik projelendirmesine girdi sağlar. Ortalama değer ise içerik, parlaklık, çalışma süresi ve kontrol ayarlarına bağlıdır. Satış dosyasında bu iki değerin birbirine karıştırılmaması gerekir. Yalnızca tipik tüketim bilgisine dayanarak kablo veya koruma elemanı seçilmemelidir; bu değerlendirme yetkin elektrik sorumlusu tarafından yapılır.",
-            "Örneğin tüketimin saatlik enerjiye çevrilmesinde ortalama güç kilovat cinsinden ele alınır ve çalışma saatiyle çarpılır. Günlük ortalama 2 kilovat tüketen varsayımsal bir sistem on saat çalışırsa ekran için yaklaşık 20 kilovatsaat hesaplanır. Bu örnek herhangi bir modelin tüketim iddiası değildir. Kontrol bilgisayarı, görüntü işlemcisi, soğutma ve diğer yardımcı cihazların harcaması varsa toplam bütçeye ayrıca eklenir."
-          ]
-        },
-        {
-          "h2": "Güç dağıtımı ve ısıl koşulları birlikte değerlendirin",
-          "p": [
-            "Bir ekranın yüzey alanını büyütmek yalnızca daha fazla modül eklemek değildir; güç dağıtımının ve kablo güzergâhının da yeniden değerlendirilmesini gerektirir. Besleme noktaları, dağıtım panosu, topraklama, koruma elemanları ve erişilebilir kapatma düzeni proje kapsamına yazılmalıdır. Mevcut priz bulunması, tesisatın istenen yükü güvenle taşıyabildiğini göstermez. Mekânın elektrik sorumlusu ile ekran sistemini kuracak ekip arasında bilgi alışverişi sağlanmalıdır.",
-            "Elektrikle alınan enerjinin bir bölümü ısıya dönüşür. Kapalı niş, vitrin boşluğu veya havalandırması zayıf arka hacim, cihazın çalışma koşullarını zorlaştırabilir. Bu nedenle bakım boşluğu ve üreticinin havalandırma gereksinimleri montaj çiziminde gösterilir. Dış ortam için yüzey koruması değerlendirilirken yalnızca yağmur değil, güneş altında oluşan sıcaklık da düşünülür. <a href=\"https://rentalekran.com/ic-mekan-dis-mekan-led-ekran/\">İç ve dış mekân seçimi</a> bu koşulları birlikte ele almak için başlangıç sağlar.",
-            "Tüketim karşılaştırması için deneme süresi ve oynatılan içerik aynı tutulabilir. Ölçümün ekranın tamamını mı yoksa tek bir besleme hattını mı kapsadığı kaydedilir. Elektrik sayacından alınan toplam değer başka cihazları da içeriyorsa doğrudan ekrana atfedilmez. Böyle bir kayıt, tahmin ile gerçek işletme koşulları arasındaki farkın nedenini açıklamaya yardımcı olur ve daha sonra çalışma programının değiştirilmesinde kullanılabilir."
-          ]
-        },
-        {
-          "h2": "Teklif ve teslim kontrolünü ölçülebilir hale getirin",
-          "p": [
-            "Karşılaştırılabilir bir teklifte model, ekran alanı, belgelenmiş parlaklık bilgisi, maksimum ve varsayıma dayanan ortalama güç, kontrol yöntemi ve çalışma takvimi bulunmalıdır. Enerji tasarrufu ifadesi kullanılıyorsa hangi referansa ve koşula göre söylendiği sorulur. GOB gibi bir yüzey uygulaması da kendiliğinden belirli bir tüketim veya parlaklık seviyesi vaat etmez; <a href=\"https://rentalekran.com/gob/\">GOB ürün seçimi</a> sırasında ilgili modelin verileri ayrıca incelenir.",
-            "Teslim sırasında tanımlı test görüntüsü, gündüz ve gece ayarı, sensör davranışı ve erişim yetkileri kontrol edilerek kayıt altına alınabilir. Bakım sonrası kalibrasyon veya kontrol kartı değişiminde hangi ayarların korunacağı belirlenir. <a href=\"https://rentalekran.com/led-ekran-satisi/\">LED ekran satışı</a> talebine çalışma saatlerini eklemek, ilk yatırım ile işletme giderinin aynı çerçevede değerlendirilmesini kolaylaştırır. Ölçü ve kullanım yerini <a href=\"https://rentalekran.com/\">Rental Ekran</a> üzerinden paylaşırken bu bilgilerin eklenmesi, teknik değerlendirmenin somut koşullara dayanmasına yardımcı olur."
-          ]
-        }
-      ]
-    },
     {
       "slug": "okul-konferans-led-ekran-satisi",
       "title": "Okul ve Konferans Salonu LED Ekran Satışı",
