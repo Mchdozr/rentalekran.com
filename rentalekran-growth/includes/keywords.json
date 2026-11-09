@@ -1,5 +1,5 @@
 {
-  "blogSync": "2.6.1",
+  "blogSync": "2.6.2",
   "pages": {
     "": {
       "focus": "LED ekran, rental ekran",
@@ -204,67 +204,6 @@
     ]
   },
   "queue": [
-    {
-      "slug": "okul-konferans-led-ekran-satisi",
-      "title": "Okul ve Konferans Salonu LED Ekran Satışı",
-      "date": "2026-12-22",
-      "category": "Uygulama Alanları",
-      "focus": "konferans salonu LED ekran",
-      "excerpt": "Okul ve konferans salonu LED ekran satışı; yazı okunabilirliği ve sabit montaj içindir. Yılda birkaç etkinlik için kiralama yeterli olabilir.",
-      "featured": "assets/cob.webp",
-      "imageAlt": "Konferans salonu LED ekran satışı",
-      "links": [
-        "",
-        "led-ekran-satisi",
-        "cob",
-        "led-ekran-secim-rehberi"
-      ],
-      "sections": [
-        {
-          "h2": "Salonda ekranın hangi işi yapacağına karar verin",
-          "p": [
-            "Konferans salonu LED ekran seçimi, sahnenin arkasındaki boş alanı ölçmekle başlamamalıdır. Ders sunumu, tören, çevrim içi bağlantı, öğrenci gösterisi ve film gösterimi farklı ihtiyaçlar doğurur. Haftalık derslerde yoğun metin ve grafik görülecekse okunabilirlik öncelik kazanır. Sahne gösterisinde ise dekorla ilişki, konuşmacının görünürlüğü ve ışık dengesi daha belirleyici olabilir. Aynı salon bütün bu işleri yapacaksa kullanım senaryoları ayrı yazılmalı, tek bir tanıtım videosuyla karar verilmemelidir.",
-            "Okul yönetimi, teknik sorumlu ve salonu düzenli kullanan öğretmenler birlikte örnek içerik hazırlayabilir. Gerçek ders dosyalarındaki en küçük metin, tablolar, çizimler ve video örnekleri değerlendirmeye alınır. Bu içeriklerle yapılacak gösterim, ekranın yalnızca etkileyici görünmesini değil, eğitim amacına hizmet etmesini sınar. Kullanıcıların değiştiremeyeceği içerik koşulları varsa teknik gereksinim bunlara göre belirlenir."
-          ]
-        },
-        {
-          "h2": "En yakın ve en uzak sırayı birlikte inceleyin",
-          "p": [
-            "Ekranın boyutuna yalnızca salon kapasitesinden karar verilemez. İlk sıranın mesafesi, son sıranın uzaklığı, yan koltuklardan görüş ve sahne yüksekliği ölçülmelidir. Yakındaki izleyici için piksel yapısı görünür hale gelebilirken uzaktaki izleyici için yazının boyutu yetersiz kalabilir. Bu iki sorun farklıdır. Daha küçük piksel aralığı seçmek, sunumda çok küçük yazı kullanılmasının bütün sonuçlarını tek başına çözmez.",
-            "Ekranın alt kenarı, ön sıradaki kişilerin başları ve konuşmacının konumuyla birlikte değerlendirilir. Alt tarafta sürekli altyazı gösterilecekse en gerideki koltuktan bu alanın kapanmadığı kontrol edilir. Salon planına olası ekran sınırları işlenerek farklı noktalardan fotoğraf veya görüş çizimi hazırlanabilir. Yakın izleme için <a href=\"https://rentalekran.com/cob/\">COB seçenekleri</a> incelenebilir; ancak uygunluğu seçilen modelin belgesi, içerik denemesi ve gerçek mesafelerle doğrulanmalıdır."
-          ]
-        },
-        {
-          "h2": "Sunumun piksel ölçüsü ve kullanım kolaylığı",
-          "p": [
-            "Fiziksel ekran ölçüsü ile bilgisayarın çıkış çözünürlüğü farklı kavramlardır. Seçilen kabin diziliminin oluşturduğu gerçek piksel genişliği ve yüksekliği öğrenilmelidir. Sunum bilgisayarı standart bir görüntü oranı üretiyorsa ekranda ölçekleme, boşluk bırakma veya kırpma seçenekleri ortaya çıkabilir. Harita, matematiksel şekil ve tablo gibi içeriklerde oranın bozulmaması özellikle önemlidir. İçerik üreticilerine kullanılabilir tuval ölçüsünün önceden bildirilmesi işleri kolaylaştırır.",
-            "Öğretmenin her kullanımda teknik menülere girmesi beklenmemelidir. Açılış, kaynak seçimi, ses seviyesi ve kapanış için anlaşılır bir işlem sırası tasarlanabilir. Misafir bilgisayarının nasıl bağlanacağı, dönüştürücü ihtiyacı ve kablo uzunluğu kontrol edilir. Bağlantı noktasının konuşmacının yolunu kesmemesi gerekir. Yönetim erişimi ile günlük kullanım yetkileri ayrılarak öğrencilerin veya geçici kullanıcıların kalıcı sistem ayarlarını değiştirmesi önlenebilir."
-          ]
-        },
-        {
-          "h2": "Ses, kamera ve sahne ışığı ayrı sistemlerdir",
-          "p": [
-            "LED ekran görüntü üretir; salonun ses ihtiyacını kendiliğinden çözmez. Bilgisayar sesi, kablosuz mikrofon ve uzaktan katılımcı sesi için ayrı bir yönlendirme planı gerekir. Ekrana giden görüntü ile salondaki ses arasında belirgin gecikme oluşup oluşmadığı prova sırasında kontrol edilir. Konuşmacının yüzünü gösteren canlı kamera kullanılacaksa görüntü zincirindeki gecikme, sahne ve ekrandaki hareketin birlikte algılanmasını etkileyebilir.",
-            "Sahne ışıkları açıkken okunabilirlik, ışıklar azaldığında ise izleyici konforu denenmelidir. Film veya karanlık sunum sırasında beyaz bir slaytın aniden açılması rahatsız edici olabilir. Kullanım senaryolarına göre parlaklık profilleri hazırlanması yararlıdır. Kamera kaydı veya canlı yayın planlanıyorsa bant oluşumu ve görüntü kararlılığı gerçek kamera ayarlarıyla test edilir. Yalnızca bir teknik özellik başlığına bakarak bütün çekim koşullarında sorunsuz kayıt garantisi verilmemelidir."
-          ]
-        },
-        {
-          "h2": "Kalıcı montajda okulun günlük düzeni önemlidir",
-          "p": [
-            "Duvar veya taşıyıcı yapı, ekranın ve montaj sisteminin yükü dikkate alınarak uzmanlarca değerlendirilmelidir. Öğrencilerin erişebileceği kablolar, keskin kenarlar ve servis noktaları kontrol altına alınır. Yangın çıkışları, yönlendirme işaretleri ve bakım yolları kapatılmamalıdır. Sahnenin farklı etkinlikler için kullanılması, ekranın önünde dekor, perde veya hareketli ekipman bulunması gibi durumlar da yerleşim kararına eklenir.",
-            "Bakım erişimi sonradan düşünülürse küçük bir parça değişimi için büyük söküm gerekebilir. Ön veya arka erişim yöntemi, modülün çıkarılacağı alan ve servis sırasında salonun kullanılıp kullanılamayacağı önceden belirlenir. Temizlik yöntemi, kullanılmaması gereken kimyasallar ve kapatma talimatları modelin dokümanına dayanmalıdır. Okul personeline yalnızca günlük kullanım değil, olağan dışı durumda güvenli kapatma ve servis çağırma adımları da aktarılmalıdır.",
-            "Erişilebilirlik açısından altyazı ve işaret dili görüntüsü kullanılacaksa bu alanların içerik tasarımında korunması gerekir. Sunumdaki renklerin tek başına anlam taşımaması, grafiklerde metin veya desenle desteklenmesi yararlıdır. Teknik kabul sırasında bu içerikler salonun farklı noktalarından denenebilir. Ayrıca görevli değiştiğinde sistemi kullanabilmek için kısa bir kullanım kılavuzunun salon içinde erişilebilir yerde tutulması, eğitimin yalnızca tek kişiye bağlı kalmasını önler."
-          ]
-        },
-        {
-          "h2": "Satın alma bütçesini teslim koşullarıyla tamamlayın",
-          "p": [
-            "Yıl içinde kaç kez ve kaç saat kullanım olacağı belirlenerek satın alma ile dönemsel kiralama karşılaştırılabilir. Yalnızca birkaç tören için kullanılan salonda kiralama değerlendirmeye açıktır. Düzenli eğitim kullanımında ise ürün, kontrol donanımı, kurulum, eğitim, enerji, bakım ve olası yenileme giderleri birlikte ele alınır. Teklif karşılaştırması ekran yüzeyinin fiyatıyla sınırlanmamalı; aynı kapsamın karşılaştırıldığından emin olunmalıdır.",
-            "Kabul listesine gerçek ders sunumu, son sıradan okuma, misafir bilgisayar bağlantısı, ses uyumu ve elektrik kesintisi sonrasında kontrollü açılış eklenebilir. Garanti kapsamı, servis başvurusu yöntemi ve yedek parça yaklaşımı yazılı istenir. <a href=\"https://rentalekran.com/led-ekran-satisi/\">Satış projesi</a> için salon planı ve örnek dosyalar paylaşılabilir. <a href=\"https://rentalekran.com/led-ekran-secim-rehberi/\">LED ekran seçim rehberi</a> teknik seçenekleri karşılaştırmaya yardımcı olur; <a href=\"https://rentalekran.com/\">Rental Ekran</a> üzerinden iletilen talepte eğitim kullanımının özellikle belirtilmesi değerlendirmeyi kolaylaştırır."
-          ]
-        }
-      ]
-    },
     {
       "slug": "led-ekran-yedek-modul-bakim",
       "title": "LED Ekran Bakım, Yedek Modül ve Servis Kapsamı",
